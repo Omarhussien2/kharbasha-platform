@@ -3,6 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Kharbasha runtime config.
+      // - On HF Space: backend/server.py injects __APP_CONFIG__ at the top of <head>
+      //   with a relative "/data" endpoint (same origin). That runs first.
+      // - On Vercel (frontend-only): the block below provides a fallback pointing
+      //   to the HF Space backend so the SPA can still call the API via CORS.
+      (function () {
+        if (!window.__APP_CONFIG__) {
+          window.__APP_CONFIG__ = {
+            appName: "kharbasha",
+            dataEndpoint: "https://omar559-kharbasha-api.hf.space/data",
+            runId: "vercel-" + Date.now()
+          };
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />

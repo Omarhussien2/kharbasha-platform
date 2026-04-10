@@ -1,1 +1,32 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIiBjbGFzcz0iZGFyayI+CiAgPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCIgLz4KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIiAvPgogICAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tIiAvPgogICAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tIiBjcm9zc29yaWdpbiAvPgogICAgPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1QbHVzK0pha2FydGErU2Fuczp3Z2h0QDQwMDs1MDA7NjAwOzcwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCIgLz4KICAgIDx0aXRsZT5LaGFyYmFzaGE8L3RpdGxlPgogICAgPHNjcmlwdCB0eXBlPSJtb2R1bGUiIGNyb3Nzb3JpZ2luIHNyYz0iLi9hc3NldHMvaW5kZXgtRHpkUW1lczYuanMiPjwvc2NyaXB0PgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBjcm9zc29yaWdpbiBocmVmPSIuL2Fzc2V0cy9pbmRleC1VSENwVkluTi5jc3MiPgogIDwvaGVhZD4KICA8Ym9keSBjbGFzcz0iYW50aWFsaWFzZWQiPgogICAgPGRpdiBpZD0icm9vdCI+PC9kaXY+CiAgPC9ib2R5Pgo8L2h0bWw+Cg==
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Kharbasha runtime config.
+      // - On HF Space: backend/server.py injects __APP_CONFIG__ at the top of <head>
+      //   with a relative "/data" endpoint (same origin). That runs first.
+      // - On Vercel (frontend-only): the block below provides a fallback pointing
+      //   to the HF Space backend so the SPA can still call the API via CORS.
+      (function () {
+        if (!window.__APP_CONFIG__) {
+          window.__APP_CONFIG__ = {
+            appName: "kharbasha",
+            dataEndpoint: "https://omar559-kharbasha-api.hf.space/data",
+            runId: "vercel-" + Date.now()
+          };
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Kharbasha</title>
+    <script type="module" crossorigin src="./assets/index-DzdQmes6.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-UHCpVInN.css">
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+  </body>
+</html>

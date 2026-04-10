@@ -1,7 +1,7 @@
-# Use an official Python runtime as a parent image
+# Kharbasha Platform — HF Spaces Docker image
 FROM python:3.11-slim
 
-# Install system dependencies for Playwright and browser-use
+# System deps for Playwright / headless Chromium (used by browser-use)
 RUN apt-get update && apt-get install -y \
     wget \
     gnupg \
@@ -31,26 +31,27 @@ RUN apt-get update && apt-get install -y \
     libxtst6 \
     && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory
 WORKDIR /app
 
-# Copy backend requirements and install them
+# Python deps
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install --no-cache-dir uvicorn playwright browser-use
+RUN pip install --no-cache-dir playwright browser-use
 RUN playwright install --with-deps chromium
 
-# Copy the backend and frontend dist files
+# App code + built frontend
 COPY backend/ ./backend/
 COPY frontend/dist/ ./static/
 
-# Environment variables for Hugging Face
-ENV PORT=7860
-ENV PYTHONUNBUFFERED=1
+# Writable data dir for SQLite (HF Spaces: /app is writable at runtime)
+RUN mkdir -p /app/data/db && chmod -R 777 /app/data
 
-# Expose the port Hugging Face expects
+ENV PORT=7860 \
+    PYTHONUNBUFFERED=1 \
+    STATIC_DIR=/app/static \
+    APP_NAME=kharbasha
+
 EXPOSE 7860
 
-# Create a simple FastAPI runner if main.py doesn't have one, 
-# or run main.py directly if it hosts the server
-CMD ["python", "backend/main.py"]
+# Run the FastAPI server (serves frontend + RPC endpoints)
+CMD ["python", "backend/server.py"]
