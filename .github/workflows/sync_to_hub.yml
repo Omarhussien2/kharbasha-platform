@@ -9,11 +9,36 @@ jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           lfs: true
-      - name: Push to hub
+
+      - name: Configure git
+        run: |
+          git config user.email "github-actions@users.noreply.github.com"
+          git config user.name "GitHub Actions"
+
+      - name: Push to Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://omar559:$HF_TOKEN@huggingface.co/spaces/omar559/Kharbasha-api main
+          HF_USER: omar559
+          HF_SPACE: Kharbasha-api
+        run: |
+          set -e
+          if [ -z "$HF_TOKEN" ]; then
+            echo "::error::HF_TOKEN secret is not set"
+            exit 1
+          fi
+
+          HF_URL="https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_USER}/${HF_SPACE}"
+
+          echo "Pushing to https://huggingface.co/spaces/${HF_USER}/${HF_SPACE}"
+          if ! git push --force "${HF_URL}" main 2>&1; then
+            echo "::warning::Force push failed, attempting fetch + merge strategy"
+            git remote add hf "${HF_URL}" || true
+            git fetch hf main || { echo "::error::Unable to fetch from HF Space"; exit 1; }
+            git push --force hf main
+          fi
+          echo "Sync complete."
