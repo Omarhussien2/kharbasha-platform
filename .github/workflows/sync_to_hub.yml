@@ -20,25 +20,65 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
           git config user.name "GitHub Actions"
 
-      - name: Push to Hugging Face Space
+      - name: Verify HF_TOKEN secret exists
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "::error::HF_TOKEN secret is not set in repository settings"
+            exit 1
+          fi
+          echo "HF_TOKEN is set (length: ${#HF_TOKEN})"
+
+      - name: Check HF token auth (whoami)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          echo "Calling HF whoami-v2..."
+          http_code=$(curl -s -o /tmp/whoami.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${HF_TOKEN}" \
+            https://huggingface.co/api/whoami-v2)
+          echo "HTTP status: ${http_code}"
+          cat /tmp/whoami.json || true
+          echo ""
+          if [ "$http_code" != "200" ]; then
+            echo "::error::HF token auth failed (HTTP ${http_code})"
+            exit 1
+          fi
+
+      - name: Check if HF Space exists
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          echo "Checking https://huggingface.co/api/spaces/omar559/Kharbasha-api ..."
+          http_code=$(curl -s -o /tmp/space.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${HF_TOKEN}" \
+            https://huggingface.co/api/spaces/omar559/Kharbasha-api)
+          echo "HTTP status: ${http_code}"
+          head -c 400 /tmp/space.json || true
+          echo ""
+          if [ "$http_code" = "404" ]; then
+            echo "::error::Space omar559/Kharbasha-api does not exist — create it first"
+            exit 1
+          fi
+
+      - name: Push to Hugging Face Space (verbose)
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_USER: omar559
           HF_SPACE: Kharbasha-api
+          GIT_CURL_VERBOSE: "1"
+          GIT_TRACE: "1"
         run: |
-          set -e
-          if [ -z "$HF_TOKEN" ]; then
-            echo "::error::HF_TOKEN secret is not set"
+          set -x
+          # Use the credentials helper so the token isn't exposed in the URL
+          git remote add hf "https://huggingface.co/spaces/${HF_USER}/${HF_SPACE}" || \
+            git remote set-url hf "https://huggingface.co/spaces/${HF_USER}/${HF_SPACE}"
+
+          # Configure auth via http.extraheader using a base64-encoded basic auth header
+          AUTH=$(printf "%s" "${HF_USER}:${HF_TOKEN}" | base64 -w 0)
+          git -c http.extraheader="Authorization: Basic ${AUTH}" push --force hf main 2>&1 || {
+            echo "::error::git push to HF Space failed — full output above"
             exit 1
-          fi
-
-          HF_URL="https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_USER}/${HF_SPACE}"
-
-          echo "Pushing to https://huggingface.co/spaces/${HF_USER}/${HF_SPACE}"
-          if ! git push --force "${HF_URL}" main 2>&1; then
-            echo "::warning::Force push failed, attempting fetch + merge strategy"
-            git remote add hf "${HF_URL}" || true
-            git fetch hf main || { echo "::error::Unable to fetch from HF Space"; exit 1; }
-            git push --force hf main
-          fi
+          }
           echo "Sync complete."
