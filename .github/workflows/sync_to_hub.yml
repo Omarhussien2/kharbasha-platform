@@ -25,15 +25,16 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_USER: omar559
           HF_SPACE: Kharbasha-api
+        shell: bash
         run: |
-          set -e
+          set -eo pipefail
+
           if [ -z "$HF_TOKEN" ]; then
             echo "::error::HF_TOKEN secret is not set"
             exit 1
           fi
 
-          # Store credentials in ~/.git-credentials so the token never appears
-          # in the remote URL (which would break if it contains URL-special chars)
+          # Store credentials securely instead of putting the token in the URL
           git config --global credential.helper store
           printf "https://%s:%s@huggingface.co\n" "${HF_USER}" "${HF_TOKEN}" > "$HOME/.git-credentials"
           chmod 600 "$HOME/.git-credentials"
@@ -44,14 +45,19 @@ jobs:
           git remote remove hf 2>/dev/null || true
           git remote add hf "${REMOTE_URL}"
 
-          # Capture full push output so we can see what HF says if it rejects
-          if git push --force hf main 2>&1 | tee /tmp/push.log; then
-            echo "Sync complete."
-          else
-            echo ""
-            echo "====== FULL PUSH LOG ======"
-            cat /tmp/push.log
-            echo "==========================="
-            echo "::error::git push to HF Space failed"
-            exit 1
+          # Run push with all output visible. Exit code reflects git push, not tee.
+          set +e
+          git push --force --verbose hf main > /tmp/push.out 2>&1
+          rc=$?
+          set -e
+
+          echo "====== PUSH OUTPUT ======"
+          cat /tmp/push.out
+          echo "========================="
+          echo "git push exit code: ${rc}"
+
+          if [ "${rc}" -ne 0 ]; then
+            echo "::error::git push to HF Space failed (exit ${rc})"
+            exit "${rc}"
           fi
+          echo "Sync complete."
