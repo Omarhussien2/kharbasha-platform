@@ -4,6 +4,32 @@ import time
 import os
 from nexttoken import NextToken
 from db import init_db, create_job, update_job_status, save_result, get_history, delete_job, save_agent_session
+import urllib.request
+from bs4 import BeautifulSoup
+import markdownify
+
+def fetch_url_local(url: str):
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as response:
+            html = response.read()
+    except Exception as e:
+        raise Exception(f"Failed to fetch {url}: {str(e)}")
+        
+    soup = BeautifulSoup(html, "html.parser")
+    title = soup.title.string if soup.title else url
+    # remove scripts and styles
+    for script in soup(["script", "style"]):
+        script.extract()
+    markdown = markdownify.markdownify(str(soup), heading_style="ATX").strip()
+    links = [a.get("href") for a in soup.find_all("a", href=True) if a.get("href") and not a.get("href").startswith("javascript:")]
+    return {
+        "content": markdown,
+        "title": title,
+        "url": url,
+        "content_length": len(markdown),
+        "links": links
+    }
 
 # Load instructions conventions:
 # Dialect influence for status messages
@@ -47,7 +73,12 @@ def scrape_url(url: str, dialect: str = "egyptian"):
     try:
         update_job_status(job_id, "processing")
         print(f"[BACKEND_STEP] fetching {url}")
-        page = client.fetch.url(url)
+        
+        try:
+            page = fetch_url_local(url)
+        except Exception as efetch:
+            print(f"[BACKEND_WARNING] local fetch failed: {efetch}, trying nexttoken as fallback")
+            page = client.fetch.url(url)
         
         markdown = page.get("content", "")
         metadata = {
@@ -93,7 +124,11 @@ def crawl_domain_streaming(url: str, limit: int = 5, dialect: str = "egyptian"):
             yield {"type": "status", "content": _get_msg(dialect, "fetching") + f" ({current_url})", "progress": int((results_count/limit)*90) + 5}
             
             try:
-                page = client.fetch.url(current_url)
+                try:
+                    page = fetch_url_local(current_url)
+                except Exception:
+                    page = client.fetch.url(current_url)
+                
                 markdown = page.get("content", "")
                 save_result(job_id, current_url, markdown, {"title": page.get("title")})
                 
@@ -127,7 +162,8 @@ def crawl_domain_streaming(url: str, limit: int = 5, dialect: str = "egyptian"):
         print(f"[BACKEND_ERROR] crawl_domain_streaming failed: {error_msg}")
         yield {"type": "status", "content": _get_msg(dialect, "error", error=error_msg), "progress": 0, "error": error_msg}
 
-def run_agent_task_streaming(task: str, dialect: str = "egyptian"):
+def run_agent_task_streaming(message: str, dialect: str = "egyptian"):
+    task = message
     print(f"[BACKEND_START] run_agent_task_streaming called with task={task}, dialect={dialect}")
     init_db()
     session_id = str(uuid.uuid4())
