@@ -37,7 +37,7 @@ WORKDIR /app
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir playwright browser-use
-RUN playwright install --with-deps chromium
+RUN playwright install chromium
 
 # App code + built frontend
 COPY backend/ ./backend/
