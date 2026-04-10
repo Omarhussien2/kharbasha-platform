@@ -2,7 +2,7 @@ import sqlite3
 import os
 import json
 
-DB_DIR = "/app/data/db"
+DB_DIR = os.getenv("DB_DIR", "data/db")
 DB_PATH = os.path.join(DB_DIR, "kharbasha.db")
 
 def _get_db():
