@@ -82,7 +82,7 @@ function AppShell() {
                   setIsSidebarOpen(false);
                 }}
                 className={cn(
-                  "w-full flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition-all",
+                  "w-full flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition-all group",
                   activeView === item.id 
                     ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20 scale-[1.02]" 
                     : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
@@ -90,6 +90,16 @@ function AppShell() {
               >
                 <item.icon className={cn("h-5 w-5", activeView === item.id ? "text-primary-foreground" : "text-primary")} />
                 <span>{item.label}</span>
+                {item.id === 'agent' && (
+                  <span className={cn(
+                    "mr-auto text-[10px] px-2 py-0.5 rounded-full font-bold tracking-widest",
+                    activeView === 'agent' 
+                      ? "bg-white/20 text-white" 
+                      : "bg-primary/10 text-primary border border-primary/20 animate-pulse"
+                  )}>
+                    قريباً
+                  </span>
+                )}
               </button>
             ))}
           </nav>
