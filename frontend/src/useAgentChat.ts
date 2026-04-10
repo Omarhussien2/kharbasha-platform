@@ -1,1 +1,351 @@
-Ly8gc3JjL3VzZUFnZW50Q2hhdC50cyAtIEFnZW50IGNvbnZlcnNhdGlvbiBzdGF0ZSBtYW5hZ2VtZW50IGhvb2suCmltcG9ydCB7IHVzZVN0YXRlLCB1c2VDYWxsYmFjaywgdXNlUmVmLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IHN0cmVhbUNhbGwgfSBmcm9tICcuL2FwaSc7CgovLyAtLS0gVHlwZXMgLS0tCgpleHBvcnQgdHlwZSBUb29sQ2FsbFN0YXR1cyA9ICdwZW5kaW5nJyB8ICdzdWNjZXNzJyB8ICdlcnJvcic7CgpleHBvcnQgaW50ZXJmYWNlIFRvb2xDYWxsSW5mbyB7CiAgY2FsbElkOiBzdHJpbmc7CiAgdG9vbDogc3RyaW5nOwogIGFyZ3M6IFJlY29yZDxzdHJpbmcsIGFueT47CiAgcmVzdWx0PzogYW55OwogIGR1cmF0aW9uTXM/OiBudW1iZXI7CiAgc3RhdHVzOiBUb29sQ2FsbFN0YXR1czsKfQoKZXhwb3J0IGludGVyZmFjZSBDaGF0TWVzc2FnZSB7CiAgaWQ6IHN0cmluZzsKICByb2xlOiAndXNlcicgfCAnYXNzaXN0YW50JzsKICBjb250ZW50OiBzdHJpbmc7CiAgdGltZXN0YW1wOiBudW1iZXI7CiAgdG9vbENhbGxzPzogVG9vbENhbGxJbmZvW107CiAgdGhpbmtpbmc/OiBzdHJpbmc7CiAgaXNTdHJlYW1pbmc/OiBib29sZWFuOwogIHN0YXR1cz86IHN0cmluZzsKfQoKZXhwb3J0IGludGVyZmFjZSBVc2VBZ2VudENoYXRPcHRpb25zIHsKICAvKiogQmFja2VuZCBzdHJlYW1pbmcgZnVuY3Rpb24gbmFtZS4gRGVmYXVsdDogImNoYXRfc3RyZWFtaW5nIiAqLwogIHN0cmVhbUZ1bmM/OiBzdHJpbmc7CiAgLyoqIE9wdGlvbmFsIGNvbnZlcnNhdGlvbiBJRCBmb3IgcGVyc2lzdGVudCBjb252ZXJzYXRpb25zICovCiAgY29udmVyc2F0aW9uSWQ/OiBzdHJpbmc7CiAgLyoqIFByZS1wb3B1bGF0ZSBtZXNzYWdlcyAoZS5nLiwgbG9hZGVkIGNvbnZlcnNhdGlvbiBoaXN0b3J5KS4gV2hlbiB0aGlzIHJlZmVyZW5jZQogICAqICBjaGFuZ2VzIHRoZSBob29rIHJlcGxhY2VzIGl0cyBpbnRlcm5hbCBtZXNzYWdlcyBhcnJheSB3aXRoIHRoZSBuZXcgdmFsdWUuICovCiAgaW5pdGlhbE1lc3NhZ2VzPzogQ2hhdE1lc3NhZ2VbXTsKICAvKiogQ2FsbGVkIGFmdGVyIGEgY29tcGxldGUgYXNzaXN0YW50IHJlc3BvbnNlLiBVc2UgZm9yIHBlcnNpc3RlbmNlIChzYXZlIHRvIERCKSwKICAgKiAgY2FjaGUgaW52YWxpZGF0aW9uLCBvciBzaWRlYmFyIHVwZGF0ZXMuICovCiAgb25NZXNzYWdlQ29tcGxldGU/OiAodXNlck1lc3NhZ2U6IHN0cmluZywgYXNzaXN0YW50TWVzc2FnZTogc3RyaW5nLCBjb252ZXJzYXRpb25JZD86IHN0cmluZykgPT4gdm9pZDsKICAvKiogQ2FsbGVkIHdoZW4gYW4gZXJyb3Igb2NjdXJzICovCiAgb25FcnJvcj86IChlcnJvcjogRXJyb3IpID0+IHZvaWQ7Cn0KCmV4cG9ydCBpbnRlcmZhY2UgVXNlQWdlbnRDaGF0UmV0dXJuIHsKICBtZXNzYWdlczogQ2hhdE1lc3NhZ2VbXTsKICAvKiogRGlyZWN0IHN0YXRlIHNldHRlciDigJQgdXNlIHRvIGV4dGVybmFsbHkgcmVzZXQgbWVzc2FnZXMgKGUuZy4sIG9uIGNvbnZlcnNhdGlvbiBzd2l0Y2gpICovCiAgc2V0TWVzc2FnZXM6IFJlYWN0LkRpc3BhdGNoPFJlYWN0LlNldFN0YXRlQWN0aW9uPENoYXRNZXNzYWdlW10+PjsKICBzZW5kTWVzc2FnZTogKHRleHQ6IHN0cmluZykgPT4gUHJvbWlzZTx2b2lkPjsKICBpc1N0cmVhbWluZzogYm9vbGVhbjsKICBzdG9wR2VuZXJhdGlvbjogKCkgPT4gdm9pZDsKICBlcnJvcjogc3RyaW5nIHwgbnVsbDsKICBjbGVhck1lc3NhZ2VzOiAoKSA9PiB2b2lkOwp9CgovLyAtLS0gSG9vayAtLS0KCmxldCBpZENvdW50ZXIgPSAwOwpmdW5jdGlvbiBnZW5lcmF0ZUlkKCk6IHN0cmluZyB7CiAgcmV0dXJuIGBtc2dfJHtEYXRlLm5vdygpfV8keysraWRDb3VudGVyfWA7Cn0KCmV4cG9ydCBmdW5jdGlvbiB1c2VBZ2VudENoYXQob3B0aW9uczogVXNlQWdlbnRDaGF0T3B0aW9ucyA9IHt9KTogVXNlQWdlbnRDaGF0UmV0dXJuIHsKICBjb25zdCB7CiAgICBzdHJlYW1GdW5jID0gJ2NoYXRfc3RyZWFtaW5nJywKICAgIGNvbnZlcnNhdGlvbklkLAogICAgaW5pdGlhbE1lc3NhZ2VzLAogICAgb25NZXNzYWdlQ29tcGxldGUsCiAgICBvbkVycm9yLAogIH0gPSBvcHRpb25zOwoKICBjb25zdCBbbWVzc2FnZXMsIHNldE1lc3NhZ2VzXSA9IHVzZVN0YXRlPENoYXRNZXNzYWdlW10+KGluaXRpYWxNZXNzYWdlcyB8fCBbXSk7CiAgY29uc3QgW2lzU3RyZWFtaW5nLCBzZXRJc1N0cmVhbWluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2Vycm9yLCBzZXRFcnJvcl0gPSB1c2VTdGF0ZTxzdHJpbmcgfCBudWxsPihudWxsKTsKICBjb25zdCBhYm9ydFJlZiA9IHVzZVJlZjxBYm9ydENvbnRyb2xsZXIgfCBudWxsPihudWxsKTsKICBjb25zdCBidWZmZXJSZWYgPSB1c2VSZWY8c3RyaW5nPignJyk7CiAgY29uc3QgZmx1c2hUaW1lclJlZiA9IHVzZVJlZjxSZXR1cm5UeXBlPHR5cGVvZiBzZXRUaW1lb3V0PiB8IG51bGw+KG51bGwpOwogIGNvbnN0IGFzc2lzdGFudElkUmVmID0gdXNlUmVmPHN0cmluZz4oJycpOwogIGNvbnN0IGxhc3RVc2VyTWVzc2FnZVJlZiA9IHVzZVJlZjxzdHJpbmc+KCcnKTsKICBjb25zdCBtZXNzYWdlQ29tcGxldGVDYWxsZWRSZWYgPSB1c2VSZWY8Ym9vbGVhbj4oZmFsc2UpOwoKICAvLyBTeW5jIHdpdGggaW5pdGlhbE1lc3NhZ2VzIHdoZW4gdGhlIHJlZmVyZW5jZSBjaGFuZ2VzIChjb252ZXJzYXRpb24gc3dpdGNoKQogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoaW5pdGlhbE1lc3NhZ2VzKSB7CiAgICAgIHNldE1lc3NhZ2VzKGluaXRpYWxNZXNzYWdlcyk7CiAgICB9CiAgfSwgW2luaXRpYWxNZXNzYWdlc10pOwoKICAvLyBGbHVzaCBidWZmZXJlZCB0ZXh0IHRvIHRoZSBjdXJyZW50IGFzc2lzdGFudCBtZXNzYWdlCiAgY29uc3QgZmx1c2hCdWZmZXIgPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBjb25zdCBidWZmZXJlZCA9IGJ1ZmZlclJlZi5jdXJyZW50OwogICAgaWYgKCFidWZmZXJlZCB8fCAhYXNzaXN0YW50SWRSZWYuY3VycmVudCkgcmV0dXJuOwogICAgYnVmZmVyUmVmLmN1cnJlbnQgPSAnJzsKCiAgICBzZXRNZXNzYWdlcyhwcmV2ID0+IHByZXYubWFwKG1zZyA9PgogICAgICBtc2cuaWQgPT09IGFzc2lzdGFudElkUmVmLmN1cnJlbnQKICAgICAgICA/IHsgLi4ubXNnLCBjb250ZW50OiBtc2cuY29udGVudCArIGJ1ZmZlcmVkIH0KICAgICAgICA6IG1zZwogICAgKSk7CiAgfSwgW10pOwoKICAvLyBTY2hlZHVsZSBhIGJ1ZmZlcmVkIGZsdXNoIChjb2FsZXNjZXMgcmFwaWQgZGVsdGFzKQogIGNvbnN0IHNjaGVkdWxlRmx1c2ggPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBpZiAoZmx1c2hUaW1lclJlZi5jdXJyZW50KSByZXR1cm47IC8vIGFscmVhZHkgc2NoZWR1bGVkCiAgICBmbHVzaFRpbWVyUmVmLmN1cnJlbnQgPSBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgZmx1c2hUaW1lclJlZi5jdXJyZW50ID0gbnVsbDsKICAgICAgZmx1c2hCdWZmZXIoKTsKICAgIH0sIDUwKTsKICB9LCBbZmx1c2hCdWZmZXJdKTsKCiAgY29uc3Qgc2VuZE1lc3NhZ2UgPSB1c2VDYWxsYmFjayhhc3luYyAodGV4dDogc3RyaW5nKSA9PiB7CiAgICBpZiAoIXRleHQudHJpbSgpIHx8IGlzU3RyZWFtaW5nKSByZXR1cm47CgogICAgc2V0RXJyb3IobnVsbCk7CiAgICBzZXRJc1N0cmVhbWluZyh0cnVlKTsKICAgIGxhc3RVc2VyTWVzc2FnZVJlZi5jdXJyZW50ID0gdGV4dC50cmltKCk7CiAgICBtZXNzYWdlQ29tcGxldGVDYWxsZWRSZWYuY3VycmVudCA9IGZhbHNlOwoKICAgIC8vIEFkZCB1c2VyIG1lc3NhZ2UKICAgIGNvbnN0IHVzZXJNc2c6IENoYXRNZXNzYWdlID0gewogICAgICBpZDogZ2VuZXJhdGVJZCgpLAogICAgICByb2xlOiAndXNlcicsCiAgICAgIGNvbnRlbnQ6IHRleHQudHJpbSgpLAogICAgICB0aW1lc3RhbXA6IERhdGUubm93KCksCiAgICB9OwoKICAgIC8vIEFkZCBwbGFjZWhvbGRlciBhc3Npc3RhbnQgbWVzc2FnZQogICAgY29uc3QgYXNzaXN0YW50SWQgPSBnZW5lcmF0ZUlkKCk7CiAgICBhc3Npc3RhbnRJZFJlZi5jdXJyZW50ID0gYXNzaXN0YW50SWQ7CiAgICBjb25zdCBhc3Npc3RhbnRNc2c6IENoYXRNZXNzYWdlID0gewogICAgICBpZDogYXNzaXN0YW50SWQsCiAgICAgIHJvbGU6ICdhc3Npc3RhbnQnLAogICAgICBjb250ZW50OiAnJywKICAgICAgdGltZXN0YW1wOiBEYXRlLm5vdygpLAogICAgICB0b29sQ2FsbHM6IFtdLAogICAgICBpc1N0cmVhbWluZzogdHJ1ZSwKICAgIH07CgogICAgc2V0TWVzc2FnZXMocHJldiA9PiBbLi4ucHJldiwgdXNlck1zZywgYXNzaXN0YW50TXNnXSk7CiAgICBidWZmZXJSZWYuY3VycmVudCA9ICcnOwoKICAgIGNvbnN0IGFib3J0Q29udHJvbGxlciA9IG5ldyBBYm9ydENvbnRyb2xsZXIoKTsKICAgIGFib3J0UmVmLmN1cnJlbnQgPSBhYm9ydENvbnRyb2xsZXI7CgogICAgdHJ5IHsKICAgICAgYXdhaXQgc3RyZWFtQ2FsbCh7CiAgICAgICAgZnVuYzogc3RyZWFtRnVuYywKICAgICAgICBhcmdzOiB7CiAgICAgICAgICBtZXNzYWdlOiB0ZXh0LnRyaW0oKSwKICAgICAgICAgIC4uLihjb252ZXJzYXRpb25JZCA/IHsgY29udmVyc2F0aW9uX2lkOiBjb252ZXJzYXRpb25JZCB9IDoge30pLAogICAgICAgIH0sCiAgICAgICAgb25DaHVuazogKGNodW5rOiBhbnkpID0+IHsKICAgICAgICAgIGlmIChhYm9ydENvbnRyb2xsZXIuc2lnbmFsLmFib3J0ZWQpIHJldHVybjsKCiAgICAgICAgICBjb25zdCB0eXBlID0gY2h1bmsudHlwZTsKCiAgICAgICAgICAvLyBMZWdhY3kgY2h1bmsgKG5vIHR5cGUgZmllbGQpIOKAlCB0cmVhdCBhcyBzdGF0dXMKICAgICAgICAgIGlmICghdHlwZSkgewogICAgICAgICAgICBjb25zdCBzdGF0dXNUZXh0ID0gY2h1bmsuc3RhdHVzIHx8IGNodW5rLmNvbnRlbnQgfHwgJyc7CiAgICAgICAgICAgIGlmIChzdGF0dXNUZXh0KSB7CiAgICAgICAgICAgICAgc2V0TWVzc2FnZXMocHJldiA9PiBwcmV2Lm1hcChtc2cgPT4KICAgICAgICAgICAgICAgIG1zZy5pZCA9PT0gYXNzaXN0YW50SWQKICAgICAgICAgICAgICAgICAgPyB7IC4uLm1zZywgc3RhdHVzOiBzdGF0dXNUZXh0IH0KICAgICAgICAgICAgICAgICAgOiBtc2cKICAgICAgICAgICAgICApKTsKICAgICAgICAgICAgfQogICAgICAgICAgICByZXR1cm47CiAgICAgICAgICB9CgogICAgICAgICAgc3dpdGNoICh0eXBlKSB7CiAgICAgICAgICAgIGNhc2UgJ3N0YXR1cyc6CiAgICAgICAgICAgICAgc2V0TWVzc2FnZXMocHJldiA9PiBwcmV2Lm1hcChtc2cgPT4KICAgICAgICAgICAgICAgIG1zZy5pZCA9PT0gYXNzaXN0YW50SWQKICAgICAgICAgICAgICAgICAgPyB7IC4uLm1zZywgc3RhdHVzOiBjaHVuay5jb250ZW50IHx8ICcnIH0KICAgICAgICAgICAgICAgICAgOiBtc2cKICAgICAgICAgICAgICApKTsKICAgICAgICAgICAgICBicmVhazsKCiAgICAgICAgICAgIGNhc2UgJ3RoaW5raW5nJzoKICAgICAgICAgICAgICBzZXRNZXNzYWdlcyhwcmV2ID0+IHByZXYubWFwKG1zZyA9PgogICAgICAgICAgICAgICAgbXNnLmlkID09PSBhc3Npc3RhbnRJZAogICAgICAgICAgICAgICAgICA/IHsgLi4ubXNnLCB0aGlua2luZzogKG1zZy50aGlua2luZyB8fCAnJykgKyAoY2h1bmsuY29udGVudCB8fCAnJykgfQogICAgICAgICAgICAgICAgICA6IG1zZwogICAgICAgICAgICAgICkpOwogICAgICAgICAgICAgIGJyZWFrOwoKICAgICAgICAgICAgY2FzZSAndG9vbF9jYWxsJzoKICAgICAgICAgICAgICBzZXRNZXNzYWdlcyhwcmV2ID0+IHByZXYubWFwKG1zZyA9PiB7CiAgICAgICAgICAgICAgICBpZiAobXNnLmlkICE9PSBhc3Npc3RhbnRJZCkgcmV0dXJuIG1zZzsKICAgICAgICAgICAgICAgIGNvbnN0IHRjOiBUb29sQ2FsbEluZm8gPSB7CiAgICAgICAgICAgICAgICAgIGNhbGxJZDogY2h1bmsuY2FsbF9pZCB8fCAnJywKICAgICAgICAgICAgICAgICAgdG9vbDogY2h1bmsudG9vbCB8fCAnJywKICAgICAgICAgICAgICAgICAgYXJnczogY2h1bmsuYXJncyB8fCB7fSwKICAgICAgICAgICAgICAgICAgc3RhdHVzOiAncGVuZGluZycsCiAgICAgICAgICAgICAgICB9OwogICAgICAgICAgICAgICAgcmV0dXJuIHsgLi4ubXNnLCB0b29sQ2FsbHM6IFsuLi4obXNnLnRvb2xDYWxscyB8fCBbXSksIHRjXSB9OwogICAgICAgICAgICAgIH0pKTsKICAgICAgICAgICAgICBicmVhazsKCiAgICAgICAgICAgIGNhc2UgJ3Rvb2xfcmVzdWx0JzoKICAgICAgICAgICAgICBzZXRNZXNzYWdlcyhwcmV2ID0+IHByZXYubWFwKG1zZyA9PiB7CiAgICAgICAgICAgICAgICBpZiAobXNnLmlkICE9PSBhc3Npc3RhbnRJZCkgcmV0dXJuIG1zZzsKICAgICAgICAgICAgICAgIGNvbnN0IHVwZGF0ZWRDYWxscyA9IChtc2cudG9vbENhbGxzIHx8IFtdKS5tYXAodGMgPT4KICAgICAgICAgICAgICAgICAgdGMuY2FsbElkID09PSBjaHVuay5jYWxsX2lkCiAgICAgICAgICAgICAgICAgICAgPyB7CiAgICAgICAgICAgICAgICAgICAgICAgIC4uLnRjLAogICAgICAgICAgICAgICAgICAgICAgICByZXN1bHQ6IGNodW5rLnJlc3VsdCwKICAgICAgICAgICAgICAgICAgICAgICAgZHVyYXRpb25NczogY2h1bmsuZHVyYXRpb25fbXMsCiAgICAgICAgICAgICAgICAgICAgICAgIHN0YXR1czogKGNodW5rLnN0YXR1cyB8fCAnc3VjY2VzcycpIGFzIFRvb2xDYWxsU3RhdHVzLAogICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIDogdGMKICAgICAgICAgICAgICAgICk7CiAgICAgICAgICAgICAgICByZXR1cm4geyAuLi5tc2csIHRvb2xDYWxsczogdXBkYXRlZENhbGxzIH07CiAgICAgICAgICAgICAgfSkpOwogICAgICAgICAgICAgIGJyZWFrOwoKICAgICAgICAgICAgY2FzZSAnbWVzc2FnZSc6CiAgICAgICAgICAgICAgLy8gQnVmZmVyIGluY3JlbWVudGFsIHRleHQgZm9yIHNtb290aCByZW5kZXJpbmcKICAgICAgICAgICAgICBpZiAoY2h1bmsuZGVsdGEpIHsKICAgICAgICAgICAgICAgIGJ1ZmZlclJlZi5jdXJyZW50ICs9IGNodW5rLmNvbnRlbnQgfHwgJyc7CiAgICAgICAgICAgICAgICBzY2hlZHVsZUZsdXNoKCk7CiAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIC8vIE5vbi1kZWx0YSBtZXNzYWdlOiBzZXQgY29udGVudCBkaXJlY3RseQogICAgICAgICAgICAgICAgZmx1c2hCdWZmZXIoKTsKICAgICAgICAgICAgICAgIHNldE1lc3NhZ2VzKHByZXYgPT4gcHJldi5tYXAobXNnID0+CiAgICAgICAgICAgICAgICAgIG1zZy5pZCA9PT0gYXNzaXN0YW50SWQKICAgICAgICAgICAgICAgICAgICA/IHsgLi4ubXNnLCBjb250ZW50OiBjaHVuay5jb250ZW50IHx8ICcnIH0KICAgICAgICAgICAgICAgICAgICA6IG1zZwogICAgICAgICAgICAgICAgKSk7CiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIGJyZWFrOwoKICAgICAgICAgICAgY2FzZSAnbWVzc2FnZV9jb21wbGV0ZSc6IHsKICAgICAgICAgICAgICAvLyBGbHVzaCBhbnkgcmVtYWluaW5nIGJ1ZmZlciwgdGhlbiBzZXQgZmluYWwgY29udGVudAogICAgICAgICAgICAgIGJ1ZmZlclJlZi5jdXJyZW50ID0gJyc7CiAgICAgICAgICAgICAgaWYgKGZsdXNoVGltZXJSZWYuY3VycmVudCkgewogICAgICAgICAgICAgICAgY2xlYXJUaW1lb3V0KGZsdXNoVGltZXJSZWYuY3VycmVudCk7CiAgICAgICAgICAgICAgICBmbHVzaFRpbWVyUmVmLmN1cnJlbnQgPSBudWxsOwogICAgICAgICAgICAgIH0KICAgICAgICAgICAgICBjb25zdCBhc3Npc3RhbnRDb250ZW50ID0gY2h1bmsuY29udGVudCB8fCAnJzsKICAgICAgICAgICAgICBzZXRNZXNzYWdlcyhwcmV2ID0+IHByZXYubWFwKG1zZyA9PgogICAgICAgICAgICAgICAgbXNnLmlkID09PSBhc3Npc3RhbnRJZAogICAgICAgICAgICAgICAgICA/IHsgLi4ubXNnLCBjb250ZW50OiBhc3Npc3RhbnRDb250ZW50LCBpc1N0cmVhbWluZzogZmFsc2UgfQogICAgICAgICAgICAgICAgICA6IG1zZwogICAgICAgICAgICAgICkpOwogICAgICAgICAgICAgIC8vIEZpcmUgb25NZXNzYWdlQ29tcGxldGUgY2FsbGJhY2sKICAgICAgICAgICAgICBpZiAoIW1lc3NhZ2VDb21wbGV0ZUNhbGxlZFJlZi5jdXJyZW50KSB7CiAgICAgICAgICAgICAgICBtZXNzYWdlQ29tcGxldGVDYWxsZWRSZWYuY3VycmVudCA9IHRydWU7CiAgICAgICAgICAgICAgICBvbk1lc3NhZ2VDb21wbGV0ZT8uKGxhc3RVc2VyTWVzc2FnZVJlZi5jdXJyZW50LCBhc3Npc3RhbnRDb250ZW50LCBjb252ZXJzYXRpb25JZCk7CiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICB9CgogICAgICAgICAgICBjYXNlICdlcnJvcic6CiAgICAgICAgICAgICAgc2V0RXJyb3IoY2h1bmsuY29udGVudCB8fCAnQW4gZXJyb3Igb2NjdXJyZWQnKTsKICAgICAgICAgICAgICBzZXRNZXNzYWdlcyhwcmV2ID0+IHByZXYubWFwKG1zZyA9PgogICAgICAgICAgICAgICAgbXNnLmlkID09PSBhc3Npc3RhbnRJZAogICAgICAgICAgICAgICAgICA/IHsgLi4ubXNnLCBpc1N0cmVhbWluZzogZmFsc2UgfQogICAgICAgICAgICAgICAgICA6IG1zZwogICAgICAgICAgICAgICkpOwogICAgICAgICAgICAgIGJyZWFrOwoKICAgICAgICAgICAgY2FzZSAnZG9uZSc6CiAgICAgICAgICAgICAgLy8gRmx1c2ggYW55IHJlbWFpbmluZyBidWZmZXIKICAgICAgICAgICAgICBpZiAoYnVmZmVyUmVmLmN1cnJlbnQpIHsKICAgICAgICAgICAgICAgIGZsdXNoQnVmZmVyKCk7CiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIGlmIChmbHVzaFRpbWVyUmVmLmN1cnJlbnQpIHsKICAgICAgICAgICAgICAgIGNsZWFyVGltZW91dChmbHVzaFRpbWVyUmVmLmN1cnJlbnQpOwogICAgICAgICAgICAgICAgZmx1c2hUaW1lclJlZi5jdXJyZW50ID0gbnVsbDsKICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgc2V0TWVzc2FnZXMocHJldiA9PiB7CiAgICAgICAgICAgICAgICBjb25zdCB1cGRhdGVkID0gcHJldi5tYXAobXNnID0+CiAgICAgICAgICAgICAgICAgIG1zZy5pZCA9PT0gYXNzaXN0YW50SWQKICAgICAgICAgICAgICAgICAgICA/IHsgLi4ubXNnLCBpc1N0cmVhbWluZzogZmFsc2UgfQogICAgICAgICAgICAgICAgICAgIDogbXNnCiAgICAgICAgICAgICAgICApOwogICAgICAgICAgICAgICAgLy8gSWYgbWVzc2FnZV9jb21wbGV0ZSB3YXMgbmV2ZXIgcmVjZWl2ZWQsIGZpcmUgb25NZXNzYWdlQ29tcGxldGUgd2l0aCBhY2N1bXVsYXRlZCBjb250ZW50CiAgICAgICAgICAgICAgICBpZiAoIW1lc3NhZ2VDb21wbGV0ZUNhbGxlZFJlZi5jdXJyZW50KSB7CiAgICAgICAgICAgICAgICAgIG1lc3NhZ2VDb21wbGV0ZUNhbGxlZFJlZi5jdXJyZW50ID0gdHJ1ZTsKICAgICAgICAgICAgICAgICAgY29uc3QgYXNzaXN0YW50TXNnID0gdXBkYXRlZC5maW5kKG0gPT4gbS5pZCA9PT0gYXNzaXN0YW50SWQpOwogICAgICAgICAgICAgICAgICBpZiAoYXNzaXN0YW50TXNnICYmIGFzc2lzdGFudE1zZy5jb250ZW50KSB7CiAgICAgICAgICAgICAgICAgICAgb25NZXNzYWdlQ29tcGxldGU/LihsYXN0VXNlck1lc3NhZ2VSZWYuY3VycmVudCwgYXNzaXN0YW50TXNnLmNvbnRlbnQsIGNvbnZlcnNhdGlvbklkKTsKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgcmV0dXJuIHVwZGF0ZWQ7CiAgICAgICAgICAgICAgfSk7CiAgICAgICAgICAgICAgYnJlYWs7CgogICAgICAgICAgICBkZWZhdWx0OgogICAgICAgICAgICAgIC8vIFVua25vd24gZXZlbnQgdHlwZSDigJQgaWdub3JlIGdyYWNlZnVsbHkKICAgICAgICAgICAgICBjb25zb2xlLmxvZygnW0FHRU5UX0NIQVRdIFVua25vd24gZXZlbnQgdHlwZTonLCB0eXBlKTsKICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgIG9uRXJyb3I6IChlcnI6IEVycm9yKSA9PiB7CiAgICAgICAgICBzZXRFcnJvcihlcnIubWVzc2FnZSk7CiAgICAgICAgICBvbkVycm9yPy4oZXJyKTsKICAgICAgICB9LAogICAgICB9KTsKICAgIH0gY2F0Y2ggKGVycjogYW55KSB7CiAgICAgIGlmICghYWJvcnRDb250cm9sbGVyLnNpZ25hbC5hYm9ydGVkKSB7CiAgICAgICAgc2V0RXJyb3IoZXJyLm1lc3NhZ2UgfHwgJ1N0cmVhbSBmYWlsZWQnKTsKICAgICAgICBvbkVycm9yPy4oZXJyKTsKICAgICAgfQogICAgfSBmaW5hbGx5IHsKICAgICAgLy8gRW5zdXJlIHN0cmVhbWluZyBzdGF0ZSBpcyBjbGVhbmVkIHVwCiAgICAgIHNldElzU3RyZWFtaW5nKGZhbHNlKTsKICAgICAgYWJvcnRSZWYuY3VycmVudCA9IG51bGw7CiAgICAgIGFzc2lzdGFudElkUmVmLmN1cnJlbnQgPSAnJzsKICAgICAgLy8gRmluYWwgZmx1c2gKICAgICAgaWYgKGJ1ZmZlclJlZi5jdXJyZW50KSB7CiAgICAgICAgZmx1c2hCdWZmZXIoKTsKICAgICAgfQogICAgICBpZiAoZmx1c2hUaW1lclJlZi5jdXJyZW50KSB7CiAgICAgICAgY2xlYXJUaW1lb3V0KGZsdXNoVGltZXJSZWYuY3VycmVudCk7CiAgICAgICAgZmx1c2hUaW1lclJlZi5jdXJyZW50ID0gbnVsbDsKICAgICAgfQogICAgICAvLyBNYXJrIGFueSBzdGlsbC1zdHJlYW1pbmcgbWVzc2FnZSBhcyBkb25lCiAgICAgIHNldE1lc3NhZ2VzKHByZXYgPT4gcHJldi5tYXAobXNnID0+CiAgICAgICAgbXNnLmlzU3RyZWFtaW5nID8geyAuLi5tc2csIGlzU3RyZWFtaW5nOiBmYWxzZSB9IDogbXNnCiAgICAgICkpOwogICAgfQogIH0sIFtpc1N0cmVhbWluZywgc3RyZWFtRnVuYywgY29udmVyc2F0aW9uSWQsIG9uRXJyb3IsIG9uTWVzc2FnZUNvbXBsZXRlLCBzY2hlZHVsZUZsdXNoLCBmbHVzaEJ1ZmZlcl0pOwoKICBjb25zdCBzdG9wR2VuZXJhdGlvbiA9IHVzZUNhbGxiYWNrKCgpID0+IHsKICAgIGlmIChhYm9ydFJlZi5jdXJyZW50KSB7CiAgICAgIGFib3J0UmVmLmN1cnJlbnQuYWJvcnQoKTsKICAgICAgYWJvcnRSZWYuY3VycmVudCA9IG51bGw7CiAgICB9CiAgICBzZXRJc1N0cmVhbWluZyhmYWxzZSk7CiAgICAvLyBNYXJrIGN1cnJlbnQgYXNzaXN0YW50IG1lc3NhZ2UgYXMgbm90IHN0cmVhbWluZwogICAgc2V0TWVzc2FnZXMocHJldiA9PiBwcmV2Lm1hcChtc2cgPT4KICAgICAgbXNnLmlzU3RyZWFtaW5nID8geyAuLi5tc2csIGlzU3RyZWFtaW5nOiBmYWxzZSB9IDogbXNnCiAgICApKTsKICB9LCBbXSk7CgogIGNvbnN0IGNsZWFyTWVzc2FnZXMgPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBzZXRNZXNzYWdlcyhbXSk7CiAgICBzZXRFcnJvcihudWxsKTsKICB9LCBbXSk7CgogIHJldHVybiB7CiAgICBtZXNzYWdlcywKICAgIHNldE1lc3NhZ2VzLAogICAgc2VuZE1lc3NhZ2UsCiAgICBpc1N0cmVhbWluZywKICAgIHN0b3BHZW5lcmF0aW9uLAogICAgZXJyb3IsCiAgICBjbGVhck1lc3NhZ2VzLAogIH07Cn0K
+// src/useAgentChat.ts - Agent conversation state management hook.
+import { useState, useCallback, useRef, useEffect } from 'react';
+import { streamCall } from './api';
+
+// --- Types ---
+
+export type ToolCallStatus = 'pending' | 'success' | 'error';
+
+export interface ToolCallInfo {
+  callId: string;
+  tool: string;
+  args: Record<string, any>;
+  result?: any;
+  durationMs?: number;
+  status: ToolCallStatus;
+}
+
+export interface ChatMessage {
+  id: string;
+  role: 'user' | 'assistant';
+  content: string;
+  timestamp: number;
+  toolCalls?: ToolCallInfo[];
+  thinking?: string;
+  isStreaming?: boolean;
+  status?: string;
+}
+
+export interface UseAgentChatOptions {
+  /** Backend streaming function name. Default: "chat_streaming" */
+  streamFunc?: string;
+  /** Optional conversation ID for persistent conversations */
+  conversationId?: string;
+  /** Pre-populate messages (e.g., loaded conversation history). When this reference
+   *  changes the hook replaces its internal messages array with the new value. */
+  initialMessages?: ChatMessage[];
+  /** Called after a complete assistant response. Use for persistence (save to DB),
+   *  cache invalidation, or sidebar updates. */
+  onMessageComplete?: (userMessage: string, assistantMessage: string, conversationId?: string) => void;
+  /** Called when an error occurs */
+  onError?: (error: Error) => void;
+}
+
+export interface UseAgentChatReturn {
+  messages: ChatMessage[];
+  /** Direct state setter — use to externally reset messages (e.g., on conversation switch) */
+  setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
+  sendMessage: (text: string) => Promise<void>;
+  isStreaming: boolean;
+  stopGeneration: () => void;
+  error: string | null;
+  clearMessages: () => void;
+}
+
+// --- Hook ---
+
+let idCounter = 0;
+function generateId(): string {
+  return `msg_${Date.now()}_${++idCounter}`;
+}
+
+export function useAgentChat(options: UseAgentChatOptions = {}): UseAgentChatReturn {
+  const {
+    streamFunc = 'chat_streaming',
+    conversationId,
+    initialMessages,
+    onMessageComplete,
+    onError,
+  } = options;
+
+  const [messages, setMessages] = useState<ChatMessage[]>(initialMessages || []);
+  const [isStreaming, setIsStreaming] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const abortRef = useRef<AbortController | null>(null);
+  const bufferRef = useRef<string>('');
+  const flushTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const assistantIdRef = useRef<string>('');
+  const lastUserMessageRef = useRef<string>('');
+  const messageCompleteCalledRef = useRef<boolean>(false);
+
+  // Sync with initialMessages when the reference changes (conversation switch)
+  useEffect(() => {
+    if (initialMessages) {
+      setMessages(initialMessages);
+    }
+  }, [initialMessages]);
+
+  // Flush buffered text to the current assistant message
+  const flushBuffer = useCallback(() => {
+    const buffered = bufferRef.current;
+    if (!buffered || !assistantIdRef.current) return;
+    bufferRef.current = '';
+
+    setMessages(prev => prev.map(msg =>
+      msg.id === assistantIdRef.current
+        ? { ...msg, content: msg.content + buffered }
+        : msg
+    ));
+  }, []);
+
+  // Schedule a buffered flush (coalesces rapid deltas)
+  const scheduleFlush = useCallback(() => {
+    if (flushTimerRef.current) return; // already scheduled
+    flushTimerRef.current = setTimeout(() => {
+      flushTimerRef.current = null;
+      flushBuffer();
+    }, 50);
+  }, [flushBuffer]);
+
+  const sendMessage = useCallback(async (text: string) => {
+    if (!text.trim() || isStreaming) return;
+
+    setError(null);
+    setIsStreaming(true);
+    lastUserMessageRef.current = text.trim();
+    messageCompleteCalledRef.current = false;
+
+    // Add user message
+    const userMsg: ChatMessage = {
+      id: generateId(),
+      role: 'user',
+      content: text.trim(),
+      timestamp: Date.now(),
+    };
+
+    // Add placeholder assistant message
+    const assistantId = generateId();
+    assistantIdRef.current = assistantId;
+    const assistantMsg: ChatMessage = {
+      id: assistantId,
+      role: 'assistant',
+      content: '',
+      timestamp: Date.now(),
+      toolCalls: [],
+      isStreaming: true,
+    };
+
+    setMessages(prev => [...prev, userMsg, assistantMsg]);
+    bufferRef.current = '';
+
+    const abortController = new AbortController();
+    abortRef.current = abortController;
+
+    try {
+      await streamCall({
+        func: streamFunc,
+        args: {
+          message: text.trim(),
+          ...(conversationId ? { conversation_id: conversationId } : {}),
+        },
+        onChunk: (chunk: any) => {
+          if (abortController.signal.aborted) return;
+
+          const type = chunk.type;
+
+          // Legacy chunk (no type field) — treat as status
+          if (!type) {
+            const statusText = chunk.status || chunk.content || '';
+            if (statusText) {
+              setMessages(prev => prev.map(msg =>
+                msg.id === assistantId
+                  ? { ...msg, status: statusText }
+                  : msg
+              ));
+            }
+            return;
+          }
+
+          switch (type) {
+            case 'status':
+              setMessages(prev => prev.map(msg =>
+                msg.id === assistantId
+                  ? { ...msg, status: chunk.content || '' }
+                  : msg
+              ));
+              break;
+
+            case 'thinking':
+              setMessages(prev => prev.map(msg =>
+                msg.id === assistantId
+                  ? { ...msg, thinking: (msg.thinking || '') + (chunk.content || '') }
+                  : msg
+              ));
+              break;
+
+            case 'tool_call':
+              setMessages(prev => prev.map(msg => {
+                if (msg.id !== assistantId) return msg;
+                const tc: ToolCallInfo = {
+                  callId: chunk.call_id || '',
+                  tool: chunk.tool || '',
+                  args: chunk.args || {},
+                  status: 'pending',
+                };
+                return { ...msg, toolCalls: [...(msg.toolCalls || []), tc] };
+              }));
+              break;
+
+            case 'tool_result':
+              setMessages(prev => prev.map(msg => {
+                if (msg.id !== assistantId) return msg;
+                const updatedCalls = (msg.toolCalls || []).map(tc =>
+                  tc.callId === chunk.call_id
+                    ? {
+                        ...tc,
+                        result: chunk.result,
+                        durationMs: chunk.duration_ms,
+                        status: (chunk.status || 'success') as ToolCallStatus,
+                      }
+                    : tc
+                );
+                return { ...msg, toolCalls: updatedCalls };
+              }));
+              break;
+
+            case 'message':
+              // Buffer incremental text for smooth rendering
+              if (chunk.delta) {
+                bufferRef.current += chunk.content || '';
+                scheduleFlush();
+              } else {
+                // Non-delta message: set content directly
+                flushBuffer();
+                setMessages(prev => prev.map(msg =>
+                  msg.id === assistantId
+                    ? { ...msg, content: chunk.content || '' }
+                    : msg
+                ));
+              }
+              break;
+
+            case 'message_complete': {
+              // Flush any remaining buffer, then set final content
+              bufferRef.current = '';
+              if (flushTimerRef.current) {
+                clearTimeout(flushTimerRef.current);
+                flushTimerRef.current = null;
+              }
+              const assistantContent = chunk.content || '';
+              setMessages(prev => prev.map(msg =>
+                msg.id === assistantId
+                  ? { ...msg, content: assistantContent, isStreaming: false }
+                  : msg
+              ));
+              // Fire onMessageComplete callback
+              if (!messageCompleteCalledRef.current) {
+                messageCompleteCalledRef.current = true;
+                onMessageComplete?.(lastUserMessageRef.current, assistantContent, conversationId);
+              }
+              break;
+            }
+
+            case 'error':
+              setError(chunk.content || 'An error occurred');
+              setMessages(prev => prev.map(msg =>
+                msg.id === assistantId
+                  ? { ...msg, isStreaming: false }
+                  : msg
+              ));
+              break;
+
+            case 'done':
+              // Flush any remaining buffer
+              if (bufferRef.current) {
+                flushBuffer();
+              }
+              if (flushTimerRef.current) {
+                clearTimeout(flushTimerRef.current);
+                flushTimerRef.current = null;
+              }
+              setMessages(prev => {
+                const updated = prev.map(msg =>
+                  msg.id === assistantId
+                    ? { ...msg, isStreaming: false }
+                    : msg
+                );
+                // If message_complete was never received, fire onMessageComplete with accumulated content
+                if (!messageCompleteCalledRef.current) {
+                  messageCompleteCalledRef.current = true;
+                  const assistantMsg = updated.find(m => m.id === assistantId);
+                  if (assistantMsg && assistantMsg.content) {
+                    onMessageComplete?.(lastUserMessageRef.current, assistantMsg.content, conversationId);
+                  }
+                }
+                return updated;
+              });
+              break;
+
+            default:
+              // Unknown event type — ignore gracefully
+              console.log('[AGENT_CHAT] Unknown event type:', type);
+              break;
+          }
+        },
+        onError: (err: Error) => {
+          setError(err.message);
+          onError?.(err);
+        },
+      });
+    } catch (err: any) {
+      if (!abortController.signal.aborted) {
+        setError(err.message || 'Stream failed');
+        onError?.(err);
+      }
+    } finally {
+      // Ensure streaming state is cleaned up
+      setIsStreaming(false);
+      abortRef.current = null;
+      assistantIdRef.current = '';
+      // Final flush
+      if (bufferRef.current) {
+        flushBuffer();
+      }
+      if (flushTimerRef.current) {
+        clearTimeout(flushTimerRef.current);
+        flushTimerRef.current = null;
+      }
+      // Mark any still-streaming message as done
+      setMessages(prev => prev.map(msg =>
+        msg.isStreaming ? { ...msg, isStreaming: false } : msg
+      ));
+    }
+  }, [isStreaming, streamFunc, conversationId, onError, onMessageComplete, scheduleFlush, flushBuffer]);
+
+  const stopGeneration = useCallback(() => {
+    if (abortRef.current) {
+      abortRef.current.abort();
+      abortRef.current = null;
+    }
+    setIsStreaming(false);
+    // Mark current assistant message as not streaming
+    setMessages(prev => prev.map(msg =>
+      msg.isStreaming ? { ...msg, isStreaming: false } : msg
+    ));
+  }, []);
+
+  const clearMessages = useCallback(() => {
+    setMessages([]);
+    setError(null);
+  }, []);
+
+  return {
+    messages,
+    setMessages,
+    sendMessage,
+    isStreaming,
+    stopGeneration,
+    error,
+    clearMessages,
+  };
+}

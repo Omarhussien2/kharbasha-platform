@@ -1,1 +1,115 @@
-aW1wb3J0IHNxbGl0ZTMKaW1wb3J0IG9zCmltcG9ydCBqc29uCgpEQl9ESVIgPSAiYXBwcy9raGFyYmFzaGEvYmFja2VuZC9kYXRhL2RiIgpEQl9QQVRIID0gb3MucGF0aC5qb2luKERCX0RJUiwgImtoYXJiYXNoYS5kYiIpCgpkZWYgX2dldF9kYigpOgogICAgb3MubWFrZWRpcnMoREJfRElSLCBleGlzdF9vaz1UcnVlKQogICAgY29ubiA9IHNxbGl0ZTMuY29ubmVjdChEQl9QQVRIKQogICAgY29ubi5yb3dfZmFjdG9yeSA9IHNxbGl0ZTMuUm93CiAgICBjb25uLmV4ZWN1dGUoIlBSQUdNQSBqb3VybmFsX21vZGU9V0FMIikKICAgIGNvbm4uZXhlY3V0ZSgiUFJBR01BIGZvcmVpZ25fa2V5cz1PTiIpCiAgICByZXR1cm4gY29ubgoKZGVmIGluaXRfZGIoKToKICAgIGNvbm4gPSBfZ2V0X2RiKCkKICAgIHRyeToKICAgICAgICBjb25uLmV4ZWN1dGUoIiIiCiAgICAgICAgICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIGpvYnMgKAogICAgICAgICAgICAgICAgaWQgVEVYVCBQUklNQVJZIEtFWSwKICAgICAgICAgICAgICAgIHVybCBURVhULAogICAgICAgICAgICAgICAgdHlwZSBURVhULAogICAgICAgICAgICAgICAgc3RhdHVzIFRFWFQsCiAgICAgICAgICAgICAgICBkaWFsZWN0IFRFWFQsCiAgICAgICAgICAgICAgICBjcmVhdGVkX2F0IFRJTUVTVEFNUCBERUZBVUxUIENVUlJFTlRfVElNRVNUQU1QCiAgICAgICAgICAgICkKICAgICAgICAiIiIpCiAgICAgICAgY29ubi5leGVjdXRlKCIiIgogICAgICAgICAgICBDUkVBVEUgVEFCTEUgSUYgTk9UIEVYSVNUUyByZXN1bHRzICgKICAgICAgICAgICAgICAgIGlkIElOVEVHRVIgUFJJTUFSWSBLRVkgQVVUT0lOQ1JFTUVOVCwKICAgICAgICAgICAgICAgIGpvYl9pZCBURVhULAogICAgICAgICAgICAgICAgdXJsIFRFWFQsCiAgICAgICAgICAgICAgICBjb250ZW50IFRFWFQsCiAgICAgICAgICAgICAgICBtZXRhZGF0YV9qc29uIFRFWFQsCiAgICAgICAgICAgICAgICBGT1JFSUdOIEtFWSAoam9iX2lkKSBSRUZFUkVOQ0VTIGpvYnMoaWQpIE9OIERFTEVURSBDQVNDQURFCiAgICAgICAgICAgICkKICAgICAgICAiIiIpCiAgICAgICAgY29ubi5leGVjdXRlKCIiIgogICAgICAgICAgICBDUkVBVEUgVEFCTEUgSUYgTk9UIEVYSVNUUyBhZ2VudF9zZXNzaW9ucyAoCiAgICAgICAgICAgICAgICBpZCBURVhUIFBSSU1BUlkgS0VZLAogICAgICAgICAgICAgICAgdGFzayBURVhULAogICAgICAgICAgICAgICAgaGlzdG9yeV9qc29uIFRFWFQsCiAgICAgICAgICAgICAgICBmaW5hbF9yZXN1bHQgVEVYVCwKICAgICAgICAgICAgICAgIGNyZWF0ZWRfYXQgVElNRVNUQU1QIERFRkFVTFQgQ1VSUkVOVF9USU1FU1RBTVAKICAgICAgICAgICAgKQogICAgICAgICIiIikKICAgICAgICBjb25uLmNvbW1pdCgpCiAgICBmaW5hbGx5OgogICAgICAgIGNvbm4uY2xvc2UoKQoKZGVmIGNyZWF0ZV9qb2Ioam9iX2lkLCB1cmwsIGpvYl90eXBlLCBkaWFsZWN0KToKICAgIGNvbm4gPSBfZ2V0X2RiKCkKICAgIHRyeToKICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJJTlNFUlQgSU5UTyBqb2JzIChpZCwgdXJsLCB0eXBlLCBzdGF0dXMsIGRpYWxlY3QpIFZBTFVFUyAoPywgPywgPywgPywgPykiLAogICAgICAgICAgICAoam9iX2lkLCB1cmwsIGpvYl90eXBlLCAicGVuZGluZyIsIGRpYWxlY3QpCiAgICAgICAgKQogICAgICAgIGNvbm4uY29tbWl0KCkKICAgIGZpbmFsbHk6CiAgICAgICAgY29ubi5jbG9zZSgpCgpkZWYgdXBkYXRlX2pvYl9zdGF0dXMoam9iX2lkLCBzdGF0dXMpOgogICAgY29ubiA9IF9nZXRfZGIoKQogICAgdHJ5OgogICAgICAgIGNvbm4uZXhlY3V0ZSgiVVBEQVRFIGpvYnMgU0VUIHN0YXR1cyA9ID8gV0hFUkUgaWQgPSA/IiwgKHN0YXR1cywgam9iX2lkKSkKICAgICAgICBjb25uLmNvbW1pdCgpCiAgICBmaW5hbGx5OgogICAgICAgIGNvbm4uY2xvc2UoKQoKZGVmIHNhdmVfcmVzdWx0KGpvYl9pZCwgdXJsLCBjb250ZW50LCBtZXRhZGF0YT1Ob25lKToKICAgIGNvbm4gPSBfZ2V0X2RiKCkKICAgIHRyeToKICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJJTlNFUlQgSU5UTyByZXN1bHRzIChqb2JfaWQsIHVybCwgY29udGVudCwgbWV0YWRhdGFfanNvbikgVkFMVUVTICg/LCA/LCA/LCA/KSIsCiAgICAgICAgICAgIChqb2JfaWQsIHVybCwgY29udGVudCwganNvbi5kdW1wcyhtZXRhZGF0YSkgaWYgbWV0YWRhdGEgZWxzZSBOb25lKQogICAgICAgICkKICAgICAgICBjb25uLmNvbW1pdCgpCiAgICBmaW5hbGx5OgogICAgICAgIGNvbm4uY2xvc2UoKQoKZGVmIHNhdmVfYWdlbnRfc2Vzc2lvbihzZXNzaW9uX2lkLCB0YXNrLCBoaXN0b3J5LCBmaW5hbF9yZXN1bHQ9Tm9uZSk6CiAgICBjb25uID0gX2dldF9kYigpCiAgICB0cnk6CiAgICAgICAgY29ubi5leGVjdXRlKAogICAgICAgICAgICAiSU5TRVJUIE9SIFJFUExBQ0UgSU5UTyBhZ2VudF9zZXNzaW9ucyAoaWQsIHRhc2ssIGhpc3RvcnlfanNvbiwgZmluYWxfcmVzdWx0KSBWQUxVRVMgKD8sID8sID8sID8pIiwKICAgICAgICAgICAgKHNlc3Npb25faWQsIHRhc2ssIGpzb24uZHVtcHMoaGlzdG9yeSksIGZpbmFsX3Jlc3VsdCkKICAgICAgICApCiAgICAgICAgY29ubi5jb21taXQoKQogICAgZmluYWxseToKICAgICAgICBjb25uLmNsb3NlKCkKCmRlZiBnZXRfaGlzdG9yeShsaW1pdD0yMCk6CiAgICBjb25uID0gX2dldF9kYigpCiAgICB0cnk6CiAgICAgICAgcm93cyA9IGNvbm4uZXhlY3V0ZSgiIiIKICAgICAgICAgICAgU0VMRUNUIGouKiwgci51cmwgYXMgcmVzdWx0X3VybCwgci5jb250ZW50IGFzIHJlc3VsdF9jb250ZW50IAogICAgICAgICAgICBGUk9NIGpvYnMgaiAKICAgICAgICAgICAgTEVGVCBKT0lOIHJlc3VsdHMgciBPTiBqLmlkID0gci5qb2JfaWQgCiAgICAgICAgICAgIE9SREVSIEJZIGouY3JlYXRlZF9hdCBERVNDIAogICAgICAgICAgICBMSU1JVCA/CiAgICAgICAgIiIiLCAobGltaXQsKSkuZmV0Y2hhbGwoKQogICAgICAgIHJldHVybiBbZGljdChyKSBmb3IgciBpbiByb3dzXQogICAgZmluYWxseToKICAgICAgICBjb25uLmNsb3NlKCkKCmRlZiBkZWxldGVfam9iKGpvYl9pZCk6CiAgICBjb25uID0gX2dldF9kYigpCiAgICB0cnk6CiAgICAgICAgY29ubi5leGVjdXRlKCJERUxFVEUgRlJPTSBqb2JzIFdIRVJFIGlkID0gPyIsIChqb2JfaWQsKSkKICAgICAgICBjb25uLmV4ZWN1dGUoIkRFTEVURSBGUk9NIHJlc3VsdHMgV0hFUkUgam9iX2lkID0gPyIsIChqb2JfaWQsKSkKICAgICAgICBjb25uLmNvbW1pdCgpCiAgICAgICAgcmV0dXJuIHsic3VjY2VzcyI6IFRydWUsICJpZCI6IGpvYl9pZH0KICAgIGZpbmFsbHk6CiAgICAgICAgY29ubi5jbG9zZSgpCg==
+import sqlite3
+import os
+import json
+
+DB_DIR = "/app/data/db"
+DB_PATH = os.path.join(DB_DIR, "kharbasha.db")
+
+def _get_db():
+    os.makedirs(DB_DIR, exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA foreign_keys=ON")
+    return conn
+
+def init_db():
+    conn = _get_db()
+    try:
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS jobs (
+                id TEXT PRIMARY KEY,
+                url TEXT,
+                type TEXT,
+                status TEXT,
+                dialect TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS results (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                job_id TEXT,
+                url TEXT,
+                content TEXT,
+                metadata_json TEXT,
+                FOREIGN KEY (job_id) REFERENCES jobs(id) ON DELETE CASCADE
+            )
+        """)
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS agent_sessions (
+                id TEXT PRIMARY KEY,
+                task TEXT,
+                history_json TEXT,
+                final_result TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        conn.commit()
+    finally:
+        conn.close()
+
+def create_job(job_id, url, job_type, dialect):
+    conn = _get_db()
+    try:
+        conn.execute(
+            "INSERT INTO jobs (id, url, type, status, dialect) VALUES (?, ?, ?, ?, ?)",
+            (job_id, url, job_type, "pending", dialect)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+def update_job_status(job_id, status):
+    conn = _get_db()
+    try:
+        conn.execute("UPDATE jobs SET status = ? WHERE id = ?", (status, job_id))
+        conn.commit()
+    finally:
+        conn.close()
+
+def save_result(job_id, url, content, metadata=None):
+    conn = _get_db()
+    try:
+        conn.execute(
+            "INSERT INTO results (job_id, url, content, metadata_json) VALUES (?, ?, ?, ?)",
+            (job_id, url, content, json.dumps(metadata) if metadata else None)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+def save_agent_session(session_id, task, history, final_result=None):
+    conn = _get_db()
+    try:
+        conn.execute(
+            "INSERT OR REPLACE INTO agent_sessions (id, task, history_json, final_result) VALUES (?, ?, ?, ?)",
+            (session_id, task, json.dumps(history), final_result)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+def get_history(limit=20):
+    conn = _get_db()
+    try:
+        rows = conn.execute("""
+            SELECT j.*, r.url as result_url, r.content as result_content 
+            FROM jobs j 
+            LEFT JOIN results r ON j.id = r.job_id 
+            ORDER BY j.created_at DESC 
+            LIMIT ?
+        """, (limit,)).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+def delete_job(job_id):
+    conn = _get_db()
+    try:
+        conn.execute("DELETE FROM jobs WHERE id = ?", (job_id,))
+        conn.execute("DELETE FROM results WHERE job_id = ?", (job_id,))
+        conn.commit()
+        return {"success": True, "id": job_id}
+    finally:
+        conn.close()

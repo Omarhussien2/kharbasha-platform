@@ -1,1 +1,203 @@
-aW1wb3J0IHV1aWQKaW1wb3J0IGpzb24KaW1wb3J0IHRpbWUKaW1wb3J0IG9zCmZyb20gbmV4dHRva2VuIGltcG9ydCBOZXh0VG9rZW4KZnJvbSBhcHBzLmtoYXJiYXNoYS5iYWNrZW5kLmRiIGltcG9ydCBpbml0X2RiLCBjcmVhdGVfam9iLCB1cGRhdGVfam9iX3N0YXR1cywgc2F2ZV9yZXN1bHQsIGdldF9oaXN0b3J5LCBkZWxldGVfam9iLCBzYXZlX2FnZW50X3Nlc3Npb24KCiMgTG9hZCBpbnN0cnVjdGlvbnMgY29udmVudGlvbnM6CiMgRGlhbGVjdCBpbmZsdWVuY2UgZm9yIHN0YXR1cyBtZXNzYWdlcwpTVEFUVVNfTVNHUyA9IHsKICAgICJlZ3lwdGlhbiI6IHsKICAgICAgICAic3RhcnRpbmciOiAi2YrZhNinINio2YrZhtinLi4g2KjZhtio2K/YoyDYr9mE2YjZgtiq2YoiLAogICAgICAgICJmZXRjaGluZyI6ICLYqNmG2LPYrdioINin2YTYr9in2KrYpyDYo9mH2YguLiDYp9iz2KrZhtmJINi02YjZitipIiwKICAgICAgICAiY3Jhd2xpbmciOiAi2KjZhtmE2YEg2YHZiiDYp9mE2YXZiNmC2Lkg2K3YqtipINit2KrYqSIsCiAgICAgICAgInRoaW5raW5nIjogItio2YHZg9ixINij2YfZiC4uINir2KfZhtmK2Kkg2YjYp9it2K/YqSIsCiAgICAgICAgImFjdGluZyI6ICLYqNi52YXZhCDYp9mE2YXZh9mF2Kkg2K/ZhNmI2YLYqtmKLi4g2YXYqtmC2YTZgti0IiwKICAgICAgICAiZG9uZSI6ICLYrtmE2KfYtSDYrtmE2LXZhtinISDYp9mE2K/Yp9iq2Kcg2KzYp9mH2LLYqSIsCiAgICAgICAgImVycm9yIjogItit2LXZhNiqINmF2LTZg9mE2Kkg2YrYpyDZgdmG2KfZhjoge2Vycm9yfSIKICAgIH0sCiAgICAic2F1ZGkiOiB7CiAgICAgICAgInN0YXJ0aW5nIjogItio2LPZhSDYp9mE2YTZhy4uINmG2KjYr9ijINin2YTYrdmK2YYiLAogICAgICAgICJmZXRjaGluZyI6ICLZgtin2LnYr9mK2YYg2YbYs9it2Kgg2KfZhNio2YrYp9mG2KfYqi4uINmE2K3YuNin2KoiLAogICAgICAgICJjcmF3bGluZyI6ICLZhtiq2KzZiNmEINmB2Yog2KfZhNmF2YjZgti5INmI2YbYtNmI2YEg2YjYtCDZgdmK2YciLAogICAgICAgICJ0aGlua2luZyI6ICLZgtin2LnYryDYo9mB2YPYsS4uINir2YjYp9mG2Yog2KjYsyIsCiAgICAgICAgImFjdGluZyI6ICLZgtin2LnYryDYo9mG2YHYsCDYp9mE2YXZh9mF2Kkg2KfZhNit2YrZhi4uINij2KjYtNixIiwKICAgICAgICAiZG9uZSI6ICLYqtmFINio2K3ZhdivINin2YTZhNmHISDYp9mE2KjZitin2YbYp9iqINis2KfZh9iy2KkiLAogICAgICAgICJlcnJvciI6ICLYtdin2LHYqiDZhdi02YPZhNipINmK2Kcg2LfZiNmK2YQg2KfZhNi52YXYsToge2Vycm9yfSIKICAgIH0KfQoKZGVmIF9nZXRfbXNnKGRpYWxlY3QsIGtleSwgKiprd2FyZ3MpOgogICAgZCA9IGRpYWxlY3QubG93ZXIoKSBpZiBkaWFsZWN0IGVsc2UgImVneXB0aWFuIgogICAgaWYgZCBub3QgaW4gU1RBVFVTX01TR1M6CiAgICAgICAgZCA9ICJlZ3lwdGlhbiIKICAgIG1zZyA9IFNUQVRVU19NU0dTW2RdLmdldChrZXksIGtleSkKICAgIHJldHVybiBtc2cuZm9ybWF0KCoqa3dhcmdzKQoKIyBSUEMgRnVuY3Rpb25zCgpkZWYgc2NyYXBlX3VybCh1cmw6IHN0ciwgZGlhbGVjdDogc3RyID0gImVneXB0aWFuIik6CiAgICBwcmludChmIltCQUNLRU5EX1NUQVJUXSBzY3JhcGVfdXJsIGNhbGxlZCB3aXRoIHVybD17dXJsfSwgZGlhbGVjdD17ZGlhbGVjdH0iKQogICAgaW5pdF9kYigpCiAgICBqb2JfaWQgPSBzdHIodXVpZC51dWlkNCgpKQogICAgY3JlYXRlX2pvYihqb2JfaWQsIHVybCwgInNjcmFwZSIsIGRpYWxlY3QpCiAgICAKICAgIGNsaWVudCA9IE5leHRUb2tlbigpCiAgICB0cnk6CiAgICAgICAgdXBkYXRlX2pvYl9zdGF0dXMoam9iX2lkLCAicHJvY2Vzc2luZyIpCiAgICAgICAgcHJpbnQoZiJbQkFDS0VORF9TVEVQXSBmZXRjaGluZyB7dXJsfSIpCiAgICAgICAgcGFnZSA9IGNsaWVudC5mZXRjaC51cmwodXJsKQogICAgICAgIAogICAgICAgIG1hcmtkb3duID0gcGFnZS5nZXQoImNvbnRlbnQiLCAiIikKICAgICAgICBtZXRhZGF0YSA9IHsKICAgICAgICAgICAgInRpdGxlIjogcGFnZS5nZXQoInRpdGxlIiksCiAgICAgICAgICAgICJ1cmwiOiBwYWdlLmdldCgidXJsIiksCiAgICAgICAgICAgICJjb250ZW50X2xlbmd0aCI6IHBhZ2UuZ2V0KCJjb250ZW50X2xlbmd0aCIpLAogICAgICAgICAgICAibGlua3NfY291bnQiOiBsZW4ocGFnZS5nZXQoImxpbmtzIiwgW10pKQogICAgICAgIH0KICAgICAgICAKICAgICAgICBzYXZlX3Jlc3VsdChqb2JfaWQsIHVybCwgbWFya2Rvd24sIG1ldGFkYXRhKQogICAgICAgIHVwZGF0ZV9qb2Jfc3RhdHVzKGpvYl9pZCwgImNvbXBsZXRlZCIpCiAgICAgICAgCiAgICAgICAgcmVzdWx0ID0geyJpZCI6IGpvYl9pZCwgIm1hcmtkb3duIjogbWFya2Rvd24sICJtZXRhZGF0YSI6IG1ldGFkYXRhfQogICAgICAgIHByaW50KGYiW0JBQ0tFTkRfU1VDQ0VTU10gc2NyYXBlX3VybCBjb21wbGV0ZSBmb3Ige3VybH0iKQogICAgICAgIHJldHVybiByZXN1bHQKICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICBlcnJvcl9tc2cgPSBzdHIoZSkKICAgICAgICB1cGRhdGVfam9iX3N0YXR1cyhqb2JfaWQsIGYiZXJyb3I6IHtlcnJvcl9tc2d9IikKICAgICAgICBwcmludChmIltCQUNLRU5EX0VSUk9SXSBzY3JhcGVfdXJsIGZhaWxlZDoge2Vycm9yX21zZ30iKQogICAgICAgIHJhaXNlCgpkZWYgY3Jhd2xfZG9tYWluX3N0cmVhbWluZyh1cmw6IHN0ciwgbGltaXQ6IGludCA9IDUsIGRpYWxlY3Q6IHN0ciA9ICJlZ3lwdGlhbiIpOgogICAgcHJpbnQoZiJbQkFDS0VORF9TVEFSVF0gY3Jhd2xfZG9tYWluX3N0cmVhbWluZyBjYWxsZWQgd2l0aCB1cmw9e3VybH0sIGxpbWl0PXtsaW1pdH0sIGRpYWxlY3Q9e2RpYWxlY3R9IikKICAgIGluaXRfZGIoKQogICAgam9iX2lkID0gc3RyKHV1aWQudXVpZDQoKSkKICAgIGNyZWF0ZV9qb2Ioam9iX2lkLCB1cmwsICJjcmF3bCIsIGRpYWxlY3QpCiAgICAKICAgIHlpZWxkIHsidHlwZSI6ICJzdGF0dXMiLCAiY29udGVudCI6IF9nZXRfbXNnKGRpYWxlY3QsICJzdGFydGluZyIpLCAicHJvZ3Jlc3MiOiA1fQogICAgCiAgICBjbGllbnQgPSBOZXh0VG9rZW4oKQogICAgdmlzaXRlZCA9IHNldCgpCiAgICBxdWV1ZSA9IFt1cmxdCiAgICByZXN1bHRzX2NvdW50ID0gMAogICAgCiAgICB0cnk6CiAgICAgICAgdXBkYXRlX2pvYl9zdGF0dXMoam9iX2lkLCAicHJvY2Vzc2luZyIpCiAgICAgICAgd2hpbGUgcXVldWUgYW5kIHJlc3VsdHNfY291bnQgPCBsaW1pdDoKICAgICAgICAgICAgY3VycmVudF91cmwgPSBxdWV1ZS5wb3AoMCkKICAgICAgICAgICAgaWYgY3VycmVudF91cmwgaW4gdmlzaXRlZDoKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIHZpc2l0ZWQuYWRkKGN1cnJlbnRfdXJsKQogICAgICAgICAgICAKICAgICAgICAgICAgeWllbGQgeyJ0eXBlIjogInN0YXR1cyIsICJjb250ZW50IjogX2dldF9tc2coZGlhbGVjdCwgImZldGNoaW5nIikgKyBmIiAoe2N1cnJlbnRfdXJsfSkiLCAicHJvZ3Jlc3MiOiBpbnQoKHJlc3VsdHNfY291bnQvbGltaXQpKjkwKSArIDV9CiAgICAgICAgICAgIAogICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICBwYWdlID0gY2xpZW50LmZldGNoLnVybChjdXJyZW50X3VybCkKICAgICAgICAgICAgICAgIG1hcmtkb3duID0gcGFnZS5nZXQoImNvbnRlbnQiLCAiIikKICAgICAgICAgICAgICAgIHNhdmVfcmVzdWx0KGpvYl9pZCwgY3VycmVudF91cmwsIG1hcmtkb3duLCB7InRpdGxlIjogcGFnZS5nZXQoInRpdGxlIil9KQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB5aWVsZCB7CiAgICAgICAgICAgICAgICAgICAgInR5cGUiOiAicGFnZSIsIAogICAgICAgICAgICAgICAgICAgICJ1cmwiOiBjdXJyZW50X3VybCwgCiAgICAgICAgICAgICAgICAgICAgImNvbnRlbnQiOiBtYXJrZG93bls6NTAwXSArICIuLi4iIGlmIGxlbihtYXJrZG93bikgPiA1MDAgZWxzZSBtYXJrZG93biwKICAgICAgICAgICAgICAgICAgICAidGl0bGUiOiBwYWdlLmdldCgidGl0bGUiKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICByZXN1bHRzX2NvdW50ICs9IDEKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgIyBTaW1wbGUgZG9tYWluLWJvdW5kIGRpc2NvdmVyeQogICAgICAgICAgICAgICAgZnJvbSB1cmxsaWIucGFyc2UgaW1wb3J0IHVybHBhcnNlLCB1cmxqb2luCiAgICAgICAgICAgICAgICBkb21haW4gPSB1cmxwYXJzZSh1cmwpLm5ldGxvYwogICAgICAgICAgICAgICAgZm9yIGxpbmsgaW4gcGFnZS5nZXQoImxpbmtzIiwgW10pOgogICAgICAgICAgICAgICAgICAgIGZ1bGxfbGluayA9IHVybGpvaW4oY3VycmVudF91cmwsIGxpbmspCiAgICAgICAgICAgICAgICAgICAgaWYgdXJscGFyc2UoZnVsbF9saW5rKS5uZXRsb2MgPT0gZG9tYWluIGFuZCBmdWxsX2xpbmsgbm90IGluIHZpc2l0ZWQ6CiAgICAgICAgICAgICAgICAgICAgICAgIHF1ZXVlLmFwcGVuZChmdWxsX2xpbmspCiAgICAgICAgICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICAgICAgICAgIHByaW50KGYiW0JBQ0tFTkRfU1RFUF0gRmFpbGVkIHRvIGZldGNoIHtjdXJyZW50X3VybH06IHtlfSIpCiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgIAogICAgICAgIHVwZGF0ZV9qb2Jfc3RhdHVzKGpvYl9pZCwgImNvbXBsZXRlZCIpCiAgICAgICAgeWllbGQgeyJ0eXBlIjogInN0YXR1cyIsICJjb250ZW50IjogX2dldF9tc2coZGlhbGVjdCwgImRvbmUiKSwgInByb2dyZXNzIjogMTAwLCAicmVzdWx0IjogeyJqb2JfaWQiOiBqb2JfaWQsICJwYWdlc19jcmF3bGVkIjogcmVzdWx0c19jb3VudH19CiAgICAgICAgcHJpbnQoZiJbQkFDS0VORF9TVUNDRVNTXSBjcmF3bF9kb21haW5fc3RyZWFtaW5nIGNvbXBsZXRlIGZvciB7dXJsfSIpCiAgICAgICAgCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgZXJyb3JfbXNnID0gc3RyKGUpCiAgICAgICAgdXBkYXRlX2pvYl9zdGF0dXMoam9iX2lkLCBmImVycm9yOiB7ZXJyb3JfbXNnfSIpCiAgICAgICAgcHJpbnQoZiJbQkFDS0VORF9FUlJPUl0gY3Jhd2xfZG9tYWluX3N0cmVhbWluZyBmYWlsZWQ6IHtlcnJvcl9tc2d9IikKICAgICAgICB5aWVsZCB7InR5cGUiOiAic3RhdHVzIiwgImNvbnRlbnQiOiBfZ2V0X21zZyhkaWFsZWN0LCAiZXJyb3IiLCBlcnJvcj1lcnJvcl9tc2cpLCAicHJvZ3Jlc3MiOiAwLCAiZXJyb3IiOiBlcnJvcl9tc2d9CgpkZWYgcnVuX2FnZW50X3Rhc2tfc3RyZWFtaW5nKHRhc2s6IHN0ciwgZGlhbGVjdDogc3RyID0gImVneXB0aWFuIik6CiAgICBwcmludChmIltCQUNLRU5EX1NUQVJUXSBydW5fYWdlbnRfdGFza19zdHJlYW1pbmcgY2FsbGVkIHdpdGggdGFzaz17dGFza30sIGRpYWxlY3Q9e2RpYWxlY3R9IikKICAgIGluaXRfZGIoKQogICAgc2Vzc2lvbl9pZCA9IHN0cih1dWlkLnV1aWQ0KCkpCiAgICAKICAgICMgU2ltdWxhdGUgYW4gYWdlbnQgbG9vcCB3aXRoIHRoaW5raW5nIGFuZCBhY3Rpbmcgc3RlcHMKICAgICMgSW4gYSByZWFsIGFwcCwgdGhpcyB3b3VsZCB1c2UgYSBtb3JlIGNvbXBsZXggcHJvbXB0IGFuZCB0b29sIGxvb3AKICAgICMgV2UgZm9sbG93IHRoZSBhZ2VudF9idWlsZGluZyBwYXR0ZXJuOiB0aGlua2luZyAtPiBhY3Rpb24gLT4gcmVzdWx0CiAgICAKICAgIGNsaWVudCA9IE5leHRUb2tlbigpCiAgICBoaXN0b3J5ID0gW3sicm9sZSI6ICJ1c2VyIiwgImNvbnRlbnQiOiB0YXNrfV0KICAgIAogICAgeWllbGQgeyJ0eXBlIjogInN0YXR1cyIsICJjb250ZW50IjogX2dldF9tc2coZGlhbGVjdCwgInN0YXJ0aW5nIiksICJwcm9ncmVzcyI6IDV9CiAgICAKICAgIHRyeToKICAgICAgICAjIFN0ZXAgMTogVGhpbmtpbmcKICAgICAgICB5aWVsZCB7InR5cGUiOiAidGhpbmtpbmciLCAiY29udGVudCI6IF9nZXRfbXNnKGRpYWxlY3QsICJ0aGlua2luZyIpLCAicHJvZ3Jlc3MiOiAyMH0KICAgICAgICB0aW1lLnNsZWVwKDEpICMgc2ltdWxhdGUgdGhpbmtpbmcKICAgICAgICAKICAgICAgICAjIENhbGwgTExNIHRvIGRlY2lkZSBpbml0aWFsIHRob3VnaHRzCiAgICAgICAgcmVzcCA9IGNsaWVudC5jaGF0LmNvbXBsZXRpb25zLmNyZWF0ZSgKICAgICAgICAgICAgbW9kZWw9ImdlbWluaS0yLjUtZmxhc2gtbGl0ZSIsCiAgICAgICAgICAgIG1lc3NhZ2VzPVt7InJvbGUiOiAic3lzdGVtIiwgImNvbnRlbnQiOiBmIllvdSBhcmUgYW4gYWdlbnQgbmFtZWQgS2hhcmJhc2hhLiBSZXNwb25kIGluIGEgZnJpZW5kbHkgdG9uZSBiYXNlZCBvbiB0aGUgZGlhbGVjdDoge2RpYWxlY3R9LiBEZWNpZGUgb24gMi0zIHN0ZXBzIHRvIHBlcmZvcm0gdGhlIHRhc2s6IHt0YXNrfSJ9XQogICAgICAgICkKICAgICAgICB0aG91Z2h0ID0gcmVzcC5jaG9pY2VzWzBdLm1lc3NhZ2UuY29udGVudAogICAgICAgIHlpZWxkIHsidHlwZSI6ICJ0aGlua2luZyIsICJjb250ZW50IjogdGhvdWdodCwgInByb2dyZXNzIjogNDB9CiAgICAgICAgaGlzdG9yeS5hcHBlbmQoeyJyb2xlIjogImFzc2lzdGFudCIsICJjb250ZW50IjogdGhvdWdodH0pCiAgICAgICAgCiAgICAgICAgIyBTdGVwIDI6IEFjdGlvbiBzaW11bGF0aW9uCiAgICAgICAgeWllbGQgeyJ0eXBlIjogImFjdGlvbiIsICJjb250ZW50IjogX2dldF9tc2coZGlhbGVjdCwgImFjdGluZyIpLCAicHJvZ3Jlc3MiOiA2MH0KICAgICAgICB0aW1lLnNsZWVwKDEuNSkgIyBzaW11bGF0ZSBhY3Rpb24KICAgICAgICAKICAgICAgICAjIFN0ZXAgMzogUmVzdWx0CiAgICAgICAgZmluYWxfcmVzcCA9IGNsaWVudC5jaGF0LmNvbXBsZXRpb25zLmNyZWF0ZSgKICAgICAgICAgICAgbW9kZWw9ImdlbWluaS0yLjUtZmxhc2gtbGl0ZSIsCiAgICAgICAgICAgIG1lc3NhZ2VzPVt7InJvbGUiOiAic3lzdGVtIiwgImNvbnRlbnQiOiBmIllvdSBhcmUgS2hhcmJhc2hhLiBTdW1tYXJpemUgdGhlIHJlc3VsdCBvZiB0aGUgdGFzayAne3Rhc2t9JyBpbiB0aGUge2RpYWxlY3R9IGRpYWxlY3QuIEJlIGNyZWF0aXZlIGJ1dCBjb25jaXNlLiJ9XQogICAgICAgICkKICAgICAgICBmaW5hbF9yZXN1bHQgPSBmaW5hbF9yZXNwLmNob2ljZXNbMF0ubWVzc2FnZS5jb250ZW50CiAgICAgICAgaGlzdG9yeS5hcHBlbmQoeyJyb2xlIjogImFzc2lzdGFudCIsICJjb250ZW50IjogZmluYWxfcmVzdWx0fSkKICAgICAgICAKICAgICAgICBzYXZlX2FnZW50X3Nlc3Npb24oc2Vzc2lvbl9pZCwgdGFzaywgaGlzdG9yeSwgZmluYWxfcmVzdWx0KQogICAgICAgIAogICAgICAgIHlpZWxkIHsidHlwZSI6ICJkb25lIiwgInJlc3VsdCI6IGZpbmFsX3Jlc3VsdCwgInByb2dyZXNzIjogMTAwfQogICAgICAgIHByaW50KGYiW0JBQ0tFTkRfU1VDQ0VTU10gcnVuX2FnZW50X3Rhc2tfc3RyZWFtaW5nIGNvbXBsZXRlIGZvciB0YXNrPXt0YXNrfSIpCiAgICAgICAgCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgZXJyb3JfbXNnID0gc3RyKGUpCiAgICAgICAgcHJpbnQoZiJbQkFDS0VORF9FUlJPUl0gcnVuX2FnZW50X3Rhc2tfc3RyZWFtaW5nIGZhaWxlZDoge2Vycm9yX21zZ30iKQogICAgICAgIHlpZWxkIHsidHlwZSI6ICJzdGF0dXMiLCAiY29udGVudCI6IF9nZXRfbXNnKGRpYWxlY3QsICJlcnJvciIsIGVycm9yPWVycm9yX21zZyksICJwcm9ncmVzcyI6IDAsICJlcnJvciI6IGVycm9yX21zZ30KCmRlZiBnZXRfaGlzdG9yeV9ycGMobGltaXQ6IGludCA9IDIwKToKICAgIHByaW50KGYiW0JBQ0tFTkRfU1RBUlRdIGdldF9oaXN0b3J5X3JwYyBjYWxsZWQgd2l0aCBsaW1pdD17bGltaXR9IikKICAgIGluaXRfZGIoKQogICAgdHJ5OgogICAgICAgIGhpc3RvcnkgPSBnZXRfaGlzdG9yeShsaW1pdCkKICAgICAgICBwcmludChmIltCQUNLRU5EX1NVQ0NFU1NdIGdldF9oaXN0b3J5X3JwYyByZXR1cm5pbmcge2xlbihoaXN0b3J5KX0gaXRlbXMiKQogICAgICAgIHJldHVybiBoaXN0b3J5CiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgcHJpbnQoZiJbQkFDS0VORF9FUlJPUl0gZ2V0X2hpc3RvcnlfcnBjIGZhaWxlZDoge2V9IikKICAgICAgICByYWlzZQoKZGVmIGRlbGV0ZV9qb2JfcnBjKGpvYl9pZDogc3RyKToKICAgIHByaW50KGYiW0JBQ0tFTkRfU1RBUlRdIGRlbGV0ZV9qb2JfcnBjIGNhbGxlZCB3aXRoIGpvYl9pZD17am9iX2lkfSIpCiAgICBpbml0X2RiKCkKICAgIHRyeToKICAgICAgICByZXN1bHQgPSBkZWxldGVfam9iKGpvYl9pZCkKICAgICAgICBwcmludChmIltCQUNLRU5EX1NVQ0NFU1NdIGRlbGV0ZV9qb2JfcnBjIGRlbGV0ZWQge2pvYl9pZH0iKQogICAgICAgIHJldHVybiByZXN1bHQKICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICBwcmludChmIltCQUNLRU5EX0VSUk9SXSBkZWxldGVfam9iX3JwYyBmYWlsZWQ6IHtlfSIpCiAgICAgICAgcmFpc2UKCiMgUmUtZXhwb3J0IGZvciBjYWxsX2JhY2tlbmRfZnVuY3Rpb24KX19hbGxfXyA9IFsic2NyYXBlX3VybCIsICJjcmF3bF9kb21haW5fc3RyZWFtaW5nIiwgInJ1bl9hZ2VudF90YXNrX3N0cmVhbWluZyIsICJnZXRfaGlzdG9yeV9ycGMiLCAiZGVsZXRlX2pvYl9ycGMiXQo=
+import uuid
+import json
+import time
+import os
+from nexttoken import NextToken
+from db import init_db, create_job, update_job_status, save_result, get_history, delete_job, save_agent_session
+
+# Load instructions conventions:
+# Dialect influence for status messages
+STATUS_MSGS = {
+    "egyptian": {
+        "starting": "يلا بينا.. بنبدأ دلوقتي",
+        "fetching": "بنسحب الداتا أهو.. استنى شوية",
+        "crawling": "بنلف في الموقع حتة حتة",
+        "thinking": "بفكر أهو.. ثانية واحدة",
+        "acting": "بعمل المهمة دلوقتي.. متقلقش",
+        "done": "خلاص خلصنا! الداتا جاهزة",
+        "error": "حصلت مشكلة يا فنان: {error}"
+    },
+    "saudi": {
+        "starting": "بسم الله.. نبدأ الحين",
+        "fetching": "قاعدين نسحب البيانات.. لحظات",
+        "crawling": "نتجول في الموقع ونشوف وش فيه",
+        "thinking": "قاعد أفكر.. ثواني بس",
+        "acting": "قاعد أنفذ المهمة الحين.. أبشر",
+        "done": "تم بحمد الله! البيانات جاهزة",
+        "error": "صارت مشكلة يا طويل العمر: {error}"
+    }
+}
+
+def _get_msg(dialect, key, **kwargs):
+    d = dialect.lower() if dialect else "egyptian"
+    if d not in STATUS_MSGS:
+        d = "egyptian"
+    msg = STATUS_MSGS[d].get(key, key)
+    return msg.format(**kwargs)
+
+# RPC Functions
+
+def scrape_url(url: str, dialect: str = "egyptian"):
+    print(f"[BACKEND_START] scrape_url called with url={url}, dialect={dialect}")
+    init_db()
+    job_id = str(uuid.uuid4())
+    create_job(job_id, url, "scrape", dialect)
+    
+    client = NextToken()
+    try:
+        update_job_status(job_id, "processing")
+        print(f"[BACKEND_STEP] fetching {url}")
+        page = client.fetch.url(url)
+        
+        markdown = page.get("content", "")
+        metadata = {
+            "title": page.get("title"),
+            "url": page.get("url"),
+            "content_length": page.get("content_length"),
+            "links_count": len(page.get("links", []))
+        }
+        
+        save_result(job_id, url, markdown, metadata)
+        update_job_status(job_id, "completed")
+        
+        result = {"id": job_id, "markdown": markdown, "metadata": metadata}
+        print(f"[BACKEND_SUCCESS] scrape_url complete for {url}")
+        return result
+    except Exception as e:
+        error_msg = str(e)
+        update_job_status(job_id, f"error: {error_msg}")
+        print(f"[BACKEND_ERROR] scrape_url failed: {error_msg}")
+        raise
+
+def crawl_domain_streaming(url: str, limit: int = 5, dialect: str = "egyptian"):
+    print(f"[BACKEND_START] crawl_domain_streaming called with url={url}, limit={limit}, dialect={dialect}")
+    init_db()
+    job_id = str(uuid.uuid4())
+    create_job(job_id, url, "crawl", dialect)
+    
+    yield {"type": "status", "content": _get_msg(dialect, "starting"), "progress": 5}
+    
+    client = NextToken()
+    visited = set()
+    queue = [url]
+    results_count = 0
+    
+    try:
+        update_job_status(job_id, "processing")
+        while queue and results_count < limit:
+            current_url = queue.pop(0)
+            if current_url in visited:
+                continue
+            visited.add(current_url)
+            
+            yield {"type": "status", "content": _get_msg(dialect, "fetching") + f" ({current_url})", "progress": int((results_count/limit)*90) + 5}
+            
+            try:
+                page = client.fetch.url(current_url)
+                markdown = page.get("content", "")
+                save_result(job_id, current_url, markdown, {"title": page.get("title")})
+                
+                yield {
+                    "type": "page", 
+                    "url": current_url, 
+                    "content": markdown[:500] + "..." if len(markdown) > 500 else markdown,
+                    "title": page.get("title")
+                }
+                
+                results_count += 1
+                
+                # Simple domain-bound discovery
+                from urllib.parse import urlparse, urljoin
+                domain = urlparse(url).netloc
+                for link in page.get("links", []):
+                    full_link = urljoin(current_url, link)
+                    if urlparse(full_link).netloc == domain and full_link not in visited:
+                        queue.append(full_link)
+            except Exception as e:
+                print(f"[BACKEND_STEP] Failed to fetch {current_url}: {e}")
+                continue
+        
+        update_job_status(job_id, "completed")
+        yield {"type": "status", "content": _get_msg(dialect, "done"), "progress": 100, "result": {"job_id": job_id, "pages_crawled": results_count}}
+        print(f"[BACKEND_SUCCESS] crawl_domain_streaming complete for {url}")
+        
+    except Exception as e:
+        error_msg = str(e)
+        update_job_status(job_id, f"error: {error_msg}")
+        print(f"[BACKEND_ERROR] crawl_domain_streaming failed: {error_msg}")
+        yield {"type": "status", "content": _get_msg(dialect, "error", error=error_msg), "progress": 0, "error": error_msg}
+
+def run_agent_task_streaming(task: str, dialect: str = "egyptian"):
+    print(f"[BACKEND_START] run_agent_task_streaming called with task={task}, dialect={dialect}")
+    init_db()
+    session_id = str(uuid.uuid4())
+    
+    # Simulate an agent loop with thinking and acting steps
+    # In a real app, this would use a more complex prompt and tool loop
+    # We follow the agent_building pattern: thinking -> action -> result
+    
+    client = NextToken()
+    history = [{"role": "user", "content": task}]
+    
+    yield {"type": "status", "content": _get_msg(dialect, "starting"), "progress": 5}
+    
+    try:
+        # Step 1: Thinking
+        yield {"type": "thinking", "content": _get_msg(dialect, "thinking"), "progress": 20}
+        time.sleep(1) # simulate thinking
+        
+        # Call LLM to decide initial thoughts
+        resp = client.chat.completions.create(
+            model="gemini-2.5-flash-lite",
+            messages=[{"role": "system", "content": f"You are an agent named Kharbasha. Respond in a friendly tone based on the dialect: {dialect}. Decide on 2-3 steps to perform the task: {task}"}]
+        )
+        thought = resp.choices[0].message.content
+        yield {"type": "thinking", "content": thought, "progress": 40}
+        history.append({"role": "assistant", "content": thought})
+        
+        # Step 2: Action simulation
+        yield {"type": "action", "content": _get_msg(dialect, "acting"), "progress": 60}
+        time.sleep(1.5) # simulate action
+        
+        # Step 3: Result
+        final_resp = client.chat.completions.create(
+            model="gemini-2.5-flash-lite",
+            messages=[{"role": "system", "content": f"You are Kharbasha. Summarize the result of the task '{task}' in the {dialect} dialect. Be creative but concise."}]
+        )
+        final_result = final_resp.choices[0].message.content
+        history.append({"role": "assistant", "content": final_result})
+        
+        save_agent_session(session_id, task, history, final_result)
+        
+        yield {"type": "done", "result": final_result, "progress": 100}
+        print(f"[BACKEND_SUCCESS] run_agent_task_streaming complete for task={task}")
+        
+    except Exception as e:
+        error_msg = str(e)
+        print(f"[BACKEND_ERROR] run_agent_task_streaming failed: {error_msg}")
+        yield {"type": "status", "content": _get_msg(dialect, "error", error=error_msg), "progress": 0, "error": error_msg}
+
+def get_history_rpc(limit: int = 20):
+    print(f"[BACKEND_START] get_history_rpc called with limit={limit}")
+    init_db()
+    try:
+        history = get_history(limit)
+        print(f"[BACKEND_SUCCESS] get_history_rpc returning {len(history)} items")
+        return history
+    except Exception as e:
+        print(f"[BACKEND_ERROR] get_history_rpc failed: {e}")
+        raise
+
+def delete_job_rpc(job_id: str):
+    print(f"[BACKEND_START] delete_job_rpc called with job_id={job_id}")
+    init_db()
+    try:
+        result = delete_job(job_id)
+        print(f"[BACKEND_SUCCESS] delete_job_rpc deleted {job_id}")
+        return result
+    except Exception as e:
+        print(f"[BACKEND_ERROR] delete_job_rpc failed: {e}")
+        raise
+
+# Re-export for call_backend_function
+__all__ = ["scrape_url", "crawl_domain_streaming", "run_agent_task_streaming", "get_history_rpc", "delete_job_rpc"]

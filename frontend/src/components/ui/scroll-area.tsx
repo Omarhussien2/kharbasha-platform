@@ -1,1 +1,69 @@
-aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAicmVhY3QiOwppbXBvcnQgeyBjbiB9IGZyb20gIi4uLy4uL2xpYi91dGlscyI7CgovKioKICogU2Nyb2xsYWJsZSBjb250YWluZXIgd2l0aCBhIHRoaW4gb3ZlcmxheSBzY3JvbGxiYXIgdGhhdCBvbmx5IGFwcGVhcnMgb24gaG92ZXIuCiAqIE5vIHBlcnNpc3RlbnQgc2Nyb2xsYmFyIGd1dHRlciDigJQgY29udGVudCB1c2VzIGZ1bGwgd2lkdGguCiAqLwpmdW5jdGlvbiBTY3JvbGxBcmVhKHsKICBjbGFzc05hbWUsCiAgY2hpbGRyZW4sCiAgLi4ucHJvcHMKfTogUmVhY3QuSFRNTEF0dHJpYnV0ZXM8SFRNTERpdkVsZW1lbnQ+KSB7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgY2xhc3NOYW1lPXtjbigicmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIiwgY2xhc3NOYW1lKX0KICAgICAgey4uLnByb3BzfQogICAgPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iaC1mdWxsIHctZnVsbCBzY3JvbGwtYXJlYS1pbm5lciI+CiAgICAgICAge2NoaWxkcmVufQogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0KCi8qKgogKiBJbmxpbmUgc3R5bGUgdGFnIGZvciBzY3JvbGwgYXJlYSDigJQgaW5qZWN0ZWQgb25jZS4KICogVXNlcyBDU1Mtb25seSBvdmVybGF5IHNjcm9sbGJhcjogaGlkZGVuIGJ5IGRlZmF1bHQsIHRoaW4gdHJhY2sgb24gaG92ZXIuCiAqIFdvcmtzIGNyb3NzLWJyb3dzZXIgKFdlYktpdCArIEZpcmVmb3gpLgogKi8KY29uc3Qgc2Nyb2xsU3R5bGVzID0gYAouc2Nyb2xsLWFyZWEtaW5uZXIgewogIG92ZXJmbG93LXk6IG92ZXJsYXk7CiAgb3ZlcmZsb3cteDogaGlkZGVuOwogIC8qIEZpcmVmb3g6IGFsd2F5cyByZXNlcnZlIHRoaW4gc2Nyb2xsYmFyIHNwYWNlIHNvIGNvbnRlbnQgbmV2ZXIgc2hpZnRzICovCiAgc2Nyb2xsYmFyLXdpZHRoOiB0aGluOwogIHNjcm9sbGJhci1jb2xvcjogdHJhbnNwYXJlbnQgdHJhbnNwYXJlbnQ7Cn0KLyogRmFsbGJhY2sgZm9yIGJyb3dzZXJzIHRoYXQgZG9uJ3Qgc3VwcG9ydCBvdmVyZmxvdzpvdmVybGF5ICovCkBzdXBwb3J0cyBub3QgKG92ZXJmbG93LXk6IG92ZXJsYXkpIHsKICAuc2Nyb2xsLWFyZWEtaW5uZXIgewogICAgb3ZlcmZsb3cteTogYXV0bzsKICB9Cn0KLnNjcm9sbC1hcmVhLWlubmVyOjotd2Via2l0LXNjcm9sbGJhciB7CiAgd2lkdGg6IDZweDsKICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsKfQouc2Nyb2xsLWFyZWEtaW5uZXI6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHsKICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsKICBib3JkZXItcmFkaXVzOiAzcHg7CiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZCAwLjJzIGVhc2U7Cn0KLnNjcm9sbC1hcmVhLWlubmVyOmhvdmVyIHsKICBzY3JvbGxiYXItY29sb3I6IHJnYmEoMTI4LDEyOCwxMjgsMC4zKSB0cmFuc3BhcmVudDsKfQouc2Nyb2xsLWFyZWEtaW5uZXI6aG92ZXI6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHsKICBiYWNrZ3JvdW5kOiByZ2JhKDEyOCwxMjgsMTI4LDAuMyk7Cn0KYDsKCmxldCBzdHlsZXNJbmplY3RlZCA9IGZhbHNlOwppZiAodHlwZW9mIGRvY3VtZW50ICE9PSAidW5kZWZpbmVkIiAmJiAhc3R5bGVzSW5qZWN0ZWQpIHsKICBjb25zdCBzdHlsZSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInN0eWxlIik7CiAgc3R5bGUudGV4dENvbnRlbnQgPSBzY3JvbGxTdHlsZXM7CiAgZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzdHlsZSk7CiAgc3R5bGVzSW5qZWN0ZWQgPSB0cnVlOwp9CgpleHBvcnQgeyBTY3JvbGxBcmVhIH07Cg==
+import * as React from "react";
+import { cn } from "../../lib/utils";
+
+/**
+ * Scrollable container with a thin overlay scrollbar that only appears on hover.
+ * No persistent scrollbar gutter — content uses full width.
+ */
+function ScrollArea({
+  className,
+  children,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn("relative overflow-hidden", className)}
+      {...props}
+    >
+      <div className="h-full w-full scroll-area-inner">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Inline style tag for scroll area — injected once.
+ * Uses CSS-only overlay scrollbar: hidden by default, thin track on hover.
+ * Works cross-browser (WebKit + Firefox).
+ */
+const scrollStyles = `
+.scroll-area-inner {
+  overflow-y: overlay;
+  overflow-x: hidden;
+  /* Firefox: always reserve thin scrollbar space so content never shifts */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+/* Fallback for browsers that don't support overflow:overlay */
+@supports not (overflow-y: overlay) {
+  .scroll-area-inner {
+    overflow-y: auto;
+  }
+}
+.scroll-area-inner::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+.scroll-area-inner::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+.scroll-area-inner:hover {
+  scrollbar-color: rgba(128,128,128,0.3) transparent;
+}
+.scroll-area-inner:hover::-webkit-scrollbar-thumb {
+  background: rgba(128,128,128,0.3);
+}
+`;
+
+let stylesInjected = false;
+if (typeof document !== "undefined" && !stylesInjected) {
+  const style = document.createElement("style");
+  style.textContent = scrollStyles;
+  document.head.appendChild(style);
+  stylesInjected = true;
+}
+
+export { ScrollArea };

@@ -1,1 +1,163 @@
-aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnOwppbXBvcnQgeyBjbiB9IGZyb20gJy4uLy4uL2xpYi91dGlscyc7CmltcG9ydCB7IFRvb2xDYWxsQ2FyZCB9IGZyb20gJy4vdG9vbC1jYWxsLWNhcmQnOwppbXBvcnQgdHlwZSB7IENoYXRNZXNzYWdlIGFzIENoYXRNZXNzYWdlVHlwZSB9IGZyb20gJy4uLy4uL3VzZUFnZW50Q2hhdCc7CmltcG9ydCB7IENoZXZyb25Eb3duIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IFJlYWN0TWFya2Rvd24gZnJvbSAncmVhY3QtbWFya2Rvd24nOwppbXBvcnQgcmVtYXJrR2ZtIGZyb20gJ3JlbWFyay1nZm0nOwoKaW50ZXJmYWNlIENoYXRNZXNzYWdlUHJvcHMgZXh0ZW5kcyBDaGF0TWVzc2FnZVR5cGUgewogIC8qKiBXaGV0aGVyIHRvIHNob3cgdG9vbCBjYWxscyBpbmxpbmUgd2l0aGluIHRoZSBtZXNzYWdlLiBEZWZhdWx0OiB0cnVlICovCiAgc2hvd1Rvb2xDYWxsc0lubGluZT86IGJvb2xlYW47CiAgY2xhc3NOYW1lPzogc3RyaW5nOwp9CgovKiogQ3VzdG9tIG1hcmtkb3duIGNvbXBvbmVudCBvdmVycmlkZXMgZm9yIHdlbGwtZm9ybWF0dGVkIEFJIHJlc3BvbnNlcy4gKi8KY29uc3QgbWFya2Rvd25Db21wb25lbnRzOiBSZWNvcmQ8c3RyaW5nLCBSZWFjdC5GQzxhbnk+PiA9IHsKICBwOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+IDxwIHsuLi5wcm9wc30gY2xhc3NOYW1lPSJtYi0zIGxhc3Q6bWItMCBsZWFkaW5nLXJlbGF4ZWQiIC8+LAogIGgxOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+IDxoMSB7Li4ucHJvcHN9IGNsYXNzTmFtZT0idGV4dC14bCBmb250LWJvbGQgbXQtNSBtYi0yIiAvPiwKICBoMjogKHsgbm9kZSwgLi4ucHJvcHMgfTogYW55KSA9PiA8aDIgey4uLnByb3BzfSBjbGFzc05hbWU9InRleHQtbGcgZm9udC1zZW1pYm9sZCBtdC00IG1iLTIiIC8+LAogIGgzOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+IDxoMyB7Li4ucHJvcHN9IGNsYXNzTmFtZT0idGV4dC1iYXNlIGZvbnQtc2VtaWJvbGQgbXQtMyBtYi0xLjUiIC8+LAogIGg0OiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+IDxoNCB7Li4ucHJvcHN9IGNsYXNzTmFtZT0idGV4dC1zbSBmb250LXNlbWlib2xkIG10LTIgbWItMSIgLz4sCiAgdWw6ICh7IG5vZGUsIC4uLnByb3BzIH06IGFueSkgPT4gPHVsIHsuLi5wcm9wc30gY2xhc3NOYW1lPSJsaXN0LWRpc2MgcGwtNSBtYi0zIGxhc3Q6bWItMCBzcGFjZS15LTEiIC8+LAogIG9sOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+IDxvbCB7Li4ucHJvcHN9IGNsYXNzTmFtZT0ibGlzdC1kZWNpbWFsIHBsLTUgbWItMyBsYXN0Om1iLTAgc3BhY2UteS0xIiAvPiwKICBsaTogKHsgbm9kZSwgLi4ucHJvcHMgfTogYW55KSA9PiA8bGkgey4uLnByb3BzfSBjbGFzc05hbWU9ImxlYWRpbmctcmVsYXhlZCIgLz4sCiAgYmxvY2txdW90ZTogKHsgbm9kZSwgLi4ucHJvcHMgfTogYW55KSA9PiAoCiAgICA8YmxvY2txdW90ZSB7Li4ucHJvcHN9IGNsYXNzTmFtZT0iYm9yZGVyLWwtNCBib3JkZXItcHJpbWFyeS80MCBwbC00IHB5LTEgbXktMyBiZy1tdXRlZC8zMCByb3VuZGVkLXItbWQgaXRhbGljIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCIgLz4KICApLAogIGhyOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+IDxociB7Li4ucHJvcHN9IGNsYXNzTmFtZT0ibXktNCBib3JkZXItdCBib3JkZXItYm9yZGVyIiAvPiwKICBhOiAoeyBub2RlLCBocmVmLCBjaGlsZHJlbiwgLi4ucHJvcHMgfTogYW55KSA9PiAoCiAgICA8YSB7Li4ucHJvcHN9IGhyZWY9e2hyZWZ9IHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiIGNsYXNzTmFtZT0idGV4dC1wcmltYXJ5IGhvdmVyOnVuZGVybGluZSI+CiAgICAgIHtjaGlsZHJlbn0KICAgIDwvYT4KICApLAogIHRhYmxlOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+ICgKICAgIDxkaXYgY2xhc3NOYW1lPSJteS0zIG92ZXJmbG93LXgtYXV0byByb3VuZGVkLWxnIGJvcmRlciBib3JkZXItYm9yZGVyIj4KICAgICAgPHRhYmxlIHsuLi5wcm9wc30gY2xhc3NOYW1lPSJ3LWZ1bGwgYm9yZGVyLWNvbGxhcHNlIHRleHQtc20iIC8+CiAgICA8L2Rpdj4KICApLAogIHRoZWFkOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+IDx0aGVhZCB7Li4ucHJvcHN9IGNsYXNzTmFtZT0iYmctbXV0ZWQvNTAiIC8+LAogIHRoOiAoeyBub2RlLCAuLi5wcm9wcyB9OiBhbnkpID0+ICgKICAgIDx0aCB7Li4ucHJvcHN9IGNsYXNzTmFtZT0iYm9yZGVyLWIgYm9yZGVyLWJvcmRlciBweC0zIHB5LTIgdGV4dC1sZWZ0IGZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIiAvPgogICksCiAgdGQ6ICh7IG5vZGUsIC4uLnByb3BzIH06IGFueSkgPT4gKAogICAgPHRkIHsuLi5wcm9wc30gY2xhc3NOYW1lPSJib3JkZXItYiBib3JkZXItYm9yZGVyLzUwIHB4LTMgcHktMiB0ZXh0LWZvcmVncm91bmQiIC8+CiAgKSwKICB0cjogKHsgbm9kZSwgLi4ucHJvcHMgfTogYW55KSA9PiA8dHIgey4uLnByb3BzfSBjbGFzc05hbWU9ImhvdmVyOmJnLW11dGVkLzMwIHRyYW5zaXRpb24tY29sb3JzIiAvPiwKICBjb2RlOiAoeyBub2RlLCBjbGFzc05hbWUsIGNoaWxkcmVuLCAuLi5wcm9wcyB9OiBhbnkpID0+IHsKICAgIGNvbnN0IG1hdGNoID0gL2xhbmd1YWdlLShcdyspLy5leGVjKGNsYXNzTmFtZSB8fCAnJyk7CiAgICBjb25zdCBjb2RlU3RyaW5nID0gU3RyaW5nKGNoaWxkcmVuKS5yZXBsYWNlKC9cbiQvLCAnJyk7CiAgICBjb25zdCBpc0Jsb2NrID0gISFtYXRjaCB8fCBjb2RlU3RyaW5nLmluY2x1ZGVzKCdcbicpOwoKICAgIGlmIChpc0Jsb2NrKSB7CiAgICAgIHJldHVybiA8Y29kZSBjbGFzc05hbWU9e2NsYXNzTmFtZX0gey4uLnByb3BzfT57Y2hpbGRyZW59PC9jb2RlPjsKICAgIH0KICAgIC8vIElubGluZSBjb2RlCiAgICByZXR1cm4gKAogICAgICA8Y29kZSB7Li4ucHJvcHN9IGNsYXNzTmFtZT0iYmctbXV0ZWQvNzAgdGV4dC1vcmFuZ2UtNjAwIGRhcms6dGV4dC1vcmFuZ2UtNDAwIHB4LTEuNSBweS0wLjUgcm91bmRlZCB0ZXh0LVswLjg1ZW1dIGZvbnQtbW9ubyBib3JkZXIgYm9yZGVyLWJvcmRlci8zMCI+CiAgICAgICAge2NoaWxkcmVufQogICAgICA8L2NvZGU+CiAgICApOwogIH0sCiAgcHJlOiAoeyBub2RlLCBjaGlsZHJlbiwgLi4ucHJvcHMgfTogYW55KSA9PiB7CiAgICByZXR1cm4gKAogICAgICA8cHJlIHsuLi5wcm9wc30gY2xhc3NOYW1lPSJteS0zIHAtNCBiZy1tdXRlZC80MCByb3VuZGVkLWxnIG92ZXJmbG93LXgtYXV0byBib3JkZXIgYm9yZGVyLWJvcmRlci81MCB0ZXh0LXNtIGZvbnQtbW9ubyBsZWFkaW5nLXJlbGF4ZWQiPgogICAgICAgIHtjaGlsZHJlbn0KICAgICAgPC9wcmU+CiAgICApOwogIH0sCn07CgpmdW5jdGlvbiBNYXJrZG93bkNvbnRlbnQoeyBjb250ZW50IH06IHsgY29udGVudDogc3RyaW5nIH0pIHsKICB0cnkgewogICAgcmV0dXJuICgKICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtc20gdGV4dC1mb3JlZ3JvdW5kIj4KICAgICAgICA8UmVhY3RNYXJrZG93biByZW1hcmtQbHVnaW5zPXtbcmVtYXJrR2ZtXX0gY29tcG9uZW50cz17bWFya2Rvd25Db21wb25lbnRzfT4KICAgICAgICAgIHtjb250ZW50IHx8ICcnfQogICAgICAgIDwvUmVhY3RNYXJrZG93bj4KICAgICAgPC9kaXY+CiAgICApOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIDxwcmUgY2xhc3NOYW1lPSJ3aGl0ZXNwYWNlLXByZS13cmFwIHRleHQtc20gbGVhZGluZy1yZWxheGVkIj57Y29udGVudH08L3ByZT47CiAgfQp9CgpmdW5jdGlvbiBUaGlua2luZ0Jsb2NrKHsgY29udGVudCB9OiB7IGNvbnRlbnQ6IHN0cmluZyB9KSB7CiAgY29uc3QgW2V4cGFuZGVkLCBzZXRFeHBhbmRlZF0gPSBSZWFjdC51c2VTdGF0ZShmYWxzZSk7CgogIHJldHVybiAoCiAgICA8YnV0dG9uCiAgICAgIG9uQ2xpY2s9eygpID0+IHNldEV4cGFuZGVkKCFleHBhbmRlZCl9CiAgICAgIGNsYXNzTmFtZT0idy1mdWxsIHRleHQtbGVmdCBtYi0zIHJvdW5kZWQtbGcgYmctbXV0ZWQvNTAgYm9yZGVyIGJvcmRlci1ib3JkZXIvNTAgcHgtMyBweS0yIHRleHQteHMgdGV4dC1tdXRlZC1mb3JlZ3JvdW5kIGhvdmVyOmJnLW11dGVkLzcwIHRyYW5zaXRpb24tY29sb3JzIgogICAgPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSI+CiAgICAgICAgPENoZXZyb25Eb3duIGNsYXNzTmFtZT17Y24oJ2gtMyB3LTMgdHJhbnNpdGlvbi10cmFuc2Zvcm0nLCBleHBhbmRlZCAmJiAncm90YXRlLTE4MCcpfSAvPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1tZWRpdW0iPlRoaW5raW5nPC9zcGFuPgogICAgICA8L2Rpdj4KICAgICAge2V4cGFuZGVkICYmICgKICAgICAgICA8cHJlIGNsYXNzTmFtZT0ibXQtMiB3aGl0ZXNwYWNlLXByZS13cmFwIHRleHQteHMgb3BhY2l0eS04MCI+e2NvbnRlbnR9PC9wcmU+CiAgICAgICl9CiAgICA8L2J1dHRvbj4KICApOwp9CgpleHBvcnQgZnVuY3Rpb24gQ2hhdE1lc3NhZ2UoewogIHJvbGUsCiAgY29udGVudCwKICB0b29sQ2FsbHMsCiAgdGhpbmtpbmcsCiAgaXNTdHJlYW1pbmcsCiAgc3RhdHVzLAogIHNob3dUb29sQ2FsbHNJbmxpbmUgPSB0cnVlLAogIGNsYXNzTmFtZSwKfTogQ2hhdE1lc3NhZ2VQcm9wcykgewogIGNvbnN0IGlzVXNlciA9IHJvbGUgPT09ICd1c2VyJzsKCiAgLy8gVXNlciBtZXNzYWdlczogcmlnaHQtYWxpZ25lZCBidWJibGUgd2l0aCBwcmltYXJ5IGNvbG9yCiAgaWYgKGlzVXNlcikgewogICAgcmV0dXJuICgKICAgICAgPGRpdiBjbGFzc05hbWU9e2NuKCdmbGV4IGp1c3RpZnktZW5kJywgY2xhc3NOYW1lKX0+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LVs4NSVdIG1kOm1heC13LVs3NSVdIHJvdW5kZWQtMnhsIHB4LTQgcHktMyBiZy1wcmltYXJ5IHRleHQtcHJpbWFyeS1mb3JlZ3JvdW5kIj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSB3aGl0ZXNwYWNlLXByZS13cmFwIj57Y29udGVudH08L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgKTsKICB9CgogIC8vIEFzc2lzdGFudCBtZXNzYWdlczogZnVsbC13aWR0aCwgbm8gYnViYmxlIOKAlCBjb250ZW50IHJlbmRlcnMgZGlyZWN0bHkKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2NuKCd3LWZ1bGwnLCBjbGFzc05hbWUpfT4KICAgICAgey8qIFRoaW5raW5nIGJsb2NrICovfQogICAgICB7dGhpbmtpbmcgJiYgPFRoaW5raW5nQmxvY2sgY29udGVudD17dGhpbmtpbmd9IC8+fQoKICAgICAgey8qIFN0YXR1cyBpbmRpY2F0b3IgKi99CiAgICAgIHtzdGF0dXMgJiYgIWNvbnRlbnQgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiB0ZXh0LXNtIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCBweS0xIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTIgdy0yIHJvdW5kZWQtZnVsbCBiZy1wcmltYXJ5IGFuaW1hdGUtcHVsc2UiIC8+CiAgICAgICAgICA8c3Bhbj57c3RhdHVzfTwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgKX0KCiAgICAgIHsvKiBNZXNzYWdlIGNvbnRlbnQg4oCUIHJlbmRlcmVkIGFzIG1hcmtkb3duLCBubyBib3VuZGluZyBib3ggKi99CiAgICAgIHtjb250ZW50ICYmIDxNYXJrZG93bkNvbnRlbnQgY29udGVudD17Y29udGVudH0gLz59CgogICAgICB7LyogU3RyZWFtaW5nIGN1cnNvciAqL30KICAgICAge2lzU3RyZWFtaW5nICYmICFjb250ZW50ICYmICFzdGF0dXMgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSBweS0yIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTIgdy0yIHJvdW5kZWQtZnVsbCBiZy1mb3JlZ3JvdW5kLzQwIGFuaW1hdGUtcHVsc2UiIC8+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0yIHctMiByb3VuZGVkLWZ1bGwgYmctZm9yZWdyb3VuZC80MCBhbmltYXRlLXB1bHNlIFthbmltYXRpb24tZGVsYXk6MTUwbXNdIiAvPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImgtMiB3LTIgcm91bmRlZC1mdWxsIGJnLWZvcmVncm91bmQvNDAgYW5pbWF0ZS1wdWxzZSBbYW5pbWF0aW9uLWRlbGF5OjMwMG1zXSIgLz4KICAgICAgICA8L2Rpdj4KICAgICAgKX0KCiAgICAgIHsvKiBJbmxpbmUgdG9vbCBjYWxscyAqL30KICAgICAge3Nob3dUb29sQ2FsbHNJbmxpbmUgJiYgdG9vbENhbGxzICYmIHRvb2xDYWxscy5sZW5ndGggPiAwICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXktMyBzcGFjZS15LTIiPgogICAgICAgICAge3Rvb2xDYWxscy5tYXAodGMgPT4gKAogICAgICAgICAgICA8VG9vbENhbGxDYXJkIGtleT17dGMuY2FsbElkfSB7Li4udGN9IC8+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgKX0KICAgIDwvZGl2PgogICk7Cn0K
+import * as React from 'react';
+import { cn } from '../../lib/utils';
+import { ToolCallCard } from './tool-call-card';
+import type { ChatMessage as ChatMessageType } from '../../useAgentChat';
+import { ChevronDown } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
+interface ChatMessageProps extends ChatMessageType {
+  /** Whether to show tool calls inline within the message. Default: true */
+  showToolCallsInline?: boolean;
+  className?: string;
+}
+
+/** Custom markdown component overrides for well-formatted AI responses. */
+const markdownComponents: Record<string, React.FC<any>> = {
+  p: ({ node, ...props }: any) => <p {...props} className="mb-3 last:mb-0 leading-relaxed" />,
+  h1: ({ node, ...props }: any) => <h1 {...props} className="text-xl font-bold mt-5 mb-2" />,
+  h2: ({ node, ...props }: any) => <h2 {...props} className="text-lg font-semibold mt-4 mb-2" />,
+  h3: ({ node, ...props }: any) => <h3 {...props} className="text-base font-semibold mt-3 mb-1.5" />,
+  h4: ({ node, ...props }: any) => <h4 {...props} className="text-sm font-semibold mt-2 mb-1" />,
+  ul: ({ node, ...props }: any) => <ul {...props} className="list-disc pl-5 mb-3 last:mb-0 space-y-1" />,
+  ol: ({ node, ...props }: any) => <ol {...props} className="list-decimal pl-5 mb-3 last:mb-0 space-y-1" />,
+  li: ({ node, ...props }: any) => <li {...props} className="leading-relaxed" />,
+  blockquote: ({ node, ...props }: any) => (
+    <blockquote {...props} className="border-l-4 border-primary/40 pl-4 py-1 my-3 bg-muted/30 rounded-r-md italic text-muted-foreground" />
+  ),
+  hr: ({ node, ...props }: any) => <hr {...props} className="my-4 border-t border-border" />,
+  a: ({ node, href, children, ...props }: any) => (
+    <a {...props} href={href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+      {children}
+    </a>
+  ),
+  table: ({ node, ...props }: any) => (
+    <div className="my-3 overflow-x-auto rounded-lg border border-border">
+      <table {...props} className="w-full border-collapse text-sm" />
+    </div>
+  ),
+  thead: ({ node, ...props }: any) => <thead {...props} className="bg-muted/50" />,
+  th: ({ node, ...props }: any) => (
+    <th {...props} className="border-b border-border px-3 py-2 text-left font-semibold text-foreground" />
+  ),
+  td: ({ node, ...props }: any) => (
+    <td {...props} className="border-b border-border/50 px-3 py-2 text-foreground" />
+  ),
+  tr: ({ node, ...props }: any) => <tr {...props} className="hover:bg-muted/30 transition-colors" />,
+  code: ({ node, className, children, ...props }: any) => {
+    const match = /language-(\w+)/.exec(className || '');
+    const codeString = String(children).replace(/\n$/, '');
+    const isBlock = !!match || codeString.includes('\n');
+
+    if (isBlock) {
+      return <code className={className} {...props}>{children}</code>;
+    }
+    // Inline code
+    return (
+      <code {...props} className="bg-muted/70 text-orange-600 dark:text-orange-400 px-1.5 py-0.5 rounded text-[0.85em] font-mono border border-border/30">
+        {children}
+      </code>
+    );
+  },
+  pre: ({ node, children, ...props }: any) => {
+    return (
+      <pre {...props} className="my-3 p-4 bg-muted/40 rounded-lg overflow-x-auto border border-border/50 text-sm font-mono leading-relaxed">
+        {children}
+      </pre>
+    );
+  },
+};
+
+function MarkdownContent({ content }: { content: string }) {
+  try {
+    return (
+      <div className="text-sm text-foreground">
+        <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
+          {content || ''}
+        </ReactMarkdown>
+      </div>
+    );
+  } catch {
+    return <pre className="whitespace-pre-wrap text-sm leading-relaxed">{content}</pre>;
+  }
+}
+
+function ThinkingBlock({ content }: { content: string }) {
+  const [expanded, setExpanded] = React.useState(false);
+
+  return (
+    <button
+      onClick={() => setExpanded(!expanded)}
+      className="w-full text-left mb-3 rounded-lg bg-muted/50 border border-border/50 px-3 py-2 text-xs text-muted-foreground hover:bg-muted/70 transition-colors"
+    >
+      <div className="flex items-center gap-1.5">
+        <ChevronDown className={cn('h-3 w-3 transition-transform', expanded && 'rotate-180')} />
+        <span className="font-medium">Thinking</span>
+      </div>
+      {expanded && (
+        <pre className="mt-2 whitespace-pre-wrap text-xs opacity-80">{content}</pre>
+      )}
+    </button>
+  );
+}
+
+export function ChatMessage({
+  role,
+  content,
+  toolCalls,
+  thinking,
+  isStreaming,
+  status,
+  showToolCallsInline = true,
+  className,
+}: ChatMessageProps) {
+  const isUser = role === 'user';
+
+  // User messages: right-aligned bubble with primary color
+  if (isUser) {
+    return (
+      <div className={cn('flex justify-end', className)}>
+        <div className="max-w-[85%] md:max-w-[75%] rounded-2xl px-4 py-3 bg-primary text-primary-foreground">
+          <p className="text-sm whitespace-pre-wrap">{content}</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Assistant messages: full-width, no bubble — content renders directly
+  return (
+    <div className={cn('w-full', className)}>
+      {/* Thinking block */}
+      {thinking && <ThinkingBlock content={thinking} />}
+
+      {/* Status indicator */}
+      {status && !content && (
+        <div className="flex items-center gap-2 text-sm text-muted-foreground py-1">
+          <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+          <span>{status}</span>
+        </div>
+      )}
+
+      {/* Message content — rendered as markdown, no bounding box */}
+      {content && <MarkdownContent content={content} />}
+
+      {/* Streaming cursor */}
+      {isStreaming && !content && !status && (
+        <div className="flex items-center gap-1 py-2">
+          <div className="h-2 w-2 rounded-full bg-foreground/40 animate-pulse" />
+          <div className="h-2 w-2 rounded-full bg-foreground/40 animate-pulse [animation-delay:150ms]" />
+          <div className="h-2 w-2 rounded-full bg-foreground/40 animate-pulse [animation-delay:300ms]" />
+        </div>
+      )}
+
+      {/* Inline tool calls */}
+      {showToolCallsInline && toolCalls && toolCalls.length > 0 && (
+        <div className="my-3 space-y-2">
+          {toolCalls.map(tc => (
+            <ToolCallCard key={tc.callId} {...tc} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

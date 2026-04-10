@@ -1,1 +1,56 @@
-IyBVc2UgYW4gb2ZmaWNpYWwgUHl0aG9uIHJ1bnRpbWUgYXMgYSBwYXJlbnQgaW1hZ2UKRlJPTSBweXRob246My4xMS1zbGltCgojIEluc3RhbGwgc3lzdGVtIGRlcGVuZGVuY2llcyBmb3IgUGxheXdyaWdodCBhbmQgYnJvd3Nlci11c2UKUlVOIGFwdC1nZXQgdXBkYXRlICYmIGFwdC1nZXQgaW5zdGFsbCAteSBcCiAgICB3Z2V0IFwKICAgIGdudXBnIFwKICAgIGxpYm5zczMgXAogICAgbGlibnNwcjQgXAogICAgbGliYXRrMS4wLTAgXAogICAgbGliYXRrLWJyaWRnZTIuMC0wIFwKICAgIGxpYmN1cHMyIFwKICAgIGxpYmRybTIgXAogICAgbGliZGJ1cy0xLTMgXAogICAgbGlieGtiY29tbW9uMCBcCiAgICBsaWJ4Y29tcG9zaXRlMSBcCiAgICBsaWJ4ZGFtYWdlMSBcCiAgICBsaWJ4ZXh0NiBcCiAgICBsaWJ4Zml4ZXMzIFwKICAgIGxpYnJhbmRyMiBcCiAgICBsaWJnYm0xIFwKICAgIGxpYmFzb3VuZDIgXAogICAgbGlicGFuZ28tMS4wLTAgXAogICAgbGlicGFuZ29jYWlyby0xLjAtMCBcCiAgICBsaWJ4MTEtNiBcCiAgICBsaWJ4MTEteGNiMSBcCiAgICBsaWJ4Y2IxIFwKICAgIGxpYnhjdXJzb3IxIFwKICAgIGxpYnhyZW5kZXIxIFwKICAgIGxpYnhzczEgXAogICAgbGlieHRzdDYgXAogICAgJiYgcm0gLXJmIC92YXIvbGliL2FwdC9saXN0cy8qCgojIFNldCB0aGUgd29ya2luZyBkaXJlY3RvcnkKV09SS0RJUiAvYXBwCgojIENvcHkgYmFja2VuZCByZXF1aXJlbWVudHMgYW5kIGluc3RhbGwgdGhlbQpDT1BZIGJhY2tlbmQvcmVxdWlyZW1lbnRzLnR4dCAuClJVTiBwaXAgaW5zdGFsbCAtLW5vLWNhY2hlLWRpciAtciByZXF1aXJlbWVudHMudHh0ClJVTiBwaXAgaW5zdGFsbCAtLW5vLWNhY2hlLWRpciB1dmljb3JuIHBsYXl3cmlnaHQgYnJvd3Nlci11c2UKUlVOIHBsYXl3cmlnaHQgaW5zdGFsbCAtLXdpdGgtZGVwcyBjaHJvbWl1bQoKIyBDb3B5IHRoZSBiYWNrZW5kIGFuZCBmcm9udGVuZCBkaXN0IGZpbGVzCkNPUFkgYmFja2VuZC8gLi9iYWNrZW5kLwpDT1BZIGZyb250ZW5kL2Rpc3QvIC4vc3RhdGljLwoKIyBFbnZpcm9ubWVudCB2YXJpYWJsZXMgZm9yIEh1Z2dpbmcgRmFjZQpFTlYgUE9SVD03ODYwCkVOViBQWVRIT05VTkJVRkZFUkVEPTEKCiMgRXhwb3NlIHRoZSBwb3J0IEh1Z2dpbmcgRmFjZSBleHBlY3RzCkVYUE9TRSA3ODYwCgojIENyZWF0ZSBhIHNpbXBsZSBGYXN0QVBJIHJ1bm5lciBpZiBtYWluLnB5IGRvZXNuJ3QgaGF2ZSBvbmUsIAojIG9yIHJ1biBtYWluLnB5IGRpcmVjdGx5IGlmIGl0IGhvc3RzIHRoZSBzZXJ2ZXIKQ01EIFsicHl0aG9uIiwgImJhY2tlbmQvbWFpbi5weSJdCg==
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim
+
+# Install system dependencies for Playwright and browser-use
+RUN apt-get update && apt-get install -y \
+    wget \
+    gnupg \
+    libnss3 \
+    libnspr4 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libcups2 \
+    libdrm2 \
+    libdbus-1-3 \
+    libxkbcommon0 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxext6 \
+    libxfixes3 \
+    librandr2 \
+    libgbm1 \
+    libasound2 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libx11-6 \
+    libx11-xcb1 \
+    libxcb1 \
+    libxcursor1 \
+    libxrender1 \
+    libxss1 \
+    libxtst6 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory
+WORKDIR /app
+
+# Copy backend requirements and install them
+COPY backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir uvicorn playwright browser-use
+RUN playwright install --with-deps chromium
+
+# Copy the backend and frontend dist files
+COPY backend/ ./backend/
+COPY frontend/dist/ ./static/
+
+# Environment variables for Hugging Face
+ENV PORT=7860
+ENV PYTHONUNBUFFERED=1
+
+# Expose the port Hugging Face expects
+EXPOSE 7860
+
+# Create a simple FastAPI runner if main.py doesn't have one, 
+# or run main.py directly if it hosts the server
+CMD ["python", "backend/main.py"]

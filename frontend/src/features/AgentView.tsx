@@ -1,1 +1,75 @@
-aW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyB1c2VBZ2VudENoYXQgfSBmcm9tICcuLi91c2VBZ2VudENoYXQnOwppbXBvcnQgeyBDaGF0TWVzc2FnZSB9IGZyb20gJy4uL2NvbXBvbmVudHMvdWkvY2hhdC1tZXNzYWdlJzsKaW1wb3J0IHsgQ2hhdElucHV0IH0gZnJvbSAnLi4vY29tcG9uZW50cy91aS9jaGF0LWlucHV0JzsKaW1wb3J0IHsgdXNlRGlhbGVjdCB9IGZyb20gJy4vRGlhbGVjdENvbnRleHQnOwppbXBvcnQgeyBCb3QsIE1lc3NhZ2VTcXVhcmUsIFNwYXJrbGVzIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKCmV4cG9ydCBmdW5jdGlvbiBBZ2VudFZpZXcoKSB7CiAgY29uc3QgeyB0LCBkaWFsZWN0IH0gPSB1c2VEaWFsZWN0KCk7CiAgCiAgY29uc3QgeyBtZXNzYWdlcywgc2VuZE1lc3NhZ2UsIGlzU3RyZWFtaW5nLCBzdG9wR2VuZXJhdGlvbiwgZXJyb3IgfSA9IHVzZUFnZW50Q2hhdCh7CiAgICBzdHJlYW1GdW5jOiAncnVuX2FnZW50X3Rhc2tfc3RyZWFtaW5nJywKICAgIC8vIFdlIHBhc3MgZGlhbGVjdCBhcyBhbiBleHRyYSBhcmcgdG8gdGhlIGJhY2tlbmQKICAgIG9uQmVmb3JlU2VuZDogKGFyZ3MpID0+ICh7IC4uLmFyZ3MsIGRpYWxlY3QgfSkKICB9KTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGgtW2NhbGMoMTAwdmgtMTQwcHgpXSBtYXgtdy00eGwgbXgtYXV0byI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEgb3ZlcmZsb3cteS1hdXRvIHB4LTQgcHktNiI+CiAgICAgICAge21lc3NhZ2VzLmxlbmd0aCA9PT0gMCA/ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLWZ1bGwgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgdGV4dC1jZW50ZXIgc3BhY2UteS00Ij4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InJvdW5kZWQtZnVsbCBiZy1wcmltYXJ5LzEwIHAtNiBzaGFkb3ctZ2xvdyI+CiAgICAgICAgICAgICAgPEJvdCBjbGFzc05hbWU9ImgtMTIgdy0xMiB0ZXh0LXByaW1hcnkiIC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS0yIj4KICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LTJ4bCBmb250LWhlYWRpbmcgZm9udC1ib2xkIj57dC53ZWxjb21lfTwvaDI+CiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LW11dGVkLWZvcmVncm91bmQgbWF4LXctbWQiPgogICAgICAgICAgICAgICAge3QudGFza1BsYWNlaG9sZGVyfQogICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0xIHNtOmdyaWQtY29scy0yIGdhcC0zIG10LTgiPgogICAgICAgICAgICAgIHtbCiAgICAgICAgICAgICAgICAi2YTYrti1INmF2K3YqtmI2Ykg2YXZiNmC2Lkg2YjZitmD2YrYqNmK2K/ZitinINi52YYg2YXYtdixIiwKICAgICAgICAgICAgICAgICLYp9iz2KrYrtix2Kwg2YLYp9im2YXYqSDYp9mE2YXZhtiq2KzYp9iqINmF2YYg2YfYsNinINin2YTZhdiq2KzYsSIsCiAgICAgICAgICAgICAgICAi2KfYqNit2Ksg2LnZhiDYotiu2LEg2KPYrtio2KfYsSDYp9mE2KrZg9mG2YjZhNmI2KzZitinINin2YTZitmI2YUiLAogICAgICAgICAgICAgICAgItit2YTZhCDYs9mK2KfYs9ipINin2YTYrti12YjYtdmK2Kkg2YTZh9iw2Kcg2KfZhNmF2YjZgti5IgogICAgICAgICAgICAgIF0ubWFwKChwcm9tcHQsIGkpID0+ICgKICAgICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZW5kTWVzc2FnZShwcm9tcHQpfQogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9InAtMyB0ZXh0LXNtIHJvdW5kZWQteGwgYm9yZGVyIGJvcmRlci13aGl0ZS8xMCBiZy1jYXJkLzUwIGhvdmVyOmJnLXByaW1hcnkvNSBob3Zlcjpib3JkZXItcHJpbWFyeS8zMCB0cmFuc2l0aW9uLWFsbCB0ZXh0LXJpZ2h0IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtMyBncm91cCIKICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgPFNwYXJrbGVzIGNsYXNzTmFtZT0iaC00IHctNCB0ZXh0LXByaW1hcnkgb3BhY2l0eS0wIGdyb3VwLWhvdmVyOm9wYWNpdHktMTAwIHRyYW5zaXRpb24tb3BhY2l0eSIgLz4KICAgICAgICAgICAgICAgICAgPHNwYW4+e3Byb21wdH08L3NwYW4+CiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApIDogKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktNiBtYXgtdy0zeGwgbXgtYXV0byI+CiAgICAgICAgICAgIHttZXNzYWdlcy5tYXAoKG1zZykgPT4gKAogICAgICAgICAgICAgIDxDaGF0TWVzc2FnZSBrZXk9e21zZy5pZH0gey4uLm1zZ30gLz4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTQgYm9yZGVyLXQgYmctYmFja2dyb3VuZC84MCBiYWNrZHJvcC1ibHVyLW1kIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctM3hsIG14LWF1dG8iPgogICAgICAgICAge2Vycm9yICYmICgKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTQgcC0zIHJvdW5kZWQtbGcgYmctZGVzdHJ1Y3RpdmUvMTAgYm9yZGVyIGJvcmRlci1kZXN0cnVjdGl2ZS8yMCB0ZXh0LWRlc3RydWN0aXZlIHRleHQtc20iPgogICAgICAgICAgICAgIHtlcnJvcn0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApfQogICAgICAgICAgPENoYXRJbnB1dCAKICAgICAgICAgICAgb25TZW5kPXtzZW5kTWVzc2FnZX0gCiAgICAgICAgICAgIGlzU3RyZWFtaW5nPXtpc1N0cmVhbWluZ30gCiAgICAgICAgICAgIG9uU3RvcD17c3RvcEdlbmVyYXRpb259IAogICAgICAgICAgICBwbGFjZWhvbGRlcj17dC50YXNrUGxhY2Vob2xkZXJ9CiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K
+import React, { useState } from 'react';
+import { useAgentChat } from '../useAgentChat';
+import { ChatMessage } from '../components/ui/chat-message';
+import { ChatInput } from '../components/ui/chat-input';
+import { useDialect } from './DialectContext';
+import { Bot, MessageSquare, Sparkles } from 'lucide-react';
+
+export function AgentView() {
+  const { t, dialect } = useDialect();
+  
+  const { messages, sendMessage, isStreaming, stopGeneration, error } = useAgentChat({
+    streamFunc: 'run_agent_task_streaming',
+    // We pass dialect as an extra arg to the backend
+    onBeforeSend: (args) => ({ ...args, dialect })
+  });
+
+  return (
+    <div className="flex flex-col h-[calc(100vh-140px)] max-w-4xl mx-auto">
+      <div className="flex-1 overflow-y-auto px-4 py-6">
+        {messages.length === 0 ? (
+          <div className="h-full flex flex-col items-center justify-center text-center space-y-4">
+            <div className="rounded-full bg-primary/10 p-6 shadow-glow">
+              <Bot className="h-12 w-12 text-primary" />
+            </div>
+            <div className="space-y-2">
+              <h2 className="text-2xl font-heading font-bold">{t.welcome}</h2>
+              <p className="text-muted-foreground max-w-md">
+                {t.taskPlaceholder}
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
+              {[
+                "لخص محتوى موقع ويكيبيديا عن مصر",
+                "استخرج قائمة المنتجات من هذا المتجر",
+                "ابحث عن آخر أخبار التكنولوجيا اليوم",
+                "حلل سياسة الخصوصية لهذا الموقع"
+              ].map((prompt, i) => (
+                <button
+                  key={i}
+                  onClick={() => sendMessage(prompt)}
+                  className="p-3 text-sm rounded-xl border border-white/10 bg-card/50 hover:bg-primary/5 hover:border-primary/30 transition-all text-right flex items-center justify-between gap-3 group"
+                >
+                  <Sparkles className="h-4 w-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span>{prompt}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="space-y-6 max-w-3xl mx-auto">
+            {messages.map((msg) => (
+              <ChatMessage key={msg.id} {...msg} />
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="p-4 border-t bg-background/80 backdrop-blur-md">
+        <div className="max-w-3xl mx-auto">
+          {error && (
+            <div className="mb-4 p-3 rounded-lg bg-destructive/10 border border-destructive/20 text-destructive text-sm">
+              {error}
+            </div>
+          )}
+          <ChatInput 
+            onSend={sendMessage} 
+            isStreaming={isStreaming} 
+            onStop={stopGeneration} 
+            placeholder={t.taskPlaceholder}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

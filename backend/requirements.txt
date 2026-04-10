@@ -1,1 +1,3 @@
-bmV4dHRva2VuCmJlYXV0aWZ1bHNvdXA0Cm1hcmtkb3duaWZ5Cg==
+nexttoken
+beautifulsoup4
+markdownify

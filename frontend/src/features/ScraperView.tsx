@@ -1,1 +1,130 @@
-aW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBCdXR0b24gfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL2J1dHRvbic7CmltcG9ydCB7IENhcmQsIENhcmRDb250ZW50LCBDYXJkSGVhZGVyLCBDYXJkVGl0bGUsIENhcmREZXNjcmlwdGlvbiB9IGZyb20gJy4uL2NvbXBvbmVudHMvdWkvY2FyZCc7CmltcG9ydCB7IElucHV0IH0gZnJvbSAnLi4vY29tcG9uZW50cy91aS9pbnB1dCc7CmltcG9ydCB7IFNwaW5uZXIgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL3NwaW5uZXInOwppbXBvcnQgeyBTY3JvbGxBcmVhIH0gZnJvbSAnLi4vY29tcG9uZW50cy91aS9zY3JvbGwtYXJlYSc7CmltcG9ydCB7IFRhYnMsIFRhYnNDb250ZW50LCBUYWJzTGlzdCwgVGFic1RyaWdnZXIgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL3RhYnMnOwppbXBvcnQgeyB1c2VEaWFsZWN0IH0gZnJvbSAnLi9EaWFsZWN0Q29udGV4dCc7CmltcG9ydCB7IHJwY0NhbGwsIGludmFsaWRhdGVDYWNoZSB9IGZyb20gJy4uL2FwaSc7CmltcG9ydCB7IEZpbGVUZXh0LCBHbG9iZSwgTGlzdCwgQ29weSwgQ2hlY2sgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgUmVhY3RNYXJrZG93biBmcm9tICdyZWFjdC1tYXJrZG93bic7CmltcG9ydCByZW1hcmtHZm0gZnJvbSAncmVtYXJrLWdmbSc7CgpleHBvcnQgZnVuY3Rpb24gU2NyYXBlclZpZXcoKSB7CiAgY29uc3QgeyB0LCBkaWFsZWN0IH0gPSB1c2VEaWFsZWN0KCk7CiAgY29uc3QgW3VybCwgc2V0VXJsXSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW3Jlc3VsdCwgc2V0UmVzdWx0XSA9IHVzZVN0YXRlPGFueT4obnVsbCk7CiAgY29uc3QgW2Vycm9yLCBzZXRFcnJvcl0gPSB1c2VTdGF0ZSgnJyk7CiAgY29uc3QgW2NvcGllZCwgc2V0Q29waWVkXSA9IHVzZVN0YXRlKGZhbHNlKTsKCiAgY29uc3QgaGFuZGxlU2NyYXBlID0gYXN5bmMgKCkgPT4gewogICAgaWYgKCF1cmwpIHJldHVybjsKICAgIHNldExvYWRpbmcodHJ1ZSk7CiAgICBzZXRFcnJvcignJyk7CiAgICBzZXRSZXN1bHQobnVsbCk7CiAgICBjb25zb2xlLmxvZygiW0FDVElPTl9TVEFSVF0gU2NyYXBlIFVSTDoiLCB1cmwpOwoKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IHJwY0NhbGwoeyBmdW5jOiAnc2NyYXBlX3VybCcsIGFyZ3M6IHsgdXJsLCBkaWFsZWN0IH0gfSk7CiAgICAgIHNldFJlc3VsdChyZXMpOwogICAgICBjb25zb2xlLmxvZygiW0ZFVENIX1JFU1BPTlNFXSBTY3JhcGUgc3VjY2VzcyIpOwogICAgICBpbnZhbGlkYXRlQ2FjaGUoWydnZXRfaGlzdG9yeV9ycGMnXSk7CiAgICB9IGNhdGNoIChlcnI6IGFueSkgewogICAgICBzZXRFcnJvcihlcnIubWVzc2FnZSB8fCAiRXJyb3IiKTsKICAgICAgY29uc29sZS5lcnJvcigiW0ZFVENIX0VSUk9SXSIsIGVycik7CiAgICB9IGZpbmFsbHkgewogICAgICBzZXRMb2FkaW5nKGZhbHNlKTsKICAgIH0KICB9OwoKICBjb25zdCBjb3B5VG9DbGlwYm9hcmQgPSAoKSA9PiB7CiAgICBpZiAocmVzdWx0Py5tYXJrZG93bikgewogICAgICBuYXZpZ2F0b3IuY2xpcGJvYXJkLndyaXRlVGV4dChyZXN1bHQubWFya2Rvd24pOwogICAgICBzZXRDb3BpZWQodHJ1ZSk7CiAgICAgIHNldFRpbWVvdXQoKCkgPT4gc2V0Q29waWVkKGZhbHNlKSwgMjAwMCk7CiAgICB9CiAgfTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTYgbWF4LXctNXhsIG14LWF1dG8iPgogICAgICA8Q2FyZCBjbGFzc05hbWU9ImJvcmRlci1wcmltYXJ5LzIwIGJnLWNhcmQvNTAgYmFja2Ryb3AtYmx1ci1zbSI+CiAgICAgICAgPENhcmRIZWFkZXI+CiAgICAgICAgICA8Q2FyZFRpdGxlIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgICA8R2xvYmUgY2xhc3NOYW1lPSJoLTUgdy01IHRleHQtcHJpbWFyeSIgLz4KICAgICAgICAgICAge3Quc2NyYXBlfQogICAgICAgICAgPC9DYXJkVGl0bGU+CiAgICAgICAgICA8Q2FyZERlc2NyaXB0aW9uPnt0LmRlc2NyaXB0aW9ufTwvQ2FyZERlc2NyaXB0aW9uPgogICAgICAgIDwvQ2FyZEhlYWRlcj4KICAgICAgICA8Q2FyZENvbnRlbnQ+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBzbTpmbGV4LXJvdyBnYXAtMyI+CiAgICAgICAgICAgIDxJbnB1dCAKICAgICAgICAgICAgICBwbGFjZWhvbGRlcj17dC51cmxQbGFjZWhvbGRlcn0gCiAgICAgICAgICAgICAgdmFsdWU9e3VybH0gCiAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRVcmwoZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleC0xIgogICAgICAgICAgICAgIG9uS2V5RG93bj17KGUpID0+IGUua2V5ID09PSAnRW50ZXInICYmIGhhbmRsZVNjcmFwZSgpfQogICAgICAgICAgICAvPgogICAgICAgICAgICA8QnV0dG9uIG9uQ2xpY2s9e2hhbmRsZVNjcmFwZX0gZGlzYWJsZWQ9e2xvYWRpbmcgfHwgIXVybH0gY2xhc3NOYW1lPSJtaW4tdy1bMTIwcHhdIj4KICAgICAgICAgICAgICB7bG9hZGluZyA/IDxTcGlubmVyIGNsYXNzTmFtZT0ibXItMiBoLTQgdy00IiAvPiA6IHQuc2NyYXBlQnRufQogICAgICAgICAgICA8L0J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAge2Vycm9yICYmIDxwIGNsYXNzTmFtZT0idGV4dC1kZXN0cnVjdGl2ZSB0ZXh0LXNtIG10LTMiPntlcnJvcn08L3A+fQogICAgICAgIDwvQ2FyZENvbnRlbnQ+CiAgICAgIDwvQ2FyZD4KCiAgICAgIHtyZXN1bHQgJiYgKAogICAgICAgIDxDYXJkIGNsYXNzTmFtZT0ib3ZlcmZsb3ctaGlkZGVuIGJvcmRlci1wcmltYXJ5LzIwIj4KICAgICAgICAgIDxDYXJkSGVhZGVyIGNsYXNzTmFtZT0iYmctbXV0ZWQvMzAgcGItMyI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICA8Q2FyZFRpdGxlIGNsYXNzTmFtZT0idGV4dC1sZyI+e3Jlc3VsdC5tZXRhZGF0YT8udGl0bGUgfHwgIlNjcmFwZSBSZXN1bHQifTwvQ2FyZFRpdGxlPgogICAgICAgICAgICAgICAgPENhcmREZXNjcmlwdGlvbiBjbGFzc05hbWU9InRydW5jYXRlIG1heC13LW1kIj57cmVzdWx0Lm1ldGFkYXRhPy51cmx9PC9DYXJkRGVzY3JpcHRpb24+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPEJ1dHRvbiB2YXJpYW50PSJvdXRsaW5lIiBzaXplPSJzbSIgb25DbGljaz17Y29weVRvQ2xpcGJvYXJkfSBjbGFzc05hbWU9ImdhcC0yIj4KICAgICAgICAgICAgICAgIHtjb3BpZWQgPyA8Q2hlY2sgY2xhc3NOYW1lPSJoLTQgdy00IiAvPiA6IDxDb3B5IGNsYXNzTmFtZT0iaC00IHctNCIgLz59CiAgICAgICAgICAgICAgICB7Y29waWVkID8gIkNvcGllZCIgOiAiQ29weSJ9CiAgICAgICAgICAgICAgPC9CdXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9DYXJkSGVhZGVyPgogICAgICAgICAgPENhcmRDb250ZW50IGNsYXNzTmFtZT0icC0wIj4KICAgICAgICAgICAgPFRhYnMgZGVmYXVsdFZhbHVlPSJtYXJrZG93biIgY2xhc3NOYW1lPSJ3LWZ1bGwiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJweC02IGJvcmRlci1iIGJnLW11dGVkLzEwIj4KICAgICAgICAgICAgICAgIDxUYWJzTGlzdCBjbGFzc05hbWU9ImJnLXRyYW5zcGFyZW50IGJvcmRlci1iLTAgLW1iLXB4Ij4KICAgICAgICAgICAgICAgICAgPFRhYnNUcmlnZ2VyIHZhbHVlPSJtYXJrZG93biIgY2xhc3NOYW1lPSJkYXRhLVtzdGF0ZT1hY3RpdmVdOmJnLXByaW1hcnkvMTAgcm91bmRlZC1ub25lIGJvcmRlci1iLTIgYm9yZGVyLXRyYW5zcGFyZW50IGRhdGEtW3N0YXRlPWFjdGl2ZV06Ym9yZGVyLXByaW1hcnkgcHktMyI+CiAgICAgICAgICAgICAgICAgICAgPEZpbGVUZXh0IGNsYXNzTmFtZT0iaC00IHctNCBtbC0yIiAvPgogICAgICAgICAgICAgICAgICAgIHt0Lm1hcmtkb3dufQogICAgICAgICAgICAgICAgICA8L1RhYnNUcmlnZ2VyPgogICAgICAgICAgICAgICAgICA8VGFic1RyaWdnZXIgdmFsdWU9Im1ldGFkYXRhIiBjbGFzc05hbWU9ImRhdGEtW3N0YXRlPWFjdGl2ZV06YmctcHJpbWFyeS8xMCByb3VuZGVkLW5vbmUgYm9yZGVyLWItMiBib3JkZXItdHJhbnNwYXJlbnQgZGF0YS1bc3RhdGU9YWN0aXZlXTpib3JkZXItcHJpbWFyeSBweS0zIj4KICAgICAgICAgICAgICAgICAgICA8TGlzdCBjbGFzc05hbWU9ImgtNCB3LTQgbWwtMiIgLz4KICAgICAgICAgICAgICAgICAgICB7dC5tZXRhZGF0YX0KICAgICAgICAgICAgICAgICAgPC9UYWJzVHJpZ2dlcj4KICAgICAgICAgICAgICAgIDwvVGFic0xpc3Q+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPFRhYnNDb250ZW50IHZhbHVlPSJtYXJrZG93biIgY2xhc3NOYW1lPSJwLTAgbS0wIj4KICAgICAgICAgICAgICAgIDxTY3JvbGxBcmVhIGNsYXNzTmFtZT0iaC1bNTAwcHhdIHctZnVsbCBwLTYiPgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icHJvc2UgcHJvc2UtaW52ZXJ0IG1heC13LW5vbmUgcHJvc2UtYW1iZXIiPgogICAgICAgICAgICAgICAgICAgIDxSZWFjdE1hcmtkb3duIHJlbWFya1BsdWdpbnM9e1tyZW1hcmtHZm1dfT4KICAgICAgICAgICAgICAgICAgICAgIHtyZXN1bHQubWFya2Rvd259CiAgICAgICAgICAgICAgICAgICAgPC9SZWFjdE1hcmtkb3duPgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvU2Nyb2xsQXJlYT4KICAgICAgICAgICAgICA8L1RhYnNDb250ZW50PgogICAgICAgICAgICAgIDxUYWJzQ29udGVudCB2YWx1ZT0ibWV0YWRhdGEiIGNsYXNzTmFtZT0icC02Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGdhcC00Ij4KICAgICAgICAgICAgICAgICAge09iamVjdC5lbnRyaWVzKHJlc3VsdC5tZXRhZGF0YSB8fCB7fSkubWFwKChba2V5LCB2YWxdOiBbc3RyaW5nLCBhbnldKSA9PiAoCiAgICAgICAgICAgICAgICAgICAgPGRpdiBrZXk9e2tleX0gY2xhc3NOYW1lPSJwLTMgcm91bmRlZC1sZyBiZy1tdXRlZC8zMCBib3JkZXIgYm9yZGVyLXdoaXRlLzUiPgogICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQteHMgdGV4dC1tdXRlZC1mb3JlZ3JvdW5kIHVwcGVyY2FzZSB0cmFja2luZy13aWRlciBtYi0xIj57a2V5fTwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZvbnQtbWVkaXVtIHRydW5jYXRlIj57U3RyaW5nKHZhbCl9PC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9UYWJzQ29udGVudD4KICAgICAgICAgICAgPC9UYWJzPgogICAgICAgICAgPC9DYXJkQ29udGVudD4KICAgICAgICA8L0NhcmQ+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+import React, { useState } from 'react';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Spinner } from '../components/ui/spinner';
+import { ScrollArea } from '../components/ui/scroll-area';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import { useDialect } from './DialectContext';
+import { rpcCall, invalidateCache } from '../api';
+import { FileText, Globe, List, Copy, Check } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
+export function ScraperView() {
+  const { t, dialect } = useDialect();
+  const [url, setUrl] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
+  const [error, setError] = useState('');
+  const [copied, setCopied] = useState(false);
+
+  const handleScrape = async () => {
+    if (!url) return;
+    setLoading(true);
+    setError('');
+    setResult(null);
+    console.log("[ACTION_START] Scrape URL:", url);
+
+    try {
+      const res = await rpcCall({ func: 'scrape_url', args: { url, dialect } });
+      setResult(res);
+      console.log("[FETCH_RESPONSE] Scrape success");
+      invalidateCache(['get_history_rpc']);
+    } catch (err: any) {
+      setError(err.message || "Error");
+      console.error("[FETCH_ERROR]", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const copyToClipboard = () => {
+    if (result?.markdown) {
+      navigator.clipboard.writeText(result.markdown);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  return (
+    <div className="space-y-6 max-w-5xl mx-auto">
+      <Card className="border-primary/20 bg-card/50 backdrop-blur-sm">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Globe className="h-5 w-5 text-primary" />
+            {t.scrape}
+          </CardTitle>
+          <CardDescription>{t.description}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Input 
+              placeholder={t.urlPlaceholder} 
+              value={url} 
+              onChange={(e) => setUrl(e.target.value)}
+              className="flex-1"
+              onKeyDown={(e) => e.key === 'Enter' && handleScrape()}
+            />
+            <Button onClick={handleScrape} disabled={loading || !url} className="min-w-[120px]">
+              {loading ? <Spinner className="mr-2 h-4 w-4" /> : t.scrapeBtn}
+            </Button>
+          </div>
+          {error && <p className="text-destructive text-sm mt-3">{error}</p>}
+        </CardContent>
+      </Card>
+
+      {result && (
+        <Card className="overflow-hidden border-primary/20">
+          <CardHeader className="bg-muted/30 pb-3">
+            <div className="flex items-center justify-between">
+              <div>
+                <CardTitle className="text-lg">{result.metadata?.title || "Scrape Result"}</CardTitle>
+                <CardDescription className="truncate max-w-md">{result.metadata?.url}</CardDescription>
+              </div>
+              <Button variant="outline" size="sm" onClick={copyToClipboard} className="gap-2">
+                {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+                {copied ? "Copied" : "Copy"}
+              </Button>
+            </div>
+          </CardHeader>
+          <CardContent className="p-0">
+            <Tabs defaultValue="markdown" className="w-full">
+              <div className="px-6 border-b bg-muted/10">
+                <TabsList className="bg-transparent border-b-0 -mb-px">
+                  <TabsTrigger value="markdown" className="data-[state=active]:bg-primary/10 rounded-none border-b-2 border-transparent data-[state=active]:border-primary py-3">
+                    <FileText className="h-4 w-4 ml-2" />
+                    {t.markdown}
+                  </TabsTrigger>
+                  <TabsTrigger value="metadata" className="data-[state=active]:bg-primary/10 rounded-none border-b-2 border-transparent data-[state=active]:border-primary py-3">
+                    <List className="h-4 w-4 ml-2" />
+                    {t.metadata}
+                  </TabsTrigger>
+                </TabsList>
+              </div>
+              <TabsContent value="markdown" className="p-0 m-0">
+                <ScrollArea className="h-[500px] w-full p-6">
+                  <div className="prose prose-invert max-w-none prose-amber">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {result.markdown}
+                    </ReactMarkdown>
+                  </div>
+                </ScrollArea>
+              </TabsContent>
+              <TabsContent value="metadata" className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {Object.entries(result.metadata || {}).map(([key, val]: [string, any]) => (
+                    <div key={key} className="p-3 rounded-lg bg-muted/30 border border-white/5">
+                      <div className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{key}</div>
+                      <div className="font-medium truncate">{String(val)}</div>
+                    </div>
+                  ))}
+                </div>
+              </TabsContent>
+            </Tabs>
+          </CardContent>
+        </Card>
+      )}
+    </div>
+  );
+}

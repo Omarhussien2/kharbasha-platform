@@ -1,1 +1,75 @@
-aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAicmVhY3QiOwppbXBvcnQgeyBjbiB9IGZyb20gIi4uLy4uL2xpYi91dGlscyI7CgpmdW5jdGlvbiBDYXJkKHsgY2xhc3NOYW1lLCAuLi5wcm9wcyB9OiBSZWFjdC5IVE1MQXR0cmlidXRlczxIVE1MRGl2RWxlbWVudD4pIHsKICByZXR1cm4gKAogICAgPGRpdgogICAgICBjbGFzc05hbWU9e2NuKAogICAgICAgICJyb3VuZGVkLXhsIGJvcmRlciBiZy1jYXJkIHRleHQtY2FyZC1mb3JlZ3JvdW5kIHNoYWRvdy1jYXJkIiwKICAgICAgICBjbGFzc05hbWUKICAgICAgKX0KICAgICAgey4uLnByb3BzfQogICAgLz4KICApOwp9CgpmdW5jdGlvbiBDYXJkSGVhZGVyKHsKICBjbGFzc05hbWUsCiAgLi4ucHJvcHMKfTogUmVhY3QuSFRNTEF0dHJpYnV0ZXM8SFRNTERpdkVsZW1lbnQ+KSB7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgY2xhc3NOYW1lPXtjbigiZmxleCBmbGV4LWNvbCBzcGFjZS15LTEuNSBwLTYiLCBjbGFzc05hbWUpfQogICAgICB7Li4ucHJvcHN9CiAgICAvPgogICk7Cn0KCmZ1bmN0aW9uIENhcmRUaXRsZSh7CiAgY2xhc3NOYW1lLAogIC4uLnByb3BzCn06IFJlYWN0LkhUTUxBdHRyaWJ1dGVzPEhUTUxEaXZFbGVtZW50PikgewogIHJldHVybiAoCiAgICA8ZGl2CiAgICAgIGNsYXNzTmFtZT17Y24oImZvbnQtc2VtaWJvbGQgbGVhZGluZy1ub25lIHRyYWNraW5nLXRpZ2h0IiwgY2xhc3NOYW1lKX0KICAgICAgey4uLnByb3BzfQogICAgLz4KICApOwp9CgpmdW5jdGlvbiBDYXJkRGVzY3JpcHRpb24oewogIGNsYXNzTmFtZSwKICAuLi5wcm9wcwp9OiBSZWFjdC5IVE1MQXR0cmlidXRlczxIVE1MRGl2RWxlbWVudD4pIHsKICByZXR1cm4gKAogICAgPGRpdgogICAgICBjbGFzc05hbWU9e2NuKCJ0ZXh0LXNtIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCIsIGNsYXNzTmFtZSl9CiAgICAgIHsuLi5wcm9wc30KICAgIC8+CiAgKTsKfQoKZnVuY3Rpb24gQ2FyZENvbnRlbnQoewogIGNsYXNzTmFtZSwKICAuLi5wcm9wcwp9OiBSZWFjdC5IVE1MQXR0cmlidXRlczxIVE1MRGl2RWxlbWVudD4pIHsKICByZXR1cm4gPGRpdiBjbGFzc05hbWU9e2NuKCJwLTYgcHQtMCIsIGNsYXNzTmFtZSl9IHsuLi5wcm9wc30gLz47Cn0KCmZ1bmN0aW9uIENhcmRGb290ZXIoewogIGNsYXNzTmFtZSwKICAuLi5wcm9wcwp9OiBSZWFjdC5IVE1MQXR0cmlidXRlczxIVE1MRGl2RWxlbWVudD4pIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2NuKCJmbGV4IGl0ZW1zLWNlbnRlciBwLTYgcHQtMCIsIGNsYXNzTmFtZSl9IHsuLi5wcm9wc30gLz4KICApOwp9CgpleHBvcnQgewogIENhcmQsCiAgQ2FyZEhlYWRlciwKICBDYXJkVGl0bGUsCiAgQ2FyZERlc2NyaXB0aW9uLAogIENhcmRDb250ZW50LAogIENhcmRGb290ZXIsCn07Cg==
+import * as React from "react";
+import { cn } from "../../lib/utils";
+
+function Card({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn(
+        "rounded-xl border bg-card text-card-foreground shadow-card",
+        className
+      )}
+      {...props}
+    />
+  );
+}
+
+function CardHeader({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn("flex flex-col space-y-1.5 p-6", className)}
+      {...props}
+    />
+  );
+}
+
+function CardTitle({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn("font-semibold leading-none tracking-tight", className)}
+      {...props}
+    />
+  );
+}
+
+function CardDescription({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn("text-sm text-muted-foreground", className)}
+      {...props}
+    />
+  );
+}
+
+function CardContent({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return <div className={cn("p-6 pt-0", className)} {...props} />;
+}
+
+function CardFooter({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div className={cn("flex items-center p-6 pt-0", className)} {...props} />
+  );
+}
+
+export {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+};

@@ -1,1 +1,140 @@
-aW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBCdXR0b24gfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL2J1dHRvbic7CmltcG9ydCB7IENhcmQsIENhcmRDb250ZW50LCBDYXJkSGVhZGVyLCBDYXJkVGl0bGUsIENhcmREZXNjcmlwdGlvbiB9IGZyb20gJy4uL2NvbXBvbmVudHMvdWkvY2FyZCc7CmltcG9ydCB7IElucHV0IH0gZnJvbSAnLi4vY29tcG9uZW50cy91aS9pbnB1dCc7CmltcG9ydCB7IFNwaW5uZXIgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL3NwaW5uZXInOwppbXBvcnQgeyBQcm9ncmVzcyB9IGZyb20gJy4uL2NvbXBvbmVudHMvdWkvcHJvZ3Jlc3MnOwppbXBvcnQgeyBTY3JvbGxBcmVhIH0gZnJvbSAnLi4vY29tcG9uZW50cy91aS9zY3JvbGwtYXJlYSc7CmltcG9ydCB7IEJhZGdlIH0gZnJvbSAnLi4vY29tcG9uZW50cy91aS9iYWRnZSc7CmltcG9ydCB7IHVzZURpYWxlY3QgfSBmcm9tICcuL0RpYWxlY3RDb250ZXh0JzsKaW1wb3J0IHsgc3RyZWFtQ2FsbCwgaW52YWxpZGF0ZUNhY2hlIH0gZnJvbSAnLi4vYXBpJzsKaW1wb3J0IHsgTGF5b3V0R3JpZCwgR2xvYmUsIEV4dGVybmFsTGluaywgSGFzaCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CgpleHBvcnQgZnVuY3Rpb24gQ3Jhd2xlclZpZXcoKSB7CiAgY29uc3QgeyB0LCBkaWFsZWN0IH0gPSB1c2VEaWFsZWN0KCk7CiAgY29uc3QgW3VybCwgc2V0VXJsXSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbbGltaXQsIHNldExpbWl0XSA9IHVzZVN0YXRlKDUpOwogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbc3RhdHVzLCBzZXRTdGF0dXNdID0gdXNlU3RhdGUoJycpOwogIGNvbnN0IFtwcm9ncmVzcywgc2V0UHJvZ3Jlc3NdID0gdXNlU3RhdGUoMCk7CiAgY29uc3QgW3BhZ2VzLCBzZXRQYWdlc10gPSB1c2VTdGF0ZTxhbnlbXT4oW10pOwogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGUoJycpOwoKICBjb25zdCBoYW5kbGVDcmF3bCA9IGFzeW5jICgpID0+IHsKICAgIGlmICghdXJsKSByZXR1cm47CiAgICBzZXRMb2FkaW5nKHRydWUpOwogICAgc2V0RXJyb3IoJycpOwogICAgc2V0UGFnZXMoW10pOwogICAgc2V0U3RhdHVzKCcnKTsKICAgIHNldFByb2dyZXNzKDApOwogICAgY29uc29sZS5sb2coIltBQ1RJT05fU1RBUlRdIENyYXdsIERvbWFpbjoiLCB1cmwpOwoKICAgIHRyeSB7CiAgICAgIGF3YWl0IHN0cmVhbUNhbGwoewogICAgICAgIGZ1bmM6ICdjcmF3bF9kb21haW5fc3RyZWFtaW5nJywKICAgICAgICBhcmdzOiB7IHVybCwgbGltaXQsIGRpYWxlY3QgfSwKICAgICAgICBvbkNodW5rOiAoY2h1bmspID0+IHsKICAgICAgICAgIGlmIChjaHVuay50eXBlID09PSAnc3RhdHVzJykgewogICAgICAgICAgICBzZXRTdGF0dXMoY2h1bmsuY29udGVudCk7CiAgICAgICAgICAgIGlmIChjaHVuay5wcm9ncmVzcyAhPT0gdW5kZWZpbmVkKSBzZXRQcm9ncmVzcyhjaHVuay5wcm9ncmVzcyk7CiAgICAgICAgICB9IGVsc2UgaWYgKGNodW5rLnR5cGUgPT09ICdwYWdlJykgewogICAgICAgICAgICBzZXRQYWdlcyhwcmV2ID0+IFsuLi5wcmV2LCBjaHVua10pOwogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgb25FcnJvcjogKGVycikgPT4gewogICAgICAgICAgc2V0RXJyb3IoZXJyLm1lc3NhZ2UpOwogICAgICAgICAgY29uc29sZS5lcnJvcigiW1NUUkVBTV9FUlJPUl0iLCBlcnIpOwogICAgICAgIH0KICAgICAgfSk7CiAgICAgIGNvbnNvbGUubG9nKCJbU1RSRUFNX0RPTkVdIENyYXdsIGNvbXBsZXRlIik7CiAgICAgIGludmFsaWRhdGVDYWNoZShbJ2dldF9oaXN0b3J5X3JwYyddKTsKICAgIH0gY2F0Y2ggKGVycjogYW55KSB7CiAgICAgIHNldEVycm9yKGVyci5tZXNzYWdlIHx8ICJFcnJvciIpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICB9CiAgfTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTYgbWF4LXctNXhsIG14LWF1dG8iPgogICAgICA8Q2FyZCBjbGFzc05hbWU9ImJvcmRlci1wcmltYXJ5LzIwIGJnLWNhcmQvNTAgYmFja2Ryb3AtYmx1ci1zbSBzaGFkb3cteGwiPgogICAgICAgIDxDYXJkSGVhZGVyPgogICAgICAgICAgPENhcmRUaXRsZSBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgPExheW91dEdyaWQgY2xhc3NOYW1lPSJoLTUgdy01IHRleHQtcHJpbWFyeSIgLz4KICAgICAgICAgICAge3QuY3Jhd2x9CiAgICAgICAgICA8L0NhcmRUaXRsZT4KICAgICAgICAgIDxDYXJkRGVzY3JpcHRpb24+e3QuZGVzY3JpcHRpb259PC9DYXJkRGVzY3JpcHRpb24+CiAgICAgICAgPC9DYXJkSGVhZGVyPgogICAgICAgIDxDYXJkQ29udGVudCBjbGFzc05hbWU9InNwYWNlLXktNCI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBtZDpmbGV4LXJvdyBnYXAtNCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEiPgogICAgICAgICAgICAgIDxJbnB1dCAKICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPXt0LnVybFBsYWNlaG9sZGVyfSAKICAgICAgICAgICAgICAgIHZhbHVlPXt1cmx9IAogICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRVcmwoZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy1mdWxsIG1kOnctMzIgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgICAgIDxIYXNoIGNsYXNzTmFtZT0iaC00IHctNCB0ZXh0LW11dGVkLWZvcmVncm91bmQiIC8+CiAgICAgICAgICAgICAgPElucHV0IAogICAgICAgICAgICAgICAgdHlwZT0ibnVtYmVyIiAKICAgICAgICAgICAgICAgIG1pbj17MX0gCiAgICAgICAgICAgICAgICBtYXg9ezUwfSAKICAgICAgICAgICAgICAgIHZhbHVlPXtsaW1pdH0gCiAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldExpbWl0KHBhcnNlSW50KGUudGFyZ2V0LnZhbHVlKSl9CiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0iTGltaXQiCiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxCdXR0b24gb25DbGljaz17aGFuZGxlQ3Jhd2x9IGRpc2FibGVkPXtsb2FkaW5nIHx8ICF1cmx9IGNsYXNzTmFtZT0ibWQ6bWluLXctWzEyMHB4XSI+CiAgICAgICAgICAgICAge2xvYWRpbmcgPyA8U3Bpbm5lciBjbGFzc05hbWU9Im1yLTIgaC00IHctNCIgLz4gOiB0LmNyYXdsQnRufQogICAgICAgICAgICA8L0J1dHRvbj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHtsb2FkaW5nICYmICgKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMiBweS0yIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBqdXN0aWZ5LWJldHdlZW4gdGV4dC1zbSBtYi0xIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1wcmltYXJ5IGZvbnQtbWVkaXVtIj57c3RhdHVzfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1tdXRlZC1mb3JlZ3JvdW5kIj57cHJvZ3Jlc3N9JTwvc3Bhbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8UHJvZ3Jlc3MgdmFsdWU9e3Byb2dyZXNzfSBjbGFzc05hbWU9ImgtMiIgLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApfQoKICAgICAgICAgIHtlcnJvciAmJiA8cCBjbGFzc05hbWU9InRleHQtZGVzdHJ1Y3RpdmUgdGV4dC1zbSI+e2Vycm9yfTwvcD59CiAgICAgICAgPC9DYXJkQ29udGVudD4KICAgICAgPC9DYXJkPgoKICAgICAge3BhZ2VzLmxlbmd0aCA+IDAgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTQiPgogICAgICAgICAgPGgzIGNsYXNzTmFtZT0iZm9udC1oZWFkaW5nIGZvbnQtc2VtaWJvbGQgdGV4dC1sZyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBweC0xIj4KICAgICAgICAgICAgPEdsb2JlIGNsYXNzTmFtZT0iaC01IHctNSB0ZXh0LXByaW1hcnkiIC8+CiAgICAgICAgICAgIHt0LnBhZ2VzfSAoe3BhZ2VzLmxlbmd0aH0pCiAgICAgICAgICA8L2gzPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTEgZ2FwLTQiPgogICAgICAgICAgICB7cGFnZXMubWFwKChwYWdlLCBpZHgpID0+ICgKICAgICAgICAgICAgICA8Q2FyZCBrZXk9e2lkeH0gY2xhc3NOYW1lPSJob3ZlcjpzaGFkb3ctbWQgdHJhbnNpdGlvbi1hbGwgYm9yZGVyLXdoaXRlLzUgYmctY2FyZC80MCBvdmVyZmxvdy1oaWRkZW4iPgogICAgICAgICAgICAgICAgPENhcmRIZWFkZXIgY2xhc3NOYW1lPSJwYi0yIj4KICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQganVzdGlmeS1iZXR3ZWVuIj4KICAgICAgICAgICAgICAgICAgICA8Q2FyZFRpdGxlIGNsYXNzTmFtZT0idGV4dC1iYXNlIHRydW5jYXRlIGZsZXgtMSBtbC00Ij57cGFnZS50aXRsZSB8fCAiTm8gVGl0bGUifTwvQ2FyZFRpdGxlPgogICAgICAgICAgICAgICAgICAgIDxCYWRnZSB2YXJpYW50PSJvdXRsaW5lIiBjbGFzc05hbWU9InRleHQtWzEwcHhdIGZvbnQtbW9ubyB3aGl0ZXNwYWNlLW5vd3JhcCI+CiAgICAgICAgICAgICAgICAgICAgICB7bmV3IFVSTChwYWdlLnVybCkucGF0aG5hbWV9CiAgICAgICAgICAgICAgICAgICAgPC9CYWRnZT4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIDxDYXJkRGVzY3JpcHRpb24gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSB0ZXh0LXhzIj4KICAgICAgICAgICAgICAgICAgICA8RXh0ZXJuYWxMaW5rIGNsYXNzTmFtZT0iaC0zIHctMyIgLz4KICAgICAgICAgICAgICAgICAgICB7cGFnZS51cmx9CiAgICAgICAgICAgICAgICAgIDwvQ2FyZERlc2NyaXB0aW9uPgogICAgICAgICAgICAgICAgPC9DYXJkSGVhZGVyPgogICAgICAgICAgICAgICAgPENhcmRDb250ZW50PgogICAgICAgICAgICAgICAgICA8U2Nyb2xsQXJlYSBjbGFzc05hbWU9ImgtMjAgdy1mdWxsIHJvdW5kZWQtbWQgYm9yZGVyIGJvcmRlci13aGl0ZS81IGJnLWJsYWNrLzIwIHAtMiB0ZXh0LXhzIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+CiAgICAgICAgICAgICAgICAgICAge3BhZ2UuY29udGVudH0KICAgICAgICAgICAgICAgICAgPC9TY3JvbGxBcmVhPgogICAgICAgICAgICAgICAgPC9DYXJkQ29udGVudD4KICAgICAgICAgICAgICA8L0NhcmQ+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+import React, { useState } from 'react';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Spinner } from '../components/ui/spinner';
+import { Progress } from '../components/ui/progress';
+import { ScrollArea } from '../components/ui/scroll-area';
+import { Badge } from '../components/ui/badge';
+import { useDialect } from './DialectContext';
+import { streamCall, invalidateCache } from '../api';
+import { LayoutGrid, Globe, ExternalLink, Hash } from 'lucide-react';
+
+export function CrawlerView() {
+  const { t, dialect } = useDialect();
+  const [url, setUrl] = useState('');
+  const [limit, setLimit] = useState(5);
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState('');
+  const [progress, setProgress] = useState(0);
+  const [pages, setPages] = useState<any[]>([]);
+  const [error, setError] = useState('');
+
+  const handleCrawl = async () => {
+    if (!url) return;
+    setLoading(true);
+    setError('');
+    setPages([]);
+    setStatus('');
+    setProgress(0);
+    console.log("[ACTION_START] Crawl Domain:", url);
+
+    try {
+      await streamCall({
+        func: 'crawl_domain_streaming',
+        args: { url, limit, dialect },
+        onChunk: (chunk) => {
+          if (chunk.type === 'status') {
+            setStatus(chunk.content);
+            if (chunk.progress !== undefined) setProgress(chunk.progress);
+          } else if (chunk.type === 'page') {
+            setPages(prev => [...prev, chunk]);
+          }
+        },
+        onError: (err) => {
+          setError(err.message);
+          console.error("[STREAM_ERROR]", err);
+        }
+      });
+      console.log("[STREAM_DONE] Crawl complete");
+      invalidateCache(['get_history_rpc']);
+    } catch (err: any) {
+      setError(err.message || "Error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="space-y-6 max-w-5xl mx-auto">
+      <Card className="border-primary/20 bg-card/50 backdrop-blur-sm shadow-xl">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <LayoutGrid className="h-5 w-5 text-primary" />
+            {t.crawl}
+          </CardTitle>
+          <CardDescription>{t.description}</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex-1">
+              <Input 
+                placeholder={t.urlPlaceholder} 
+                value={url} 
+                onChange={(e) => setUrl(e.target.value)}
+              />
+            </div>
+            <div className="w-full md:w-32 flex items-center gap-2">
+              <Hash className="h-4 w-4 text-muted-foreground" />
+              <Input 
+                type="number" 
+                min={1} 
+                max={50} 
+                value={limit} 
+                onChange={(e) => setLimit(parseInt(e.target.value))}
+                placeholder="Limit"
+              />
+            </div>
+            <Button onClick={handleCrawl} disabled={loading || !url} className="md:min-w-[120px]">
+              {loading ? <Spinner className="mr-2 h-4 w-4" /> : t.crawlBtn}
+            </Button>
+          </div>
+
+          {loading && (
+            <div className="space-y-2 py-2">
+              <div className="flex justify-between text-sm mb-1">
+                <span className="text-primary font-medium">{status}</span>
+                <span className="text-muted-foreground">{progress}%</span>
+              </div>
+              <Progress value={progress} className="h-2" />
+            </div>
+          )}
+
+          {error && <p className="text-destructive text-sm">{error}</p>}
+        </CardContent>
+      </Card>
+
+      {pages.length > 0 && (
+        <div className="space-y-4">
+          <h3 className="font-heading font-semibold text-lg flex items-center gap-2 px-1">
+            <Globe className="h-5 w-5 text-primary" />
+            {t.pages} ({pages.length})
+          </h3>
+          <div className="grid grid-cols-1 gap-4">
+            {pages.map((page, idx) => (
+              <Card key={idx} className="hover:shadow-md transition-all border-white/5 bg-card/40 overflow-hidden">
+                <CardHeader className="pb-2">
+                  <div className="flex items-start justify-between">
+                    <CardTitle className="text-base truncate flex-1 ml-4">{page.title || "No Title"}</CardTitle>
+                    <Badge variant="outline" className="text-[10px] font-mono whitespace-nowrap">
+                      {new URL(page.url).pathname}
+                    </Badge>
+                  </div>
+                  <CardDescription className="flex items-center gap-1 text-xs">
+                    <ExternalLink className="h-3 w-3" />
+                    {page.url}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ScrollArea className="h-20 w-full rounded-md border border-white/5 bg-black/20 p-2 text-xs text-muted-foreground">
+                    {page.content}
+                  </ScrollArea>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

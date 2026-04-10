@@ -1,1 +1,123 @@
-aW1wb3J0IFJlYWN0LCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUsIHVzZUNhbGxiYWNrIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBDYXJkLCBDYXJkQ29udGVudCwgQ2FyZEhlYWRlciwgQ2FyZFRpdGxlLCBDYXJkRGVzY3JpcHRpb24sIENhcmRGb290ZXIgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL2NhcmQnOwppbXBvcnQgeyBCdXR0b24gfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL2J1dHRvbic7CmltcG9ydCB7IHJwY0NhbGwsIGludmFsaWRhdGVDYWNoZSB9IGZyb20gJy4uL2FwaSc7CmltcG9ydCB7IHVzZURpYWxlY3QgfSBmcm9tICcuL0RpYWxlY3RDb250ZXh0JzsKaW1wb3J0IHsgSGlzdG9yeSwgVHJhc2gyLCBDYWxlbmRhciwgR2xvYmUsIFNlYXJjaCwgQm90IH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgQmFkZ2UgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpL2JhZGdlJzsKaW1wb3J0IHsgU3Bpbm5lciB9IGZyb20gJy4uL2NvbXBvbmVudHMvdWkvc3Bpbm5lcic7CmltcG9ydCB7IEVtcHR5LCBFbXB0eVRpdGxlLCBFbXB0eURlc2NyaXB0aW9uIH0gZnJvbSAnLi4vY29tcG9uZW50cy91aS9lbXB0eSc7CgpleHBvcnQgZnVuY3Rpb24gSGlzdG9yeVZpZXcoKSB7CiAgY29uc3QgeyB0IH0gPSB1c2VEaWFsZWN0KCk7CiAgY29uc3QgW2hpc3RvcnksIHNldEhpc3RvcnldID0gdXNlU3RhdGU8YW55W10+KFtdKTsKICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZSh0cnVlKTsKCiAgY29uc3QgbG9hZEhpc3RvcnkgPSB1c2VDYWxsYmFjayhhc3luYyAoKSA9PiB7CiAgICBzZXRMb2FkaW5nKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJwY0NhbGwoeyBmdW5jOiAnZ2V0X2hpc3RvcnlfcnBjJywgYXJnczogeyBsaW1pdDogMzAgfSB9KTsKICAgICAgc2V0SGlzdG9yeShkYXRhKTsKICAgIH0gY2F0Y2ggKGVycikgewogICAgICBjb25zb2xlLmVycm9yKCJGYWlsZWQgdG8gbG9hZCBoaXN0b3J5IiwgZXJyKTsKICAgIH0gZmluYWxseSB7CiAgICAgIHNldExvYWRpbmcoZmFsc2UpOwogICAgfQogIH0sIFtdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGxvYWRIaXN0b3J5KCk7CiAgfSwgW2xvYWRIaXN0b3J5XSk7CgogIGNvbnN0IGhhbmRsZURlbGV0ZSA9IGFzeW5jIChpZDogc3RyaW5nKSA9PiB7CiAgICB0cnkgewogICAgICBhd2FpdCBycGNDYWxsKHsgZnVuYzogJ2RlbGV0ZV9qb2JfcnBjJywgYXJnczogeyBqb2JfaWQ6IGlkIH0gfSk7CiAgICAgIHNldEhpc3RvcnkocHJldiA9PiBwcmV2LmZpbHRlcihpdGVtID0+IGl0ZW0uaWQgIT09IGlkKSk7CiAgICAgIGludmFsaWRhdGVDYWNoZShbJ2dldF9oaXN0b3J5X3JwYyddKTsKICAgIH0gY2F0Y2ggKGVycikgewogICAgICBjb25zb2xlLmVycm9yKCJEZWxldGUgZmFpbGVkIiwgZXJyKTsKICAgIH0KICB9OwoKICBpZiAobG9hZGluZykgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJoLTY0IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICAgICAgPFNwaW5uZXIgY2xhc3NOYW1lPSJoLTggdy04IHRleHQtcHJpbWFyeSIgLz4KICAgIDwvZGl2PgogICk7CgogIGlmIChoaXN0b3J5Lmxlbmd0aCA9PT0gMCkgcmV0dXJuICgKICAgIDxFbXB0eSBjbGFzc05hbWU9InB5LTIwIj4KICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLXByaW1hcnkvMTAgcC00IHJvdW5kZWQtZnVsbCBtYi00Ij4KICAgICAgICA8SGlzdG9yeSBjbGFzc05hbWU9ImgtMTAgdy0xMCB0ZXh0LXByaW1hcnkiIC8+CiAgICAgIDwvZGl2PgogICAgICA8RW1wdHlUaXRsZT57dC5ub0hpc3Rvcnl9PC9FbXB0eVRpdGxlPgogICAgICA8RW1wdHlEZXNjcmlwdGlvbj57dC5kZXNjcmlwdGlvbn08L0VtcHR5RGVzY3JpcHRpb24+CiAgICA8L0VtcHR5PgogICk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctNXhsIG14LWF1dG8gc3BhY2UteS02Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC0yIj4KICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LTJ4bCBmb250LWhlYWRpbmcgZm9udC1ib2xkIGZsZXggaXRlbXMtY2VudGVyIGdhcC0zIj4KICAgICAgICAgIDxIaXN0b3J5IGNsYXNzTmFtZT0iaC02IHctNiB0ZXh0LXByaW1hcnkiIC8+CiAgICAgICAgICB7dC5oaXN0b3J5fQogICAgICAgIDwvaDI+CiAgICAgICAgPEJhZGdlIHZhcmlhbnQ9Im91dGxpbmUiIGNsYXNzTmFtZT0iYm9yZGVyLXByaW1hcnkvMjAiPgogICAgICAgICAge2hpc3RvcnkubGVuZ3RofSBKb2JzCiAgICAgICAgPC9CYWRnZT4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMSBtZDpncmlkLWNvbHMtMiBsZzpncmlkLWNvbHMtMyBnYXAtNCI+CiAgICAgICAge2hpc3RvcnkubWFwKChpdGVtKSA9PiAoCiAgICAgICAgICA8Q2FyZCBrZXk9e2l0ZW0uaWR9IGNsYXNzTmFtZT0iaG92ZXI6c2hhZG93LWxnIHRyYW5zaXRpb24tYWxsIGJvcmRlci13aGl0ZS8xMCBiZy1jYXJkLzUwIG92ZXJmbG93LWhpZGRlbiBmbGV4IGZsZXgtY29sIj4KICAgICAgICAgICAgPENhcmRIZWFkZXIgY2xhc3NOYW1lPSJwYi0zIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtc3RhcnQiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InAtMiByb3VuZGVkLWxnIGJnLXByaW1hcnkvMTAiPgogICAgICAgICAgICAgICAgICB7aXRlbS50eXBlID09PSAnc2NyYXBlJyA/IDxHbG9iZSBjbGFzc05hbWU9ImgtNCB3LTQgdGV4dC1wcmltYXJ5IiAvPiA6IAogICAgICAgICAgICAgICAgICAgaXRlbS50eXBlID09PSAnY3Jhd2wnID8gPFNlYXJjaCBjbGFzc05hbWU9ImgtNCB3LTQgdGV4dC1wcmltYXJ5IiAvPiA6IAogICAgICAgICAgICAgICAgICAgPEJvdCBjbGFzc05hbWU9ImgtNCB3LTQgdGV4dC1wcmltYXJ5IiAvPn0KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPEJhZGdlIGNsYXNzTmFtZT17CiAgICAgICAgICAgICAgICAgIGl0ZW0uc3RhdHVzID09PSAnY29tcGxldGVkJyA/ICdiZy1lbWVyYWxkLTUwMC8xMCB0ZXh0LWVtZXJhbGQtNTAwIGhvdmVyOmJnLWVtZXJhbGQtNTAwLzIwJyA6CiAgICAgICAgICAgICAgICAgIGl0ZW0uc3RhdHVzID09PSAncGVuZGluZycgfHwgaXRlbS5zdGF0dXMgPT09ICdwcm9jZXNzaW5nJyA/ICdiZy1hbWJlci01MDAvMTAgdGV4dC1hbWJlci01MDAnIDoKICAgICAgICAgICAgICAgICAgJ2JnLWRlc3RydWN0aXZlLzEwIHRleHQtZGVzdHJ1Y3RpdmUnCiAgICAgICAgICAgICAgICB9PgogICAgICAgICAgICAgICAgICB7aXRlbS5zdGF0dXN9CiAgICAgICAgICAgICAgICA8L0JhZGdlPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxDYXJkVGl0bGUgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtbWVkaXVtIG10LTMgdHJ1bmNhdGUiIHRpdGxlPXtpdGVtLnVybH0+CiAgICAgICAgICAgICAgICB7aXRlbS51cmx9CiAgICAgICAgICAgICAgPC9DYXJkVGl0bGU+CiAgICAgICAgICAgICAgPENhcmREZXNjcmlwdGlvbiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0xIHRleHQtWzEwcHhdIj4KICAgICAgICAgICAgICAgIDxDYWxlbmRhciBjbGFzc05hbWU9ImgtMyB3LTMiIC8+CiAgICAgICAgICAgICAgICB7bmV3IERhdGUoaXRlbS5jcmVhdGVkX2F0KS50b0xvY2FsZVN0cmluZygpfQogICAgICAgICAgICAgIDwvQ2FyZERlc2NyaXB0aW9uPgogICAgICAgICAgICA8L0NhcmRIZWFkZXI+CiAgICAgICAgICAgIDxDYXJkQ29udGVudCBjbGFzc05hbWU9ImZsZXgtMSBwYi0zIj4KICAgICAgICAgICAgICB7aXRlbS5yZXN1bHRfdXJsICYmICgKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCBiZy1ibGFjay8yMCBwLTIgcm91bmRlZCB0cnVuY2F0ZSI+CiAgICAgICAgICAgICAgICAgICB7aXRlbS5yZXN1bHRfdXJsfQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgPC9DYXJkQ29udGVudD4KICAgICAgICAgICAgPENhcmRGb290ZXIgY2xhc3NOYW1lPSJwdC0wIGJvcmRlci10IGJvcmRlci13aGl0ZS81IGJnLW11dGVkLzIwIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyIHctZnVsbCBtdC0zIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1bMTBweF0gdGV4dC1tdXRlZC1mb3JlZ3JvdW5kIGl0YWxpYyI+CiAgICAgICAgICAgICAgICAgIHtpdGVtLmRpYWxlY3QgPT09ICdlZ3lwdGlhbicgPyAn8J+HqvCfh6wg2YXYtdix2YonIDogJ/Cfh7jwn4emINiz2LnZiNiv2YonfQogICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgPEJ1dHRvbiAKICAgICAgICAgICAgICAgICAgdmFyaWFudD0iZ2hvc3QiIAogICAgICAgICAgICAgICAgICBzaXplPSJpY29uIiAKICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJoLTggdy04IHRleHQtZGVzdHJ1Y3RpdmUgaG92ZXI6YmctZGVzdHJ1Y3RpdmUvMTAiIAogICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBoYW5kbGVEZWxldGUoaXRlbS5pZCl9CiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIDxUcmFzaDIgY2xhc3NOYW1lPSJoLTQgdy00IiAvPgogICAgICAgICAgICAgICAgPC9CdXR0b24+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvQ2FyZEZvb3Rlcj4KICAgICAgICAgIDwvQ2FyZD4KICAgICAgICApKX0KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg==
+import React, { useEffect, useState, useCallback } from 'react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { rpcCall, invalidateCache } from '../api';
+import { useDialect } from './DialectContext';
+import { History, Trash2, Calendar, Globe, Search, Bot } from 'lucide-react';
+import { Badge } from '../components/ui/badge';
+import { Spinner } from '../components/ui/spinner';
+import { Empty, EmptyTitle, EmptyDescription } from '../components/ui/empty';
+
+export function HistoryView() {
+  const { t } = useDialect();
+  const [history, setHistory] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const loadHistory = useCallback(async () => {
+    setLoading(true);
+    try {
+      const data = await rpcCall({ func: 'get_history_rpc', args: { limit: 30 } });
+      setHistory(data);
+    } catch (err) {
+      console.error("Failed to load history", err);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadHistory();
+  }, [loadHistory]);
+
+  const handleDelete = async (id: string) => {
+    try {
+      await rpcCall({ func: 'delete_job_rpc', args: { job_id: id } });
+      setHistory(prev => prev.filter(item => item.id !== id));
+      invalidateCache(['get_history_rpc']);
+    } catch (err) {
+      console.error("Delete failed", err);
+    }
+  };
+
+  if (loading) return (
+    <div className="h-64 flex items-center justify-center">
+      <Spinner className="h-8 w-8 text-primary" />
+    </div>
+  );
+
+  if (history.length === 0) return (
+    <Empty className="py-20">
+      <div className="bg-primary/10 p-4 rounded-full mb-4">
+        <History className="h-10 w-10 text-primary" />
+      </div>
+      <EmptyTitle>{t.noHistory}</EmptyTitle>
+      <EmptyDescription>{t.description}</EmptyDescription>
+    </Empty>
+  );
+
+  return (
+    <div className="max-w-5xl mx-auto space-y-6">
+      <div className="flex items-center justify-between px-2">
+        <h2 className="text-2xl font-heading font-bold flex items-center gap-3">
+          <History className="h-6 w-6 text-primary" />
+          {t.history}
+        </h2>
+        <Badge variant="outline" className="border-primary/20">
+          {history.length} Jobs
+        </Badge>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {history.map((item) => (
+          <Card key={item.id} className="hover:shadow-lg transition-all border-white/10 bg-card/50 overflow-hidden flex flex-col">
+            <CardHeader className="pb-3">
+              <div className="flex justify-between items-start">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  {item.type === 'scrape' ? <Globe className="h-4 w-4 text-primary" /> : 
+                   item.type === 'crawl' ? <Search className="h-4 w-4 text-primary" /> : 
+                   <Bot className="h-4 w-4 text-primary" />}
+                </div>
+                <Badge className={
+                  item.status === 'completed' ? 'bg-emerald-500/10 text-emerald-500 hover:bg-emerald-500/20' :
+                  item.status === 'pending' || item.status === 'processing' ? 'bg-amber-500/10 text-amber-500' :
+                  'bg-destructive/10 text-destructive'
+                }>
+                  {item.status}
+                </Badge>
+              </div>
+              <CardTitle className="text-sm font-medium mt-3 truncate" title={item.url}>
+                {item.url}
+              </CardTitle>
+              <CardDescription className="flex items-center gap-1 text-[10px]">
+                <Calendar className="h-3 w-3" />
+                {new Date(item.created_at).toLocaleString()}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex-1 pb-3">
+              {item.result_url && (
+                <div className="text-xs text-muted-foreground bg-black/20 p-2 rounded truncate">
+                   {item.result_url}
+                </div>
+              )}
+            </CardContent>
+            <CardFooter className="pt-0 border-t border-white/5 bg-muted/20">
+              <div className="flex justify-between items-center w-full mt-3">
+                <span className="text-[10px] text-muted-foreground italic">
+                  {item.dialect === 'egyptian' ? '🇪🇬 مصري' : '🇸🇦 سعودي'}
+                </span>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="h-8 w-8 text-destructive hover:bg-destructive/10" 
+                  onClick={() => handleDelete(item.id)}
+                >
+                  <Trash2 className="h-4 w-4" />
+                </Button>
+              </div>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+}

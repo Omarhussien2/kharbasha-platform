@@ -1,1 +1,170 @@
-aW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IERpYWxlY3RQcm92aWRlciwgdXNlRGlhbGVjdCB9IGZyb20gJy4vZmVhdHVyZXMvRGlhbGVjdENvbnRleHQnOwppbXBvcnQgeyBTY3JhcGVyVmlldyB9IGZyb20gJy4vZmVhdHVyZXMvU2NyYXBlclZpZXcnOwppbXBvcnQgeyBDcmF3bGVyVmlldyB9IGZyb20gJy4vZmVhdHVyZXMvQ3Jhd2xlclZpZXcnOwppbXBvcnQgeyBBZ2VudFZpZXcgfSBmcm9tICcuL2ZlYXR1cmVzL0FnZW50Vmlldyc7CmltcG9ydCB7IEhpc3RvcnlWaWV3IH0gZnJvbSAnLi9mZWF0dXJlcy9IaXN0b3J5Vmlldyc7CmltcG9ydCB7IEJ1dHRvbiB9IGZyb20gJy4vY29tcG9uZW50cy91aS9idXR0b24nOwppbXBvcnQgeyBTZXBhcmF0b3IgfSBmcm9tICcuL2NvbXBvbmVudHMvdWkvc2VwYXJhdG9yJzsKaW1wb3J0IHsgU2Nyb2xsQXJlYSB9IGZyb20gJy4vY29tcG9uZW50cy91aS9zY3JvbGwtYXJlYSc7CmltcG9ydCB7IGNuIH0gZnJvbSAnLi9saWIvdXRpbHMnOwppbXBvcnQgeyAKICBMYXlvdXREYXNoYm9hcmQsIAogIEdsb2JlLCAKICBMYXlvdXRHcmlkLCAKICBCb3QsIAogIEhpc3RvcnksIAogIE1lbnUsIAogIFgsCiAgU3BhcmtsZXMKfSBmcm9tICdsdWNpZGUtcmVhY3QnOwoKLy8gU2hlbGwgTGF5b3V0CmZ1bmN0aW9uIEFwcFNoZWxsKCkgewogIGNvbnN0IHsgdCwgZGlhbGVjdCwgc2V0RGlhbGVjdCB9ID0gdXNlRGlhbGVjdCgpOwogIGNvbnN0IFthY3RpdmVWaWV3LCBzZXRBY3RpdmVWaWV3XSA9IHVzZVN0YXRlKCdhZ2VudCcpOwogIGNvbnN0IFtpc1NpZGViYXJPcGVuLCBzZXRJc1NpZGViYXJPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnNvbGUubG9nKCJSRU5ERVJfU1VDQ0VTUyIpOwogIH0sIFtdKTsKCiAgY29uc3QgbmF2SXRlbXMgPSBbCiAgICB7IGlkOiAnYWdlbnQnLCBsYWJlbDogdC5hZ2VudCwgaWNvbjogQm90IH0sCiAgICB7IGlkOiAnc2NyYXBlJywgbGFiZWw6IHQuc2NyYXBlLCBpY29uOiBHbG9iZSB9LAogICAgeyBpZDogJ2NyYXdsJywgbGFiZWw6IHQuY3Jhd2wsIGljb246IExheW91dEdyaWQgfSwKICAgIHsgaWQ6ICdoaXN0b3J5JywgbGFiZWw6IHQuaGlzdG9yeSwgaWNvbjogSGlzdG9yeSB9LAogIF07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBoLXNjcmVlbiBmbGV4LWNvbCBtZDpmbGV4LXJvdyBiZy1iYWNrZ3JvdW5kIHRleHQtZm9yZWdyb3VuZCBvdmVyZmxvdy1oaWRkZW4iPgogICAgICB7LyogTW9iaWxlIEhlYWRlciAqL30KICAgICAgPGhlYWRlciBjbGFzc05hbWU9Im1kOmhpZGRlbiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gcHgtNCBweS0zIGJvcmRlci1iIGJnLWNhcmQvNTAgYmFja2Ryb3AtYmx1ci1sZyB6LTUwIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgPGltZyBzcmM9Ii4vYXNzZXRzL2xvZ28ta2hhcmJhc2hhLXNjcmF0Y2guc3ZnIiBhbHQ9IkxvZ28iIGNsYXNzTmFtZT0iaC04IHctOCIgLz4KICAgICAgICAgIDxoMSBjbGFzc05hbWU9ImZvbnQtaGVhZGluZyBmb250LWJvbGQgdGV4dC14bCB0ZXh0LXByaW1hcnkiPnt0LnRpdGxlfTwvaDE+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgIDxEaWFsZWN0VG9nZ2xlIC8+CiAgICAgICAgICA8QnV0dG9uIHZhcmlhbnQ9Imdob3N0IiBzaXplPSJpY29uIiBvbkNsaWNrPXsoKSA9PiBzZXRJc1NpZGViYXJPcGVuKCFpc1NpZGViYXJPcGVuKX0+CiAgICAgICAgICAgIHtpc1NpZGViYXJPcGVuID8gPFggLz4gOiA8TWVudSAvPn0KICAgICAgICAgIDwvQnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIHsvKiBTaWRlYmFyICovfQogICAgICA8YXNpZGUgY2xhc3NOYW1lPXtjbigKICAgICAgICAiZml4ZWQgaW5zZXQteS0wIHJpZ2h0LTAgei00MCB3LTY0IGJnLWNhcmQvMzAgYmFja2Ryb3AtYmx1ci14bCBib3JkZXItbCBib3JkZXItd2hpdGUvNSBmbGV4IGZsZXgtY29sIHRyYW5zaXRpb24tdHJhbnNmb3JtIGR1cmF0aW9uLTMwMCBtZDpyZWxhdGl2ZSBtZDp0cmFuc2xhdGUteC0wIiwKICAgICAgICBpc1NpZGViYXJPcGVuID8gInRyYW5zbGF0ZS14LTAiIDogInRyYW5zbGF0ZS14LWZ1bGwiCiAgICAgICl9PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTYgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLXByaW1hcnkvMjAgcC0yIHJvdW5kZWQteGwgc2hhZG93LWdsb3ciPgogICAgICAgICAgICA8aW1nIHNyYz0iLi9hc3NldHMvbG9nby1raGFyYmFzaGEtc2NyYXRjaC5zdmciIGFsdD0iTG9nbyIgY2xhc3NOYW1lPSJoLTggdy04IiAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJmb250LWhlYWRpbmcgdGV4dC0yeGwgZm9udC1ib2xkIGJnLWdyYWRpZW50LXRvLWwgZnJvbS1wcmltYXJ5IHRvLWFtYmVyLTIwMCBiZy1jbGlwLXRleHQgdGV4dC10cmFuc3BhcmVudCI+CiAgICAgICAgICAgIHt0LnRpdGxlfQogICAgICAgICAgPC9oMj4KICAgICAgICA8L2Rpdj4KICAgICAgICAKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icHgtNCBtYi00Ij4KICAgICAgICAgICA8RGlhbGVjdFRvZ2dsZSAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8U2VwYXJhdG9yIGNsYXNzTmFtZT0ibXgtNCB3LWF1dG8gYmctd2hpdGUvNSIgLz4KICAgICAgICAKICAgICAgICA8U2Nyb2xsQXJlYSBjbGFzc05hbWU9ImZsZXgtMSBweC0zIHB5LTQiPgogICAgICAgICAgPG5hdiBjbGFzc05hbWU9InNwYWNlLXktMSI+CiAgICAgICAgICAgIHtuYXZJdGVtcy5tYXAoaXRlbSA9PiAoCiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAga2V5PXtpdGVtLmlkfQogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gewogICAgICAgICAgICAgICAgICBzZXRBY3RpdmVWaWV3KGl0ZW0uaWQpOwogICAgICAgICAgICAgICAgICBzZXRJc1NpZGViYXJPcGVuKGZhbHNlKTsKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2NuKAogICAgICAgICAgICAgICAgICAidy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGdhcC0zIHJvdW5kZWQteGwgcHgtNCBweS0zIHRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1hbGwiLAogICAgICAgICAgICAgICAgICBhY3RpdmVWaWV3ID09PSBpdGVtLmlkIAogICAgICAgICAgICAgICAgICAgID8gImJnLXByaW1hcnkgdGV4dC1wcmltYXJ5LWZvcmVncm91bmQgc2hhZG93LWxnIHNoYWRvdy1wcmltYXJ5LzIwIHNjYWxlLVsxLjAyXSIgCiAgICAgICAgICAgICAgICAgICAgOiAidGV4dC1tdXRlZC1mb3JlZ3JvdW5kIGhvdmVyOmJnLXdoaXRlLzUgaG92ZXI6dGV4dC1mb3JlZ3JvdW5kIgogICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8aXRlbS5pY29uIGNsYXNzTmFtZT17Y24oImgtNSB3LTUiLCBhY3RpdmVWaWV3ID09PSBpdGVtLmlkID8gInRleHQtcHJpbWFyeS1mb3JlZ3JvdW5kIiA6ICJ0ZXh0LXByaW1hcnkiKX0gLz4KICAgICAgICAgICAgICAgIDxzcGFuPntpdGVtLmxhYmVsfTwvc3Bhbj4KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L25hdj4KICAgICAgICA8L1Njcm9sbEFyZWE+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTQgbXQtYXV0byI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icC00IHJvdW5kZWQtMnhsIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tcHJpbWFyeS8xMCB0by10cmFuc3BhcmVudCBib3JkZXIgYm9yZGVyLXByaW1hcnkvMjAiPgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1wcmltYXJ5IGZvbnQtYm9sZCBtYi0xIGZsZXggaXRlbXMtY2VudGVyIGdhcC0xIj4KICAgICAgICAgICAgICA8U3BhcmtsZXMgY2xhc3NOYW1lPSJoLTMgdy0zIiAvPgogICAgICAgICAgICAgIFBybyBBZ2VudCBNb2RlCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LVsxMHB4XSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPgogICAgICAgICAgICAgIHtkaWFsZWN0ID09PSAnZWd5cHRpYW4nID8gJ9i02LrYp9mE2YrZhiDYqNmG2LjYp9mFINin2YTZiNmD2YrZhCDYp9mE2LDZg9mKINmK2Kcg2YHZhtin2YYnIDogJ9mG2LnZhdmEINio2YbYuNin2YUg2KfZhNmI2YPZitmEINin2YTYsNmD2Yog2YrYpyDYt9mI2YrZhCDYp9mE2LnZhdixJ30KICAgICAgICAgICAgPC9wPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvYXNpZGU+CgogICAgICB7LyogTWFpbiBDb250ZW50ICovfQogICAgICA8bWFpbiBjbGFzc05hbWU9ImZsZXgtMSBvdmVyZmxvdy15LWF1dG8gYmctbWVzaCByZWxhdGl2ZSI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgYmctZ3JhZGllbnQtdG8tYiBmcm9tLWJhY2tncm91bmQgdmlhLXRyYW5zcGFyZW50IHRvLWJhY2tncm91bmQgcG9pbnRlci1ldmVudHMtbm9uZSIgLz4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgaC1mdWxsIGZsZXggZmxleC1jb2wiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgtMSBwLTQgbWQ6cC04Ij4KICAgICAgICAgICAgIHthY3RpdmVWaWV3ID09PSAnYWdlbnQnICYmIDxBZ2VudFZpZXcgLz59CiAgICAgICAgICAgICB7YWN0aXZlVmlldyA9PT0gJ3NjcmFwZScgJiYgPFNjcmFwZXJWaWV3IC8+fQogICAgICAgICAgICAge2FjdGl2ZVZpZXcgPT09ICdjcmF3bCcgJiYgPENyYXdsZXJWaWV3IC8+fQogICAgICAgICAgICAge2FjdGl2ZVZpZXcgPT09ICdoaXN0b3J5JyAmJiA8SGlzdG9yeVZpZXcgLz59CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9tYWluPgoKICAgICAgey8qIEJhY2tkcm9wIGZvciBtb2JpbGUgKi99CiAgICAgIHtpc1NpZGViYXJPcGVuICYmICgKICAgICAgICA8ZGl2IAogICAgICAgICAgY2xhc3NOYW1lPSJmaXhlZCBpbnNldC0wIGJnLWJsYWNrLzUwIHotMzAgbWQ6aGlkZGVuIiAKICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldElzU2lkZWJhck9wZW4oZmFsc2UpfQogICAgICAgIC8+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9CgpmdW5jdGlvbiBEaWFsZWN0VG9nZ2xlKCkgewogIGNvbnN0IHsgZGlhbGVjdCwgc2V0RGlhbGVjdCB9ID0gdXNlRGlhbGVjdCgpOwogIAogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBiZy1tdXRlZC81MCBwLTEgcm91bmRlZC14bCBib3JkZXIgYm9yZGVyLXdoaXRlLzUiPgogICAgICA8YnV0dG9uIAogICAgICAgIG9uQ2xpY2s9eygpID0+IHNldERpYWxlY3QoJ2VneXB0aWFuJyl9CiAgICAgICAgY2xhc3NOYW1lPXtjbigKICAgICAgICAgICJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBweC0zIHB5LTEuNSByb3VuZGVkLWxnIHRleHQteHMgZm9udC1ib2xkIHRyYW5zaXRpb24tYWxsIiwKICAgICAgICAgIGRpYWxlY3QgPT09ICdlZ3lwdGlhbicgPyAiYmctY2FyZCB0ZXh0LXByaW1hcnkgc2hhZG93LXNtIHNoYWRvdy1ibGFjay8yMCIgOiAidGV4dC1tdXRlZC1mb3JlZ3JvdW5kIG9wYWNpdHktNjAiCiAgICAgICAgKX0KICAgICAgPgogICAgICAgIDxpbWcgc3JjPSIuL2Fzc2V0cy9pY29uLWZsYWctZWcuc3ZnIiBhbHQ9IkVHIiBjbGFzc05hbWU9ImgtNCB3LTQgcm91bmRlZC1zbSIgLz4KICAgICAgICA8c3Bhbj7ZhdmQ2LXYsdmKPC9zcGFuPgogICAgICA8L2J1dHRvbj4KICAgICAgPGJ1dHRvbiAKICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXREaWFsZWN0KCdzYXVkaScpfQogICAgICAgIGNsYXNzTmFtZT17Y24oCiAgICAgICAgICAiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcHgtMyBweS0xLjUgcm91bmRlZC1sZyB0ZXh0LXhzIGZvbnQtYm9sZCB0cmFuc2l0aW9uLWFsbCIsCiAgICAgICAgICBkaWFsZWN0ID09PSAnc2F1ZGknID8gImJnLWNhcmQgdGV4dC1wcmltYXJ5IHNoYWRvdy1zbSBzaGFkb3ctYmxhY2svMjAiIDogInRleHQtbXV0ZWQtZm9yZWdyb3VuZCBvcGFjaXR5LTYwIgogICAgICAgICl9CiAgICAgID4KICAgICAgICA8aW1nIHNyYz0iLi9hc3NldHMvaWNvbi1mbGFnLXNhLnN2ZyIgYWx0PSJTQSIgY2xhc3NOYW1lPSJoLTQgdy00IHJvdW5kZWQtc20iIC8+CiAgICAgICAgPHNwYW4+2LPYudmI2K/Zijwvc3Bhbj4KICAgICAgPC9idXR0b24+CiAgICA8L2Rpdj4KICApOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBcHAoKSB7CiAgcmV0dXJuICgKICAgIDxEaWFsZWN0UHJvdmlkZXI+CiAgICAgIDxBcHBTaGVsbCAvPgogICAgPC9EaWFsZWN0UHJvdmlkZXI+CiAgKTsKfQo=
+import React, { useState, useEffect } from 'react';
+import { DialectProvider, useDialect } from './features/DialectContext';
+import { ScraperView } from './features/ScraperView';
+import { CrawlerView } from './features/CrawlerView';
+import { AgentView } from './features/AgentView';
+import { HistoryView } from './features/HistoryView';
+import { Button } from './components/ui/button';
+import { Separator } from './components/ui/separator';
+import { ScrollArea } from './components/ui/scroll-area';
+import { cn } from './lib/utils';
+import { 
+  LayoutDashboard, 
+  Globe, 
+  LayoutGrid, 
+  Bot, 
+  History, 
+  Menu, 
+  X,
+  Sparkles
+} from 'lucide-react';
+
+// Shell Layout
+function AppShell() {
+  const { t, dialect, setDialect } = useDialect();
+  const [activeView, setActiveView] = useState('agent');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    console.log("RENDER_SUCCESS");
+  }, []);
+
+  const navItems = [
+    { id: 'agent', label: t.agent, icon: Bot },
+    { id: 'scrape', label: t.scrape, icon: Globe },
+    { id: 'crawl', label: t.crawl, icon: LayoutGrid },
+    { id: 'history', label: t.history, icon: History },
+  ];
+
+  return (
+    <div className="flex h-screen flex-col md:flex-row bg-background text-foreground overflow-hidden">
+      {/* Mobile Header */}
+      <header className="md:hidden flex items-center justify-between px-4 py-3 border-b bg-card/50 backdrop-blur-lg z-50">
+        <div className="flex items-center gap-2">
+          <img src="./assets/logo-kharbasha-scratch.svg" alt="Logo" className="h-8 w-8" />
+          <h1 className="font-heading font-bold text-xl text-primary">{t.title}</h1>
+        </div>
+        <div className="flex items-center gap-2">
+          <DialectToggle />
+          <Button variant="ghost" size="icon" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+            {isSidebarOpen ? <X /> : <Menu />}
+          </Button>
+        </div>
+      </header>
+
+      {/* Sidebar */}
+      <aside className={cn(
+        "fixed inset-y-0 right-0 z-40 w-64 bg-card/30 backdrop-blur-xl border-l border-white/5 flex flex-col transition-transform duration-300 md:relative md:translate-x-0",
+        isSidebarOpen ? "translate-x-0" : "translate-x-full"
+      )}>
+        <div className="p-6 flex items-center gap-3">
+          <div className="bg-primary/20 p-2 rounded-xl shadow-glow">
+            <img src="./assets/logo-kharbasha-scratch.svg" alt="Logo" className="h-8 w-8" />
+          </div>
+          <h2 className="font-heading text-2xl font-bold bg-gradient-to-l from-primary to-amber-200 bg-clip-text text-transparent">
+            {t.title}
+          </h2>
+        </div>
+        
+        <div className="px-4 mb-4">
+           <DialectToggle />
+        </div>
+
+        <Separator className="mx-4 w-auto bg-white/5" />
+        
+        <ScrollArea className="flex-1 px-3 py-4">
+          <nav className="space-y-1">
+            {navItems.map(item => (
+              <button
+                key={item.id}
+                onClick={() => {
+                  setActiveView(item.id);
+                  setIsSidebarOpen(false);
+                }}
+                className={cn(
+                  "w-full flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition-all",
+                  activeView === item.id 
+                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20 scale-[1.02]" 
+                    : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                )}
+              >
+                <item.icon className={cn("h-5 w-5", activeView === item.id ? "text-primary-foreground" : "text-primary")} />
+                <span>{item.label}</span>
+              </button>
+            ))}
+          </nav>
+        </ScrollArea>
+
+        <div className="p-4 mt-auto">
+          <div className="p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/20">
+            <p className="text-xs text-primary font-bold mb-1 flex items-center gap-1">
+              <Sparkles className="h-3 w-3" />
+              Pro Agent Mode
+            </p>
+            <p className="text-[10px] text-muted-foreground">
+              {dialect === 'egyptian' ? 'شغالين بنظام الوكيل الذكي يا فنان' : 'نعمل بنظام الوكيل الذكي يا طويل العمر'}
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      {/* Main Content */}
+      <main className="flex-1 overflow-y-auto bg-mesh relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background pointer-events-none" />
+        <div className="relative h-full flex flex-col">
+          <div className="flex-1 p-4 md:p-8">
+             {activeView === 'agent' && <AgentView />}
+             {activeView === 'scrape' && <ScraperView />}
+             {activeView === 'crawl' && <CrawlerView />}
+             {activeView === 'history' && <HistoryView />}
+          </div>
+        </div>
+      </main>
+
+      {/* Backdrop for mobile */}
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-30 md:hidden" 
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+    </div>
+  );
+}
+
+function DialectToggle() {
+  const { dialect, setDialect } = useDialect();
+  
+  return (
+    <div className="flex bg-muted/50 p-1 rounded-xl border border-white/5">
+      <button 
+        onClick={() => setDialect('egyptian')}
+        className={cn(
+          "flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all",
+          dialect === 'egyptian' ? "bg-card text-primary shadow-sm shadow-black/20" : "text-muted-foreground opacity-60"
+        )}
+      >
+        <img src="./assets/icon-flag-eg.svg" alt="EG" className="h-4 w-4 rounded-sm" />
+        <span>مِصري</span>
+      </button>
+      <button 
+        onClick={() => setDialect('saudi')}
+        className={cn(
+          "flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all",
+          dialect === 'saudi' ? "bg-card text-primary shadow-sm shadow-black/20" : "text-muted-foreground opacity-60"
+        )}
+      >
+        <img src="./assets/icon-flag-sa.svg" alt="SA" className="h-4 w-4 rounded-sm" />
+        <span>سعودي</span>
+      </button>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <DialectProvider>
+      <AppShell />
+    </DialectProvider>
+  );
+}

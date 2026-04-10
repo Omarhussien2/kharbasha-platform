@@ -1,1 +1,139 @@
-aW1wb3J0IHsgc3RyZWFtU1NFIH0gZnJvbSAiLi91c2VTU0UiOwoKdHlwZSBBcHBDb25maWcgPSB7CiAgYXBwTmFtZTogc3RyaW5nOwogIGRhdGFFbmRwb2ludDogc3RyaW5nOwogIHJ1bklkOiBzdHJpbmc7Cn07CgpmdW5jdGlvbiBnZXRDb25maWcoKTogQXBwQ29uZmlnIHsKICByZXR1cm4gKHdpbmRvdyBhcyBhbnkpLl9fQVBQX0NPTkZJR19fOwp9Cgp0eXBlIFJwY1BhcmFtcyA9IHsKICBmdW5jOiBzdHJpbmc7CiAgYXJncz86IFJlY29yZDxzdHJpbmcsIGFueT47CiAgbW9kdWxlPzogc3RyaW5nOwp9OwoKdHlwZSBTdHJlYW1QYXJhbXMgPSBScGNQYXJhbXMgJiB7CiAgb25DaHVuazogKGRhdGE6IGFueSkgPT4gdm9pZDsKICBvbkVycm9yPzogKGVycm9yOiBFcnJvcikgPT4gdm9pZDsKfTsKCmZ1bmN0aW9uIGdldFVzZXJGYWNpbmdFcnJvck1lc3NhZ2Uoc3RhdHVzOiBudW1iZXIpOiBzdHJpbmcgewogIGlmIChzdGF0dXMgPT09IDQwMSkgcmV0dXJuICJBdXRoZW50aWNhdGlvbiByZXF1aXJlZC4gUGxlYXNlIHNpZ24gaW4gYWdhaW4uIjsKICBpZiAoc3RhdHVzID09PSA0MDMpIHJldHVybiAiWW91IGRvIG5vdCBoYXZlIGFjY2VzcyB0byB0aGlzIGFwcCB3b3Jrc3BhY2UuIjsKICBpZiAoc3RhdHVzID09PSA0MDQpIHJldHVybiAiUmVxdWVzdGVkIGFwcCByZXNvdXJjZSB3YXMgbm90IGZvdW5kLiI7CiAgaWYgKHN0YXR1cyA+PSA1MDApIHJldHVybiAiU2VydmVyIGVycm9yIHdoaWxlIGxvYWRpbmcgYXBwIGRhdGEuIFBsZWFzZSB0cnkgYWdhaW4uIjsKICByZXR1cm4gIlJlcXVlc3QgZmFpbGVkLiBQbGVhc2UgdHJ5IGFnYWluLiI7Cn0KCmZ1bmN0aW9uIGNhY2hlS2V5KGZ1bmM6IHN0cmluZywgYXJnczogUmVjb3JkPHN0cmluZywgYW55PiwgbW9kdWxlOiBzdHJpbmcpOiBzdHJpbmcgewogIHJldHVybiBgcnBjOiR7bW9kdWxlfToke2Z1bmN9OiR7SlNPTi5zdHJpbmdpZnkoYXJncyl9YDsKfQoKZnVuY3Rpb24gZ2V0Q2FjaGVkPFQ+KGtleTogc3RyaW5nKTogVCB8IHVuZGVmaW5lZCB7CiAgdHJ5IHsKICAgIGNvbnN0IHJhdyA9IHNlc3Npb25TdG9yYWdlLmdldEl0ZW0oa2V5KTsKICAgIGlmICghcmF3KSByZXR1cm4gdW5kZWZpbmVkOwogICAgcmV0dXJuIEpTT04ucGFyc2UocmF3KSBhcyBUOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIHVuZGVmaW5lZDsKICB9Cn0KCmZ1bmN0aW9uIHNldENhY2hlKGtleTogc3RyaW5nLCBkYXRhOiB1bmtub3duKTogdm9pZCB7CiAgdHJ5IHsKICAgIHNlc3Npb25TdG9yYWdlLnNldEl0ZW0oa2V5LCBKU09OLnN0cmluZ2lmeShkYXRhKSk7CiAgfSBjYXRjaCB7CiAgICAvLyBTdG9yYWdlIGZ1bGwgb3IgdW5hdmFpbGFibGUg4oCUIGlnbm9yZQogIH0KfQoKYXN5bmMgZnVuY3Rpb24gZmV0Y2hScGM8VD4oY29uZmlnOiBBcHBDb25maWcsIHJlc29sdmVkTW9kdWxlOiBzdHJpbmcsIGZ1bmM6IHN0cmluZywgYXJnczogUmVjb3JkPHN0cmluZywgYW55Pik6IFByb21pc2U8VD4gewogIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGNvbmZpZy5kYXRhRW5kcG9pbnQsIHsKICAgIG1ldGhvZDogIlBPU1QiLAogICAgaGVhZGVyczogeyAiQ29udGVudC1UeXBlIjogImFwcGxpY2F0aW9uL2pzb24iLCAiWC1SdW4tSWQiOiBjb25maWcucnVuSWQgfHwgIiIgfSwKICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgbW9kdWxlOiByZXNvbHZlZE1vZHVsZSwgZnVuYywgYXJncyB9KSwKICAgIGNyZWRlbnRpYWxzOiAiaW5jbHVkZSIsCiAgfSk7CgogIGNvbnN0IGNvbnRlbnRUeXBlID0gcmVzLmhlYWRlcnMuZ2V0KCJjb250ZW50LXR5cGUiKSB8fCAiIjsKICBjb25zb2xlLmxvZygiW0ZFVENIX1JFU1BPTlNFXSIsIHsgc3RhdHVzOiByZXMuc3RhdHVzLCBjb250ZW50VHlwZSB9KTsKCiAgY29uc3QgcmF3ID0gYXdhaXQgcmVzLnRleHQoKTsKICBpZiAoIXJlcy5vaykgewogICAgY29uc29sZS5lcnJvcigiW0ZFVENIX0VSUk9SXSIsIHJhdy5zbGljZSgwLCAyMDApKTsKICAgIHRocm93IG5ldyBFcnJvcihnZXRVc2VyRmFjaW5nRXJyb3JNZXNzYWdlKHJlcy5zdGF0dXMpKTsKICB9CgogIGlmICghY29udGVudFR5cGUuaW5jbHVkZXMoImFwcGxpY2F0aW9uL2pzb24iKSkgewogICAgY29uc29sZS5lcnJvcigiW1BBUlNFX0VSUk9SXSIsIGBVbmV4cGVjdGVkIGNvbnRlbnQtdHlwZTogJHtjb250ZW50VHlwZX1gKTsKICAgIGNvbnNvbGUubG9nKCJbUEFSU0VfRVJST1JfUFJFVklFV10iLCByYXcuc2xpY2UoMCwgMjAwKSk7CiAgICB0aHJvdyBuZXcgRXJyb3IoYEV4cGVjdGVkIEpTT04gcmVzcG9uc2UsIGdvdCAnJHtjb250ZW50VHlwZSB8fCAidW5rbm93biJ9J2ApOwogIH0KCiAgdHJ5IHsKICAgIGNvbnN0IGRhdGEgPSBKU09OLnBhcnNlKHJhdyk7CiAgICBjb25zb2xlLmxvZygiW1BBUlNFX1NVQ0NFU1NdIiwgeyBrZXlzOiBPYmplY3Qua2V5cyhkYXRhID8/IHt9KSB9KTsKICAgIHJldHVybiBkYXRhIGFzIFQ7CiAgfSBjYXRjaCAoZXJyKSB7CiAgICBjb25zb2xlLmVycm9yKCJbUEFSU0VfRVJST1JdIiwgZXJyKTsKICAgIGNvbnNvbGUubG9nKCJbUEFSU0VfRVJST1JfUFJFVklFV10iLCByYXcuc2xpY2UoMCwgMjAwKSk7CiAgICB0aHJvdyBlcnI7CiAgfQp9CgovKioKICogQ2xlYXIgY2FjaGVkIHF1ZXJ5IHJlc3VsdHMuIENhbGwgYWZ0ZXIgbXV0YXRpb25zIHRvIHByZXZlbnQgc3RhbGUgZGF0YS4KICogQHBhcmFtIGZ1bmNOYW1lcyAtIFNwZWNpZmljIGZ1bmN0aW9uIG5hbWVzIHRvIGludmFsaWRhdGUgKGUuZy4sIFsnZ2V0X2l0ZW1zJywgJ2dldF9zdGF0cyddKS4gT21pdCB0byBjbGVhciBhbGwuCiAqLwpleHBvcnQgZnVuY3Rpb24gaW52YWxpZGF0ZUNhY2hlKGZ1bmNOYW1lcz86IHN0cmluZ1tdKTogdm9pZCB7CiAgY29uc3Qga2V5c1RvUmVtb3ZlOiBzdHJpbmdbXSA9IFtdOwogIGZvciAobGV0IGkgPSAwOyBpIDwgc2Vzc2lvblN0b3JhZ2UubGVuZ3RoOyBpKyspIHsKICAgIGNvbnN0IGtleSA9IHNlc3Npb25TdG9yYWdlLmtleShpKTsKICAgIGlmIChrZXkgJiYga2V5LnN0YXJ0c1dpdGgoInJwYzoiKSkgewogICAgICBpZiAoIWZ1bmNOYW1lcyB8fCBmdW5jTmFtZXMuc29tZSgoZm4pID0+IGtleS5pbmNsdWRlcyhgOiR7Zm59OmApKSkgewogICAgICAgIGtleXNUb1JlbW92ZS5wdXNoKGtleSk7CiAgICAgIH0KICAgIH0KICB9CiAga2V5c1RvUmVtb3ZlLmZvckVhY2goKGspID0+IHNlc3Npb25TdG9yYWdlLnJlbW92ZUl0ZW0oaykpOwogIGNvbnNvbGUubG9nKCJbQ0FDSEVfSU5WQUxJREFURV0iLCB7IGZ1bmNzOiBmdW5jTmFtZXMgfHwgIioiLCBjbGVhcmVkOiBrZXlzVG9SZW1vdmUubGVuZ3RoIH0pOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gcnBjQ2FsbDxUID0gYW55Pih7IGZ1bmMsIGFyZ3MgPSB7fSwgbW9kdWxlIH06IFJwY1BhcmFtcyk6IFByb21pc2U8VD4gewogIGNvbnN0IGNvbmZpZyA9IGdldENvbmZpZygpOwogIGNvbnN0IHJlc29sdmVkTW9kdWxlID0gbW9kdWxlIHx8IGBhcHBzLiR7Y29uZmlnLmFwcE5hbWV9LmJhY2tlbmQubWFpbmA7CiAgY29uc3Qga2V5ID0gY2FjaGVLZXkoZnVuYywgYXJncywgcmVzb2x2ZWRNb2R1bGUpOwoKICBjb25zdCBjYWNoZWQgPSBnZXRDYWNoZWQ8VD4oa2V5KTsKICBpZiAoY2FjaGVkICE9PSB1bmRlZmluZWQpIHsKICAgIGNvbnNvbGUubG9nKCJbQ0FDSEVfSElUXSIsIHsgZnVuYywgbW9kdWxlOiByZXNvbHZlZE1vZHVsZSB9KTsKICAgIC8vIFJldHVybiBjYWNoZWQgZGF0YSBpbW1lZGlhdGVseSwgcmVmcmVzaCBpbiBiYWNrZ3JvdW5kCiAgICBmZXRjaFJwYzxUPihjb25maWcsIHJlc29sdmVkTW9kdWxlLCBmdW5jLCBhcmdzKQogICAgICAudGhlbigoZnJlc2gpID0+IHNldENhY2hlKGtleSwgZnJlc2gpKQogICAgICAuY2F0Y2goKCkgPT4ge30pOwogICAgcmV0dXJuIGNhY2hlZDsKICB9CgogIGNvbnNvbGUubG9nKCJbRkVUQ0hfU1RBUlRdIiwgeyBmdW5jLCBtb2R1bGU6IHJlc29sdmVkTW9kdWxlIH0pOwogIGNvbnN0IGRhdGEgPSBhd2FpdCBmZXRjaFJwYzxUPihjb25maWcsIHJlc29sdmVkTW9kdWxlLCBmdW5jLCBhcmdzKTsKICBzZXRDYWNoZShrZXksIGRhdGEpOwogIHJldHVybiBkYXRhOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gc3RyZWFtQ2FsbCh7IGZ1bmMsIGFyZ3MgPSB7fSwgbW9kdWxlLCBvbkNodW5rLCBvbkVycm9yIH06IFN0cmVhbVBhcmFtcyk6IFByb21pc2U8dm9pZD4gewogIGNvbnN0IGNvbmZpZyA9IGdldENvbmZpZygpOwogIGNvbnN0IHJlc29sdmVkTW9kdWxlID0gbW9kdWxlIHx8IGBhcHBzLiR7Y29uZmlnLmFwcE5hbWV9LmJhY2tlbmQubWFpbmA7CiAgY29uc3Qgc3RyZWFtVXJsID0gY29uZmlnLmRhdGFFbmRwb2ludC5yZXBsYWNlKCIvZGF0YSIsICIvZGF0YS9zdHJlYW0iKTsKCiAgYXdhaXQgc3RyZWFtU1NFKAogICAgc3RyZWFtVXJsLAogICAgeyBtb2R1bGU6IHJlc29sdmVkTW9kdWxlLCBmdW5jLCBhcmdzIH0sCiAgICBvbkNodW5rLAogICAgb25FcnJvciwKICAgIHsgIlgtUnVuLUlkIjogY29uZmlnLnJ1bklkIHx8ICIiIH0KICApOwp9Cg==
+import { streamSSE } from "./useSSE";
+
+type AppConfig = {
+  appName: string;
+  dataEndpoint: string;
+  runId: string;
+};
+
+function getConfig(): AppConfig {
+  return (window as any).__APP_CONFIG__;
+}
+
+type RpcParams = {
+  func: string;
+  args?: Record<string, any>;
+  module?: string;
+};
+
+type StreamParams = RpcParams & {
+  onChunk: (data: any) => void;
+  onError?: (error: Error) => void;
+};
+
+function getUserFacingErrorMessage(status: number): string {
+  if (status === 401) return "Authentication required. Please sign in again.";
+  if (status === 403) return "You do not have access to this app workspace.";
+  if (status === 404) return "Requested app resource was not found.";
+  if (status >= 500) return "Server error while loading app data. Please try again.";
+  return "Request failed. Please try again.";
+}
+
+function cacheKey(func: string, args: Record<string, any>, module: string): string {
+  return `rpc:${module}:${func}:${JSON.stringify(args)}`;
+}
+
+function getCached<T>(key: string): T | undefined {
+  try {
+    const raw = sessionStorage.getItem(key);
+    if (!raw) return undefined;
+    return JSON.parse(raw) as T;
+  } catch {
+    return undefined;
+  }
+}
+
+function setCache(key: string, data: unknown): void {
+  try {
+    sessionStorage.setItem(key, JSON.stringify(data));
+  } catch {
+    // Storage full or unavailable — ignore
+  }
+}
+
+async function fetchRpc<T>(config: AppConfig, resolvedModule: string, func: string, args: Record<string, any>): Promise<T> {
+  const res = await fetch(config.dataEndpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "X-Run-Id": config.runId || "" },
+    body: JSON.stringify({ module: resolvedModule, func, args }),
+    credentials: "include",
+  });
+
+  const contentType = res.headers.get("content-type") || "";
+  console.log("[FETCH_RESPONSE]", { status: res.status, contentType });
+
+  const raw = await res.text();
+  if (!res.ok) {
+    console.error("[FETCH_ERROR]", raw.slice(0, 200));
+    throw new Error(getUserFacingErrorMessage(res.status));
+  }
+
+  if (!contentType.includes("application/json")) {
+    console.error("[PARSE_ERROR]", `Unexpected content-type: ${contentType}`);
+    console.log("[PARSE_ERROR_PREVIEW]", raw.slice(0, 200));
+    throw new Error(`Expected JSON response, got '${contentType || "unknown"}'`);
+  }
+
+  try {
+    const data = JSON.parse(raw);
+    console.log("[PARSE_SUCCESS]", { keys: Object.keys(data ?? {}) });
+    return data as T;
+  } catch (err) {
+    console.error("[PARSE_ERROR]", err);
+    console.log("[PARSE_ERROR_PREVIEW]", raw.slice(0, 200));
+    throw err;
+  }
+}
+
+/**
+ * Clear cached query results. Call after mutations to prevent stale data.
+ * @param funcNames - Specific function names to invalidate (e.g., ['get_items', 'get_stats']). Omit to clear all.
+ */
+export function invalidateCache(funcNames?: string[]): void {
+  const keysToRemove: string[] = [];
+  for (let i = 0; i < sessionStorage.length; i++) {
+    const key = sessionStorage.key(i);
+    if (key && key.startsWith("rpc:")) {
+      if (!funcNames || funcNames.some((fn) => key.includes(`:${fn}:`))) {
+        keysToRemove.push(key);
+      }
+    }
+  }
+  keysToRemove.forEach((k) => sessionStorage.removeItem(k));
+  console.log("[CACHE_INVALIDATE]", { funcs: funcNames || "*", cleared: keysToRemove.length });
+}
+
+export async function rpcCall<T = any>({ func, args = {}, module }: RpcParams): Promise<T> {
+  const config = getConfig();
+  const resolvedModule = module || `apps.${config.appName}.backend.main`;
+  const key = cacheKey(func, args, resolvedModule);
+
+  const cached = getCached<T>(key);
+  if (cached !== undefined) {
+    console.log("[CACHE_HIT]", { func, module: resolvedModule });
+    // Return cached data immediately, refresh in background
+    fetchRpc<T>(config, resolvedModule, func, args)
+      .then((fresh) => setCache(key, fresh))
+      .catch(() => {});
+    return cached;
+  }
+
+  console.log("[FETCH_START]", { func, module: resolvedModule });
+  const data = await fetchRpc<T>(config, resolvedModule, func, args);
+  setCache(key, data);
+  return data;
+}
+
+export async function streamCall({ func, args = {}, module, onChunk, onError }: StreamParams): Promise<void> {
+  const config = getConfig();
+  const resolvedModule = module || `apps.${config.appName}.backend.main`;
+  const streamUrl = config.dataEndpoint.replace("/data", "/data/stream");
+
+  await streamSSE(
+    streamUrl,
+    { module: resolvedModule, func, args },
+    onChunk,
+    onError,
+    { "X-Run-Id": config.runId || "" }
+  );
+}
