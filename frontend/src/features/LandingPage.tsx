@@ -13,6 +13,14 @@ import {
   ExternalLink,
   Copy,
   Check,
+  GraduationCap,
+  Newspaper,
+  ShoppingBag,
+  Code,
+  Megaphone,
+  Languages as Translate,
+  PenTool,
+  BarChart3,
 } from 'lucide-react';
 
 /* ──────────── scroll-reveal hook ──────────── */
@@ -118,6 +126,9 @@ export function LandingPage({ onEnterApp }: LandingPageProps) {
       {/* ───── Hero ───── */}
       <HeroSection onEnterApp={onEnterApp} />
 
+      {/* ───── Marquee ───── */}
+      <MarqueeStrip />
+
       {/* ───── Interactive Tabs ───── */}
       <TabsSection activeTab={activeTab} setActiveTab={setActiveTab} />
 
@@ -135,6 +146,52 @@ export function LandingPage({ onEnterApp }: LandingPageProps) {
 
       {/* ───── Footer ───── */}
       <Footer />
+    </div>
+  );
+}
+
+/* ═══════════ MARQUEE STRIP ═══════════ */
+const MARQUEE_USERS = [
+  { icon: GraduationCap, label: 'باحثين وطلاب', desc: 'سحب أوراق ومقالات' },
+  { icon: Newspaper, label: 'صحفيين', desc: 'تلخيص الأخبار' },
+  { icon: ShoppingBag, label: 'أصحاب متاجر', desc: 'مراقبة المنافسين' },
+  { icon: Code, label: 'مطورين', desc: 'استخراج محتوى Markdown' },
+  { icon: Megaphone, label: 'مسوّقين', desc: 'تحليل المحتوى' },
+  { icon: Translate, label: 'مترجمين', desc: 'نسخ محتوى نظيف' },
+  { icon: PenTool, label: 'كتّاب محتوى', desc: 'جمع مراجع' },
+  { icon: BarChart3, label: 'محللين بيانات', desc: 'سحب بيانات منظمة' },
+];
+
+function MarqueeStrip() {
+  const items = [...MARQUEE_USERS, ...MARQUEE_USERS];
+
+  return (
+    <div className="relative border-y border-white/[0.04] bg-white/[0.01] overflow-hidden">
+      {/* Fade edges */}
+      <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-l from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
+
+      <div className="flex animate-marquee py-3">
+        {items.map((item, i) => {
+          const Icon = item.icon;
+          return (
+            <div
+              key={i}
+              className="flex items-center gap-2.5 shrink-0 px-5 group"
+            >
+              <div className="w-7 h-7 rounded-lg bg-white/[0.04] group-hover:bg-orange-500/10 flex items-center justify-center transition-colors">
+                <Icon className="h-3.5 w-3.5 text-white/30 group-hover:text-orange-400 transition-colors" />
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-bold text-white/50 group-hover:text-white/80 transition-colors whitespace-nowrap">{item.label}</span>
+                <span className="text-[10px] text-white/20 whitespace-nowrap">—</span>
+                <span className="text-[10px] text-white/25 whitespace-nowrap">{item.desc}</span>
+              </div>
+              <div className="w-1 h-1 rounded-full bg-white/10 mr-2" />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
