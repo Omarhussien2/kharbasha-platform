@@ -3,7 +3,7 @@ import json
 import time
 import os
 from db import init_db, create_job, update_job_status, save_result, get_history, delete_job, save_agent_session
-from llm import chat_completion, ProviderError
+from llm import chat_completion, ProviderError, probe_providers
 import urllib.request
 from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
@@ -215,5 +215,10 @@ def delete_job_rpc(job_id: str):
         print(f"[BACKEND_ERROR] delete_job_rpc failed: {e}")
         raise
 
+def probe_llm_rpc():
+    """Diagnostic RPC: returns which LLM providers are reachable from the runtime env."""
+    print(f"[BACKEND_START] probe_llm_rpc called")
+    return probe_providers()
+
 # Re-export for call_backend_function
-__all__ = ["scrape_url", "crawl_domain_streaming", "run_agent_task_streaming", "get_history_rpc", "delete_job_rpc"]
+__all__ = ["scrape_url", "crawl_domain_streaming", "run_agent_task_streaming", "get_history_rpc", "delete_job_rpc", "probe_llm_rpc"]

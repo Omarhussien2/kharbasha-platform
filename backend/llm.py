@@ -178,3 +178,36 @@ def chat_completion(messages: List[Dict[str, str]]) -> Tuple[str, str]:
     if last_error is None:
         raise ProviderError("all", "no providers configured")
     raise ProviderError("all", f"all providers failed ({', '.join(attempted)}); last: {last_error.detail[:200]}")
+
+
+def probe_providers() -> Dict[str, Dict[str, object]]:
+    """
+    Diagnostic: probe each provider individually with a tiny ping message.
+    Returns per-provider {ok, env_set, error}. Never raises.
+    Use this to verify which providers are actually reachable in the runtime env.
+    """
+    probe_messages = [{"role": "user", "content": "ping"}]
+    report: Dict[str, Dict[str, object]] = {}
+
+    # Also report which env vars are visible (just presence, never values)
+    env_visibility = {
+        "GEMINI_API_KEY": bool(os.environ.get("GEMINI_API_KEY")),
+        "OPENROUTER_API_KEY": bool(os.environ.get("OPENROUTER_API_KEY")),
+        "HF_TOKEN": bool(os.environ.get("HF_TOKEN")),
+        "HUGGINGFACE_HUB_TOKEN": bool(os.environ.get("HUGGINGFACE_HUB_TOKEN")),
+        "HUGGING_FACE_HUB_TOKEN": bool(os.environ.get("HUGGING_FACE_HUB_TOKEN")),
+    }
+
+    for name, fn in PROVIDERS:
+        entry: Dict[str, object] = {"ok": False, "error": None}
+        try:
+            text = fn(probe_messages)
+            entry["ok"] = True
+            entry["sample"] = (text or "")[:120]
+        except ProviderError as e:
+            entry["error"] = e.detail[:400]
+        except Exception as e:
+            entry["error"] = f"unexpected: {str(e)[:400]}"
+        report[name] = entry
+
+    return {"env": env_visibility, "providers": report}
