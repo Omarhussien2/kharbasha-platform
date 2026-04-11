@@ -4,6 +4,7 @@ import time
 import os
 from nexttoken import NextToken
 from db import init_db, create_job, update_job_status, save_result, get_history, delete_job, save_agent_session
+from llm import chat_completion, ProviderError
 import urllib.request
 from bs4 import BeautifulSoup
 import markdownify
@@ -167,40 +168,33 @@ def run_agent_task_streaming(message: str, dialect: str = "egyptian"):
     print(f"[BACKEND_START] run_agent_task_streaming called with task={task}, dialect={dialect}")
     init_db()
     session_id = str(uuid.uuid4())
-    
-    # Simulate an agent loop with thinking and acting steps
-    # In a real app, this would use a more complex prompt and tool loop
-    # We follow the agent_building pattern: thinking -> action -> result
-    
-    client = NextToken()
+
+    # Agent loop: thinking -> action -> result. LLM calls go through llm.chat_completion,
+    # which tries Gemini -> OpenRouter -> HuggingFace and falls through on any failure.
     history = [{"role": "user", "content": task}]
-    
+
     yield {"type": "status", "content": _get_msg(dialect, "starting"), "progress": 5}
-    
+
     try:
         # Step 1: Thinking
         yield {"type": "thinking", "content": _get_msg(dialect, "thinking"), "progress": 20}
         time.sleep(1) # simulate thinking
-        
+
         # Call LLM to decide initial thoughts
-        resp = client.chat.completions.create(
-            model="gemini-2.5-flash-lite",
-            messages=[{"role": "system", "content": f"You are an agent named Kharbasha. Respond in a friendly tone based on the dialect: {dialect}. Decide on 2-3 steps to perform the task: {task}"}]
-        )
-        thought = resp.choices[0].message.content
+        thought, provider_used = chat_completion([
+            {"role": "system", "content": f"You are an agent named Kharbasha. Respond in a friendly tone based on the dialect: {dialect}. Decide on 2-3 steps to perform the task: {task}"}
+        ])
         yield {"type": "thinking", "content": thought, "progress": 40}
         history.append({"role": "assistant", "content": thought})
-        
+
         # Step 2: Action simulation
         yield {"type": "action", "content": _get_msg(dialect, "acting"), "progress": 60}
         time.sleep(1.5) # simulate action
-        
+
         # Step 3: Result
-        final_resp = client.chat.completions.create(
-            model="gemini-2.5-flash-lite",
-            messages=[{"role": "system", "content": f"You are Kharbasha. Summarize the result of the task '{task}' in the {dialect} dialect. Be creative but concise."}]
-        )
-        final_result = final_resp.choices[0].message.content
+        final_result, _ = chat_completion([
+            {"role": "system", "content": f"You are Kharbasha. Summarize the result of the task '{task}' in the {dialect} dialect. Be creative but concise."}
+        ])
         history.append({"role": "assistant", "content": final_result})
         
         save_agent_session(session_id, task, history, final_result)

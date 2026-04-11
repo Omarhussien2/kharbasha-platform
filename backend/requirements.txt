@@ -3,3 +3,4 @@ uvicorn[standard]
 nexttoken
 beautifulsoup4
 markdownify
+huggingface_hub
