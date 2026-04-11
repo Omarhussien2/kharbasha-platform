@@ -20,9 +20,22 @@ import urllib.error
 from typing import List, Dict, Optional, Tuple, Callable
 
 
-# Model selection per provider. Tune here without touching call sites.
-GEMINI_MODEL = "gemini-2.0-flash"
-OPENROUTER_MODEL = "google/gemini-2.0-flash-exp:free"
+# Model fallback lists. Each provider tries its models in order; first success wins.
+# Gemini free-tier quotas are per-model, so exhausting one model still leaves others.
+GEMINI_MODELS = [
+    "gemini-2.0-flash",
+    "gemini-1.5-flash",
+    "gemini-1.5-flash-8b",
+    "gemini-1.5-pro",
+]
+# OpenRouter :free models change frequently; keep multiple Arabic-capable options.
+OPENROUTER_MODELS = [
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "deepseek/deepseek-chat-v3-0324:free",
+    "qwen/qwen-2.5-72b-instruct:free",
+    "google/gemma-2-9b-it:free",
+    "mistralai/mistral-7b-instruct:free",
+]
 HF_MODEL = "meta-llama/Llama-3.1-8B-Instruct"
 
 DEFAULT_TIMEOUT = 30
@@ -83,16 +96,28 @@ def _gemini(messages: List[Dict[str, str]]) -> str:
     if system_text:
         body["systemInstruction"] = {"parts": [{"text": system_text.strip()}]}
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={key}"
-    try:
-        data = _http_post_json(url, headers={}, body=body)
-    except ProviderError as e:
-        raise ProviderError("gemini", e.detail)
+    # Try each model in order. Free-tier quotas are per-model so 429 on one
+    # leaves others available. First success wins.
+    last_detail = "no models attempted"
+    for model in GEMINI_MODELS:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
+        try:
+            data = _http_post_json(url, headers={}, body=body)
+        except ProviderError as e:
+            last_detail = f"model={model} {e.detail}"
+            print(f"[LLM][gemini] {last_detail[:200]}")
+            continue
 
-    try:
-        return data["candidates"][0]["content"]["parts"][0]["text"]
-    except (KeyError, IndexError, TypeError):
-        raise ProviderError("gemini", f"unexpected response: {json.dumps(data)[:300]}")
+        try:
+            text = data["candidates"][0]["content"]["parts"][0]["text"]
+            print(f"[LLM][gemini] model={model} ok")
+            return text
+        except (KeyError, IndexError, TypeError):
+            last_detail = f"model={model} unexpected response: {json.dumps(data)[:200]}"
+            print(f"[LLM][gemini] {last_detail[:200]}")
+            continue
+
+    raise ProviderError("gemini", last_detail)
 
 
 def _openrouter(messages: List[Dict[str, str]]) -> str:
@@ -105,23 +130,36 @@ def _openrouter(messages: List[Dict[str, str]]) -> str:
         "HTTP-Referer": "https://huggingface.co/spaces/omar559/Kharbasha-api",
         "X-Title": "Kharbasha",
     }
-    body = {
-        "model": OPENROUTER_MODEL,
-        "messages": messages,
-    }
-    try:
-        data = _http_post_json(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers=headers,
-            body=body,
-        )
-    except ProviderError as e:
-        raise ProviderError("openrouter", e.detail)
 
-    try:
-        return data["choices"][0]["message"]["content"]
-    except (KeyError, IndexError, TypeError):
-        raise ProviderError("openrouter", f"unexpected response: {json.dumps(data)[:300]}")
+    # OpenRouter :free models come and go. Try each; first success wins.
+    last_detail = "no models attempted"
+    for model in OPENROUTER_MODELS:
+        body = {"model": model, "messages": messages}
+        try:
+            data = _http_post_json(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers=headers,
+                body=body,
+            )
+        except ProviderError as e:
+            last_detail = f"model={model} {e.detail}"
+            print(f"[LLM][openrouter] {last_detail[:200]}")
+            continue
+
+        try:
+            text = data["choices"][0]["message"]["content"]
+            if not text:
+                last_detail = f"model={model} empty content: {json.dumps(data)[:200]}"
+                print(f"[LLM][openrouter] {last_detail[:200]}")
+                continue
+            print(f"[LLM][openrouter] model={model} ok")
+            return text
+        except (KeyError, IndexError, TypeError):
+            last_detail = f"model={model} unexpected response: {json.dumps(data)[:200]}"
+            print(f"[LLM][openrouter] {last_detail[:200]}")
+            continue
+
+    raise ProviderError("openrouter", last_detail)
 
 
 def _huggingface(messages: List[Dict[str, str]]) -> str:
