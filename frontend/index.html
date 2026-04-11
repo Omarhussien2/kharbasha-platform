@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ar" dir="rtl" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>خربشة — أقوى أداة عربية لسحب البيانات بالذكاء الاصطناعي</title>
+    <meta name="title" content="خربشة — أقوى أداة عربية لسحب البيانات بالذكاء الاصطناعي" />
+    <meta name="description" content="اسحب بيانات من أي موقع ويب، لف في النطاق كله، أو خلّي الذكاء الاصطناعي يشتغل عنك. مجاني 100% باللهجة المصرية والسعودية. أقوى منصة عربية لاستخراج البيانات." />
+    <meta name="keywords" content="خربشة, سحب بيانات, استخراج بيانات, web scraping, ذكاء اصطناعي, عربي, مصري, سعودي, crawling, data extraction, مجاني" />
+    <meta name="author" content="خربشة" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Arabic" />
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kharbasha-platform-main.vercel.app/" />
+    <meta property="og:title" content="خربشة — أقوى أداة عربية لسحب البيانات بالذكاء الاصطناعي" />
+    <meta property="og:description" content="اسحب بيانات من أي موقع، لف في النطاق كله، أو خلّي الذكاء الاصطناعي يشتغل عنك. مجاني 100% باللهجة المصرية والسعودية." />
+    <meta property="og:image" content="https://kharbasha-platform-main.vercel.app/assets/og-banner.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="خربشة — منصة سحب البيانات بالذكاء الاصطناعي" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:site_name" content="خربشة" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://kharbasha-platform-main.vercel.app/" />
+    <meta name="twitter:title" content="خربشة — أقوى أداة عربية لسحب البيانات بالذكاء الاصطناعي" />
+    <meta name="twitter:description" content="اسحب بيانات من أي موقع، لف في النطاق كله، أو خلّي الذكاء الاصطناعي يشتغل عنك. مجاني 100% باللهجة المصرية والسعودية." />
+    <meta name="twitter:image" content="https://kharbasha-platform-main.vercel.app/assets/og-banner.svg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://kharbasha-platform-main.vercel.app/" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "خربشة",
+      "alternateName": "Kharbasha",
+      "url": "https://kharbasha-platform-main.vercel.app/",
+      "description": "أقوى أداة عربية لسحب البيانات من المواقع بالذكاء الاصطناعي. مجانية بالكامل باللهجة المصرية والسعودية.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EGP"
+      },
+      "inLanguage": ["ar-EG", "ar-SA"],
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "softwareVersion": "1.0",
+      "featureList": [
+        "سحب محتوى صفحات الويب كـ Markdown",
+        "زحف مواقع كاملة حتى 50 صفحة",
+        "عميل ذكي بالذكاء الاصطناعي",
+        "واجهة باللهجة المصرية والسعودية",
+        "مجاني 100% بدون تسجيل"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- App Config -->
     <script>
-      // Kharbasha runtime config.
-      // - On HF Space: backend/server.py injects __APP_CONFIG__ at the top of <head>
-      //   with a relative "/data" endpoint (same origin). That runs first.
-      // - On Vercel (frontend-only): the block below provides a fallback pointing
-      //   to the HF Space backend so the SPA can still call the API via CORS.
       (function () {
         if (!window.__APP_CONFIG__) {
           window.__APP_CONFIG__ = {
@@ -19,10 +87,6 @@
         }
       })();
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <title>Kharbasha</title>
   </head>
   <body class="antialiased">
     <div id="root"></div>
