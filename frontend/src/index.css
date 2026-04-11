@@ -26,8 +26,8 @@
     --radius: 0.75rem;
     --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.05);
     --shadow-card-hover: 0 8px 24px rgba(0,0,0,0.08);
-    --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Shubbak', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-body: 'Shubbak', 'Plus Jakarta Sans', system-ui, sans-serif;
     --chart-1: 24.6 95% 53.1%;
     --chart-2: 47 96% 53%;
     --chart-3: 142 76% 36%;
