@@ -2,10 +2,10 @@ import uuid
 import json
 import time
 import os
-from nexttoken import NextToken
 from db import init_db, create_job, update_job_status, save_result, get_history, delete_job, save_agent_session
 from llm import chat_completion, ProviderError
 import urllib.request
+from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
 import markdownify
 
@@ -70,17 +70,10 @@ def scrape_url(url: str, dialect: str = "egyptian"):
     job_id = str(uuid.uuid4())
     create_job(job_id, url, "scrape", dialect)
     
-    client = NextToken()
     try:
         update_job_status(job_id, "processing")
         print(f"[BACKEND_STEP] fetching {url}")
-        
-        try:
-            page = fetch_url_local(url)
-        except Exception as efetch:
-            print(f"[BACKEND_WARNING] local fetch failed: {efetch}, trying nexttoken as fallback")
-            page = client.fetch.url(url)
-        
+        page = fetch_url_local(url)
         markdown = page.get("content", "")
         metadata = {
             "title": page.get("title"),
@@ -108,12 +101,12 @@ def crawl_domain_streaming(url: str, limit: int = 5, dialect: str = "egyptian"):
     create_job(job_id, url, "crawl", dialect)
     
     yield {"type": "status", "content": _get_msg(dialect, "starting"), "progress": 5}
-    
-    client = NextToken()
+
     visited = set()
     queue = [url]
     results_count = 0
-    
+    domain = urlparse(url).netloc
+
     try:
         update_job_status(job_id, "processing")
         while queue and results_count < limit:
@@ -121,30 +114,23 @@ def crawl_domain_streaming(url: str, limit: int = 5, dialect: str = "egyptian"):
             if current_url in visited:
                 continue
             visited.add(current_url)
-            
+
             yield {"type": "status", "content": _get_msg(dialect, "fetching") + f" ({current_url})", "progress": int((results_count/limit)*90) + 5}
-            
+
             try:
-                try:
-                    page = fetch_url_local(current_url)
-                except Exception:
-                    page = client.fetch.url(current_url)
-                
+                page = fetch_url_local(current_url)
                 markdown = page.get("content", "")
                 save_result(job_id, current_url, markdown, {"title": page.get("title")})
-                
+
                 yield {
-                    "type": "page", 
-                    "url": current_url, 
+                    "type": "page",
+                    "url": current_url,
                     "content": markdown[:500] + "..." if len(markdown) > 500 else markdown,
                     "title": page.get("title")
                 }
-                
+
                 results_count += 1
-                
-                # Simple domain-bound discovery
-                from urllib.parse import urlparse, urljoin
-                domain = urlparse(url).netloc
+
                 for link in page.get("links", []):
                     full_link = urljoin(current_url, link)
                     if urlparse(full_link).netloc == domain and full_link not in visited:
