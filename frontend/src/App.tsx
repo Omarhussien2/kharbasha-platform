@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 // Shell Layout
-function AppShell() {
+function AppShell({ onBackToLanding }: { onBackToLanding: () => void }) {
   const { t, dialect, setDialect } = useDialect();
   const [activeView, setActiveView] = useState('agent');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -42,7 +42,7 @@ function AppShell() {
     <div className="flex h-screen flex-col md:flex-row bg-background text-foreground overflow-hidden">
       {/* Mobile Header */}
       <header className="md:hidden flex items-center justify-between px-4 py-3 border-b bg-card/50 backdrop-blur-lg z-50">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 cursor-pointer" onClick={onBackToLanding}>
            <img src="./assets/logo-kharbasha-scarab.svg" alt="خربشة" className="h-8 w-8" />
            <h1 className="font-heading font-bold text-xl text-primary">{t.title}</h1>
         </div>
@@ -59,14 +59,14 @@ function AppShell() {
         "fixed inset-y-0 right-0 z-40 w-64 bg-card/30 backdrop-blur-xl border-l border-white/5 flex flex-col transition-transform duration-300 md:relative md:translate-x-0",
         isSidebarOpen ? "translate-x-0" : "translate-x-full"
       )}>
-        <div className="p-6 flex items-center gap-3">
+        <div className="p-6 flex items-center gap-3 cursor-pointer" onClick={onBackToLanding}>
           <div className="bg-primary/20 p-2 rounded-xl shadow-glow">
             <img src="./assets/logo-kharbasha-scarab.svg" alt="خربشة" className="h-8 w-8" />
           </div>
           <h2 className="font-heading text-2xl font-bold bg-gradient-to-l from-primary to-amber-200 bg-clip-text text-transparent">
             {t.title}
           </h2>
-          <div className="mr-auto">
+          <div className="mr-auto" onClick={e => e.stopPropagation()}>
             <DialectToggle />
           </div>
         </div>
@@ -225,6 +225,12 @@ export default function App() {
     }
   });
 
+  const handleBackToLanding = useCallback(() => {
+    try { sessionStorage.removeItem('kharbasha-entered'); } catch {}
+    setShowApp(false);
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleEnterApp = useCallback(() => {
     try { sessionStorage.setItem('kharbasha-entered', 'true'); } catch {}
     setShowApp(true);
@@ -237,7 +243,7 @@ export default function App() {
 
   return (
     <DialectProvider>
-      <AppShell />
+      <AppShell onBackToLanding={handleBackToLanding} />
     </DialectProvider>
   );
 }
