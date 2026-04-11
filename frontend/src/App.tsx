@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { DialectProvider, useDialect } from './features/DialectContext';
 import { LandingPage } from './features/LandingPage';
 import { ScraperView } from './features/ScraperView';
@@ -218,12 +218,15 @@ function DialectToggle() {
 
 export default function App() {
   const [showApp, setShowApp] = useState(() => {
-    // If user has already visited the app, skip landing
-    return sessionStorage.getItem('kharbasha-entered') === 'true';
+    try {
+      return sessionStorage.getItem('kharbasha-entered') === 'true';
+    } catch {
+      return false;
+    }
   });
 
   const handleEnterApp = useCallback(() => {
-    sessionStorage.setItem('kharbasha-entered', 'true');
+    try { sessionStorage.setItem('kharbasha-entered', 'true'); } catch {}
     setShowApp(true);
     window.scrollTo(0, 0);
   }, []);
