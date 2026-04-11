@@ -21,20 +21,24 @@ from typing import List, Dict, Optional, Tuple, Callable
 
 
 # Model fallback lists. Each provider tries its models in order; first success wins.
-# Gemini free-tier quotas are per-model, so exhausting one model still leaves others.
+# Verified live 2026-04-11 against the current account keys.
+# Gemini 1.5-* models were removed from v1beta API. Only 2.0-flash/lite remain;
+# they share the same free-tier quota, so adding more is mostly futile — listed
+# for completeness in case one clears while the other is throttled.
 GEMINI_MODELS = [
     "gemini-2.0-flash",
-    "gemini-1.5-flash",
-    "gemini-1.5-flash-8b",
-    "gemini-1.5-pro",
+    "gemini-2.0-flash-lite",
 ]
-# OpenRouter :free models change frequently; keep multiple Arabic-capable options.
+# OpenRouter: big :free models (llama-3.3-70b, qwen-72b, deepseek) are upstream
+# rate-limited at the provider pool level. Google's Gemma 3 :free variants are
+# reliably reachable today. Llama-3.3-70b kept as opportunistic first attempt
+# in case the rate limit clears; Gemma 3 12B is the dependable best-quality pick.
 OPENROUTER_MODELS = [
     "meta-llama/llama-3.3-70b-instruct:free",
-    "deepseek/deepseek-chat-v3-0324:free",
-    "qwen/qwen-2.5-72b-instruct:free",
-    "google/gemma-2-9b-it:free",
-    "mistralai/mistral-7b-instruct:free",
+    "google/gemma-3-12b-it:free",
+    "google/gemma-3-4b-it:free",
+    "google/gemma-3n-e4b-it:free",
+    "google/gemma-3n-e2b-it:free",
 ]
 HF_MODEL = "meta-llama/Llama-3.1-8B-Instruct"
 
@@ -98,14 +102,14 @@ def _gemini(messages: List[Dict[str, str]]) -> str:
 
     # Try each model in order. Free-tier quotas are per-model so 429 on one
     # leaves others available. First success wins.
-    last_detail = "no models attempted"
+    attempts: List[str] = []
     for model in GEMINI_MODELS:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
         try:
             data = _http_post_json(url, headers={}, body=body)
         except ProviderError as e:
-            last_detail = f"model={model} {e.detail}"
-            print(f"[LLM][gemini] {last_detail[:200]}")
+            attempts.append(f"{model}: {e.detail[:150]}")
+            print(f"[LLM][gemini] model={model} failed: {e.detail[:150]}")
             continue
 
         try:
@@ -113,11 +117,11 @@ def _gemini(messages: List[Dict[str, str]]) -> str:
             print(f"[LLM][gemini] model={model} ok")
             return text
         except (KeyError, IndexError, TypeError):
-            last_detail = f"model={model} unexpected response: {json.dumps(data)[:200]}"
-            print(f"[LLM][gemini] {last_detail[:200]}")
+            attempts.append(f"{model}: unexpected response")
+            print(f"[LLM][gemini] model={model} unexpected response")
             continue
 
-    raise ProviderError("gemini", last_detail)
+    raise ProviderError("gemini", " | ".join(attempts) or "no models attempted")
 
 
 def _openrouter(messages: List[Dict[str, str]]) -> str:
@@ -132,7 +136,7 @@ def _openrouter(messages: List[Dict[str, str]]) -> str:
     }
 
     # OpenRouter :free models come and go. Try each; first success wins.
-    last_detail = "no models attempted"
+    attempts: List[str] = []
     for model in OPENROUTER_MODELS:
         body = {"model": model, "messages": messages}
         try:
@@ -142,24 +146,31 @@ def _openrouter(messages: List[Dict[str, str]]) -> str:
                 body=body,
             )
         except ProviderError as e:
-            last_detail = f"model={model} {e.detail}"
-            print(f"[LLM][openrouter] {last_detail[:200]}")
+            attempts.append(f"{model}: {e.detail[:120]}")
+            print(f"[LLM][openrouter] model={model} failed: {e.detail[:150]}")
+            continue
+
+        # OpenRouter returns 200 with {"error": {...}} when upstream provider fails
+        if isinstance(data, dict) and data.get("error"):
+            err_msg = data["error"].get("message", "upstream error") if isinstance(data["error"], dict) else str(data["error"])
+            attempts.append(f"{model}: {err_msg[:120]}")
+            print(f"[LLM][openrouter] model={model} upstream error: {err_msg[:150]}")
             continue
 
         try:
             text = data["choices"][0]["message"]["content"]
             if not text:
-                last_detail = f"model={model} empty content: {json.dumps(data)[:200]}"
-                print(f"[LLM][openrouter] {last_detail[:200]}")
+                attempts.append(f"{model}: empty content")
+                print(f"[LLM][openrouter] model={model} empty content")
                 continue
             print(f"[LLM][openrouter] model={model} ok")
             return text
         except (KeyError, IndexError, TypeError):
-            last_detail = f"model={model} unexpected response: {json.dumps(data)[:200]}"
-            print(f"[LLM][openrouter] {last_detail[:200]}")
+            attempts.append(f"{model}: unexpected response")
+            print(f"[LLM][openrouter] model={model} unexpected response")
             continue
 
-    raise ProviderError("openrouter", last_detail)
+    raise ProviderError("openrouter", " | ".join(attempts) or "no models attempted")
 
 
 def _huggingface(messages: List[Dict[str, str]]) -> str:
