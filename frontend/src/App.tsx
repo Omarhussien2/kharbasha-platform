@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { DialectProvider, useDialect } from './features/DialectContext';
 import { ScraperView } from './features/ScraperView';
 import { CrawlerView } from './features/CrawlerView';
@@ -16,7 +16,8 @@ import {
   History, 
   Menu, 
   X,
-  Sparkles
+  Sparkles,
+  ChevronDown
 } from 'lucide-react';
 
 // Shell Layout
@@ -41,14 +42,14 @@ function AppShell() {
       {/* Mobile Header */}
       <header className="md:hidden flex items-center justify-between px-4 py-3 border-b bg-card/50 backdrop-blur-lg z-50">
         <div className="flex items-center gap-2">
-          <img src="./assets/logo-kharbasha-scratch.svg" alt="Logo" className="h-8 w-8" />
-          <h1 className="font-heading font-bold text-xl text-primary">{t.title}</h1>
+           <img src="./assets/logo-kharbasha-scarab.svg" alt="خربشة" className="h-8 w-8" />
+           <h1 className="font-heading font-bold text-xl text-primary">{t.title}</h1>
         </div>
         <div className="flex items-center gap-2">
-          <DialectToggle />
-          <Button variant="ghost" size="icon" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-            {isSidebarOpen ? <X /> : <Menu />}
-          </Button>
+           <DialectToggle />
+           <Button variant="ghost" size="icon" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+             {isSidebarOpen ? <X /> : <Menu />}
+           </Button>
         </div>
       </header>
 
@@ -59,15 +60,14 @@ function AppShell() {
       )}>
         <div className="p-6 flex items-center gap-3">
           <div className="bg-primary/20 p-2 rounded-xl shadow-glow">
-            <img src="./assets/logo-kharbasha-scratch.svg" alt="Logo" className="h-8 w-8" />
+            <img src="./assets/logo-kharbasha-scarab.svg" alt="خربشة" className="h-8 w-8" />
           </div>
           <h2 className="font-heading text-2xl font-bold bg-gradient-to-l from-primary to-amber-200 bg-clip-text text-transparent">
             {t.title}
           </h2>
-        </div>
-        
-        <div className="px-4 mb-4">
-           <DialectToggle />
+          <div className="mr-auto">
+            <DialectToggle />
+          </div>
         </div>
 
         <Separator className="mx-4 w-auto bg-white/5" />
@@ -144,29 +144,73 @@ function AppShell() {
 
 function DialectToggle() {
   const { dialect, setDialect } = useDialect();
-  
+  const [open, setOpen] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    if (open) document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [open]);
+
+  const currentFlag = dialect === 'egyptian'
+    ? './assets/icon-flag-eg.svg'
+    : './assets/icon-flag-sa.svg';
+
   return (
-    <div className="flex bg-muted/50 p-1 rounded-xl border border-white/5">
-      <button 
-        onClick={() => setDialect('egyptian')}
-        className={cn(
-          "flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all",
-          dialect === 'egyptian' ? "bg-card text-primary shadow-sm shadow-black/20" : "text-muted-foreground opacity-60"
-        )}
+    <div className="relative" ref={ref}>
+      <button
+        onClick={() => setOpen(!open)}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        className="flex items-center gap-1.5 px-2 py-1.5 rounded-xl bg-muted/50 border border-white/10 hover:border-primary/30 transition-all"
       >
-        <img src="./assets/icon-flag-eg.svg" alt="EG" className="h-4 w-4 rounded-sm" />
-        <span>مِصري</span>
+        <img src={currentFlag} alt={dialect === 'egyptian' ? 'مصري' : 'سعودي'} className="h-5 w-5 rounded-sm" />
+        <ChevronDown className={cn("h-3 w-3 text-muted-foreground transition-transform", open && "rotate-180")} />
       </button>
-      <button 
-        onClick={() => setDialect('saudi')}
-        className={cn(
-          "flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold transition-all",
-          dialect === 'saudi' ? "bg-card text-primary shadow-sm shadow-black/20" : "text-muted-foreground opacity-60"
-        )}
-      >
-        <img src="./assets/icon-flag-sa.svg" alt="SA" className="h-4 w-4 rounded-sm" />
-        <span>سعودي</span>
-      </button>
+
+      {hovered && !open && (
+        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1 rounded-md bg-primary text-primary-foreground text-[11px] font-bold whitespace-nowrap z-50 pointer-events-none animate-in fade-in-0 zoom-in-95">
+          تغيير اللغة
+        </div>
+      )}
+
+      {open && (
+        <div className="absolute top-full left-0 mt-2 w-44 rounded-xl bg-card border border-white/10 shadow-xl shadow-black/20 z-50 overflow-hidden animate-in fade-in-0 zoom-in-95">
+          <div className="p-1.5">
+            <p className="px-3 py-1 text-[10px] text-muted-foreground font-bold">تغيير اللغة</p>
+            <button
+              onClick={() => { setDialect('egyptian'); setOpen(false); }}
+              className={cn(
+                "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all",
+                dialect === 'egyptian'
+                  ? "bg-primary/10 text-primary"
+                  : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+              )}
+            >
+              <img src="./assets/icon-flag-eg.svg" alt="EG" className="h-5 w-5 rounded-sm" />
+              <span>مِصري</span>
+              {dialect === 'egyptian' && <span className="mr-auto text-primary text-xs">✓</span>}
+            </button>
+            <button
+              onClick={() => { setDialect('saudi'); setOpen(false); }}
+              className={cn(
+                "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all",
+                dialect === 'saudi'
+                  ? "bg-primary/10 text-primary"
+                  : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+              )}
+            >
+              <img src="./assets/icon-flag-sa.svg" alt="SA" className="h-5 w-5 rounded-sm" />
+              <span>سعودي</span>
+              {dialect === 'saudi' && <span className="mr-auto text-primary text-xs">✓</span>}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
