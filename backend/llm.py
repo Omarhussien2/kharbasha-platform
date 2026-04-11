@@ -125,7 +125,11 @@ def _openrouter(messages: List[Dict[str, str]]) -> str:
 
 
 def _huggingface(messages: List[Dict[str, str]]) -> str:
-    token = os.environ.get("HF_TOKEN")
+    token = (
+        os.environ.get("HF_TOKEN")
+        or os.environ.get("HUGGINGFACE_HUB_TOKEN")
+        or os.environ.get("HUGGING_FACE_HUB_TOKEN")
+    )
     if not token:
         raise ProviderError("huggingface", "HF_TOKEN not set")
 
