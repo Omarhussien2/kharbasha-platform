@@ -60,4 +60,21 @@ jobs:
             echo "::error::git push to HF Space failed (exit ${rc})"
             exit "${rc}"
           fi
+
+          # After a successful push, restart the Space so HF rebuilds the Docker image.
+          # This is required when the Space is stuck in an error state (e.g. after a
+          # bad README previously left it in "Configuration error").
+          echo "Triggering Space rebuild via HF API..."
+          restart_http=$(curl -s -o /tmp/restart.out -w "%{http_code}" \
+            -X POST \
+            -H "Authorization: Bearer ${HF_TOKEN}" \
+            "https://huggingface.co/api/spaces/${HF_USER}/${HF_SPACE}/restart?factory=true")
+          echo "Restart response (HTTP ${restart_http}):"
+          cat /tmp/restart.out
+          if [ "${restart_http}" != "200" ] && [ "${restart_http}" != "204" ]; then
+            echo "::warning::Space restart returned HTTP ${restart_http} — the push succeeded but rebuild may not have triggered automatically."
+          else
+            echo "Space rebuild triggered."
+          fi
+
           echo "Sync complete."
