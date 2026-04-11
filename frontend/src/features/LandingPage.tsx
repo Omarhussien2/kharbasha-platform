@@ -23,8 +23,10 @@ import {
   BarChart3,
 } from 'lucide-react';
 
-/* ──────────── scroll-reveal hook ──────────── */
-function useReveal(threshold = 0.15) {
+/* ──────────── scroll-reveal hook with direction ──────────── */
+type RevealDir = 'up' | 'left' | 'right' | 'scale' | 'fade';
+
+function useReveal(threshold = 0.12, dir: RevealDir = 'up') {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
@@ -37,7 +39,21 @@ function useReveal(threshold = 0.15) {
     obs.observe(el);
     return () => obs.disconnect();
   }, [threshold]);
-  return { ref, visible };
+  const transforms: Record<RevealDir, string> = {
+    up: 'translate-y-10 scale-[0.97]',
+    left: 'translate-x-16',
+    right: '-translate-x-16',
+    scale: 'scale-0.9',
+    fade: '',
+  };
+  return {
+    ref,
+    visible,
+    className: cn(
+      "transition-all duration-[800ms] cubic-bezier(0.16,1,0.3,1)",
+      visible ? "opacity-100 translate-y-0 translate-x-0 scale-100" : `opacity-0 ${transforms[dir]}`
+    ),
+  };
 }
 
 /* ──────────── animated typing ──────────── */
@@ -152,47 +168,73 @@ export function LandingPage({ onEnterApp }: LandingPageProps) {
 
 /* ═══════════ MARQUEE STRIP ═══════════ */
 const MARQUEE_USERS = [
-  { icon: GraduationCap, label: 'باحثين وطلاب', desc: 'سحب أوراق ومقالات' },
-  { icon: Newspaper, label: 'صحفيين', desc: 'تلخيص الأخبار' },
-  { icon: ShoppingBag, label: 'أصحاب متاجر', desc: 'مراقبة المنافسين' },
-  { icon: Code, label: 'مطورين', desc: 'استخراج محتوى Markdown' },
-  { icon: Megaphone, label: 'مسوّقين', desc: 'تحليل المحتوى' },
-  { icon: Translate, label: 'مترجمين', desc: 'نسخ محتوى نظيف' },
-  { icon: PenTool, label: 'كتّاب محتوى', desc: 'جمع مراجع' },
-  { icon: BarChart3, label: 'محللين بيانات', desc: 'سحب بيانات منظمة' },
+  { icon: GraduationCap, label: 'باحثين وطلاب', desc: 'سحب أوراق ومقالات أكاديمية' },
+  { icon: Newspaper, label: 'صحفيين وإعلاميين', desc: 'تلخيص وتحليل الأخبار' },
+  { icon: ShoppingBag, label: 'أصحاب متاجر إلكترونية', desc: 'مراقبة أسعار المنافسين' },
+  { icon: Code, label: 'مطورين ومبرمجين', desc: 'استخراج محتوى كـ Markdown' },
+  { icon: Megaphone, label: 'مُسوّقين رقميين', desc: 'تحليل محتوى المواقع' },
+  { icon: Translate, label: 'مترجمين محترفين', desc: 'نسخ محتوى نظيف للترجمة' },
+  { icon: PenTool, label: 'كتّاب ومُؤلفين', desc: 'جمع مراجع ومصادر' },
+  { icon: BarChart3, label: 'محللين بيانات', desc: 'سحب بيانات منظمة من المواقع' },
 ];
 
 function MarqueeStrip() {
-  const items = [...MARQUEE_USERS, ...MARQUEE_USERS];
+  // Triple items for seamless infinite loop
+  const items = [...MARQUEE_USERS, ...MARQUEE_USERS, ...MARQUEE_USERS];
 
   return (
-    <div className="relative border-y border-white/[0.04] bg-white/[0.01] overflow-hidden">
-      {/* Fade edges */}
-      <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-l from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
+    <section className="relative py-10 overflow-hidden">
+      {/* Section label */}
+      <p className="text-center text-[11px] font-bold text-white/20 tracking-widest uppercase mb-6">
+        مُناسب لكل الاستخدامات
+      </p>
 
-      <div className="flex animate-marquee py-3">
-        {items.map((item, i) => {
-          const Icon = item.icon;
-          return (
-            <div
-              key={i}
-              className="flex items-center gap-2.5 shrink-0 px-5 group"
-            >
-              <div className="w-7 h-7 rounded-lg bg-white/[0.04] group-hover:bg-orange-500/10 flex items-center justify-center transition-colors">
-                <Icon className="h-3.5 w-3.5 text-white/30 group-hover:text-orange-400 transition-colors" />
+      {/* Row 1 — scrolls right (normal direction in RTL) */}
+      <div className="relative mb-3">
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-l from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
+        <div className="flex animate-marquee-right">
+          {items.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div key={`r1-${i}`} className="flex items-center gap-3 shrink-0 px-4 group">
+                <div className="w-9 h-9 rounded-xl bg-white/[0.03] border border-white/[0.06] group-hover:bg-orange-500/10 group-hover:border-orange-500/20 flex items-center justify-center transition-all duration-300">
+                  <Icon className="h-4 w-4 text-white/25 group-hover:text-orange-400 transition-colors duration-300" />
+                </div>
+                <div>
+                  <span className="text-sm font-bold text-white/40 group-hover:text-white/80 transition-colors duration-300 whitespace-nowrap">{item.label}</span>
+                  <span className="block text-[11px] text-white/20 whitespace-nowrap">{item.desc}</span>
+                </div>
+                <div className="w-1.5 h-1.5 rounded-full bg-white/[0.06] mx-3" />
               </div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-xs font-bold text-white/50 group-hover:text-white/80 transition-colors whitespace-nowrap">{item.label}</span>
-                <span className="text-[10px] text-white/20 whitespace-nowrap">—</span>
-                <span className="text-[10px] text-white/25 whitespace-nowrap">{item.desc}</span>
-              </div>
-              <div className="w-1 h-1 rounded-full bg-white/10 mr-2" />
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+
+      {/* Row 2 — scrolls left (reverse) */}
+      <div className="relative">
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-l from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-[#0a0a0a] z-10 pointer-events-none" />
+        <div className="flex animate-marquee-left">
+          {[...items].reverse().map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div key={`r2-${i}`} className="flex items-center gap-3 shrink-0 px-4 group">
+                <div className="w-9 h-9 rounded-xl bg-white/[0.03] border border-white/[0.06] group-hover:bg-orange-500/10 group-hover:border-orange-500/20 flex items-center justify-center transition-all duration-300">
+                  <Icon className="h-4 w-4 text-white/25 group-hover:text-orange-400 transition-colors duration-300" />
+                </div>
+                <div>
+                  <span className="text-sm font-bold text-white/40 group-hover:text-white/80 transition-colors duration-300 whitespace-nowrap">{item.label}</span>
+                  <span className="block text-[11px] text-white/20 whitespace-nowrap">{item.desc}</span>
+                </div>
+                <div className="w-1.5 h-1.5 rounded-full bg-white/[0.06] mx-3" />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -205,11 +247,12 @@ function HeroSection({ onEnterApp }: { onEnterApp: () => void }) {
     'لف في الموقع كله واجمعلي المعلومات...',
   ], 50, 25, 2500);
 
-  const r1 = useReveal();
-  const r2 = useReveal();
+  const r1 = useReveal(0.2, 'scale');
+  const r2 = useReveal(0.2, 'up');
+  const r3 = useReveal(0.2, 'fade');
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 pb-4">
       {/* BG glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-to-b from-orange-500/8 via-amber-500/5 to-transparent rounded-full blur-3xl" />
@@ -219,8 +262,8 @@ function HeroSection({ onEnterApp }: { onEnterApp: () => void }) {
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         {/* Badge */}
         <div ref={r1.ref} className={cn(
-          "inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8 transition-all duration-700",
-          r1.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          "inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8",
+          r1.className
         )}>
           <Sparkles className="h-3.5 w-3.5 text-amber-400" />
           <span className="text-xs font-medium text-white/70">مجاني 100% — باللهجة المصرية والسعودية</span>
@@ -228,8 +271,8 @@ function HeroSection({ onEnterApp }: { onEnterApp: () => void }) {
 
         {/* Headline */}
         <h1 ref={r2.ref} className={cn(
-          "text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 transition-all duration-700 delay-100",
-          r2.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          "text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6",
+          r2.className
         )}>
           <span className="block">أقوى أداة عربية</span>
           <span className="block bg-gradient-to-l from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
@@ -238,7 +281,7 @@ function HeroSection({ onEnterApp }: { onEnterApp: () => void }) {
         </h1>
 
         {/* Typing demo */}
-        <div className="max-w-xl mx-auto mb-8">
+        <div ref={r3.ref} className={cn("max-w-xl mx-auto mb-8", r3.className)}>
           <div className="bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-right">
             <div className="flex items-center gap-2 mb-2">
               <div className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
@@ -254,16 +297,16 @@ function HeroSection({ onEnterApp }: { onEnterApp: () => void }) {
         </div>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-lg text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className={cn("text-base sm:text-lg text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed transition-all duration-[1000ms] delay-300", r3.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
           اسحب بيانات من أي موقع، لف في النطاق كله، أو خلّي الذكاء الاصطناعي يشتغل عنك
           — كل ده بالعربي ومجاني
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className={cn("flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-[1000ms] delay-500", r3.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
           <button
             onClick={onEnterApp}
-            className="group bg-gradient-to-l from-amber-500 to-orange-600 text-black font-bold text-base px-8 py-3.5 rounded-full hover:shadow-2xl hover:shadow-orange-500/30 transition-all hover:scale-105 flex items-center gap-2"
+            className="group bg-gradient-to-l from-amber-500 to-orange-600 text-black font-bold text-base px-8 py-3.5 rounded-full hover:shadow-2xl hover:shadow-orange-500/30 transition-all hover:scale-105 flex items-center gap-2 animate-pulse-glow"
           >
             جرّب خربشة دلوقتي
             <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
@@ -319,30 +362,28 @@ const TAB_CONTENT = {
 };
 
 function TabsSection({ activeTab, setActiveTab }: { activeTab: 'scrape' | 'crawl' | 'agent'; setActiveTab: (t: 'scrape' | 'crawl' | 'agent') => void }) {
-  const r = useReveal();
+  const rHeader = useReveal(0.12, 'up');
+  const rContent = useReveal(0.1, 'fade');
   const content = TAB_CONTENT[activeTab];
 
   return (
-    <section ref={r.ref} className="py-24 relative">
+    <section className="py-24 relative">
       <div className="max-w-6xl mx-auto px-6">
-        <div className={cn(
-          "text-center mb-12 transition-all duration-700",
-          r.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-        )}>
+        <div ref={rHeader.ref} className={cn("text-center mb-12", rHeader.className)}>
           <h2 className="text-3xl sm:text-4xl font-bold mb-3">كيف تقدر تستخدم خربشة؟</h2>
           <p className="text-white/50 text-lg">ثلاث طرق بسيطة لسحب البيانات من أي مكان</p>
         </div>
 
         {/* Tab buttons */}
-        <div className="flex justify-center gap-2 mb-10">
+        <div className={cn("flex justify-center gap-2 mb-10 transition-all duration-700", rHeader.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")} style={{ transitionDelay: '200ms' }}>
           {TABS.map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={cn(
-                "flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all",
+                "flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all duration-300",
                 activeTab === tab.id
-                  ? `bg-gradient-to-l ${tab.color} text-white shadow-lg`
+                  ? `bg-gradient-to-l ${tab.color} text-white shadow-lg scale-105`
                   : "bg-white/5 text-white/50 hover:bg-white/10 hover:text-white/80"
               )}
             >
@@ -353,14 +394,14 @@ function TabsSection({ activeTab, setActiveTab }: { activeTab: 'scrape' | 'crawl
         </div>
 
         {/* Tab content */}
-        <div className="grid md:grid-cols-2 gap-6 min-h-[380px]">
+        <div ref={rContent.ref} key={activeTab} className={cn("grid md:grid-cols-2 gap-6 min-h-[380px]", rContent.className)}>
           {/* Left — info */}
           <div className="flex flex-col justify-center">
             <h3 className="text-2xl font-bold mb-3">{content.title}</h3>
             <p className="text-white/50 mb-6 leading-relaxed">{content.subtitle}</p>
             <div className="space-y-3">
               {content.prompts.map((p, i) => (
-                <PromptCard key={i} input={p.input} output={p.output} delay={i * 150} active={r.visible} />
+                <PromptCard key={i} input={p.input} output={p.output} delay={i * 150} active={rContent.visible} />
               ))}
             </div>
           </div>
@@ -415,21 +456,21 @@ function TabsSection({ activeTab, setActiveTab }: { activeTab: 'scrape' | 'crawl
 
 function PromptCard({ input, output, delay, active }: { input: string; output: string; delay: number; active: boolean }) {
   const [copied, setCopied] = useState(false);
-  const r = useReveal();
+  const r = useReveal(0.1, 'left');
 
   return (
     <div
       ref={r.ref}
       className={cn(
-        "group bg-white/[0.03] border border-white/[0.06] rounded-xl px-4 py-3 hover:bg-white/[0.06] transition-all duration-500 cursor-pointer",
-        r.visible && active ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+        "group bg-white/[0.03] border border-white/[0.06] rounded-xl px-4 py-3 hover:bg-white/[0.06] hover:border-orange-500/20 transition-all duration-500 cursor-pointer hover:scale-[1.02]",
+        r.visible && active ? r.className : "opacity-0 translate-x-8"
       )}
       style={{ transitionDelay: `${delay}ms` }}
       onClick={() => { navigator.clipboard.writeText(input); setCopied(true); setTimeout(() => setCopied(false), 1500); }}
     >
       <div className="flex items-start gap-3">
         <div className="mt-1 shrink-0">
-          {copied ? <Check className="h-3.5 w-3.5 text-green-400" /> : <Copy className="h-3.5 w-3.5 text-white/20 group-hover:text-white/40 transition-colors" />}
+          {copied ? <Check className="h-3.5 w-3.5 text-green-400" /> : <Copy className="h-3.5 w-3.5 text-white/20 group-hover:text-orange-400 transition-colors" />}
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-sm text-white/70 font-mono truncate">{input}</p>
@@ -481,15 +522,12 @@ const FEATURES = [
 ];
 
 function FeaturesSection() {
-  const r = useReveal();
+  const r = useReveal(0.08, 'up');
   return (
     <section id="features" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-orange-500/[0.02] to-transparent pointer-events-none" />
       <div className="max-w-6xl mx-auto px-6 relative">
-        <div ref={r.ref} className={cn(
-          "text-center mb-16 transition-all duration-700",
-          r.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-        )}>
+        <div ref={r.ref} className={cn("text-center mb-16", r.className)}>
           <h2 className="text-3xl sm:text-4xl font-bold mb-3">ليه خربشة مختلفة؟</h2>
           <p className="text-white/50 text-lg max-w-2xl mx-auto">مش مجرد أداة سكرابينج — ده نظام متكامل بالعربي للمستخدم العربي</p>
         </div>
@@ -505,18 +543,19 @@ function FeaturesSection() {
 }
 
 function FeatureCard({ icon: Icon, title, desc, gradient, index }: typeof FEATURES[0] & { index: number }) {
-  const r = useReveal(0.1);
+  const r = useReveal(0.1, 'scale');
   return (
     <div
       ref={r.ref}
       className={cn(
-        "group relative bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 hover:bg-white/[0.06] hover:border-white/[0.1] transition-all duration-700",
-        r.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+        "group relative bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 hover:bg-white/[0.06] hover:border-white/[0.1] hover:scale-[1.03] transition-all duration-[600ms]",
+        r.visible ? r.className : "opacity-0 scale-90",
+        index % 3 === 0 ? "hover:shadow-lg hover:shadow-blue-500/5" : index % 3 === 1 ? "hover:shadow-lg hover:shadow-purple-500/5" : "hover:shadow-lg hover:shadow-orange-500/5"
       )}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
       <div className={cn(
-        "w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center mb-4 group-hover:scale-110 transition-transform",
+        "w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300",
         gradient
       )}>
         <Icon className="h-5 w-5 text-white" />
@@ -529,7 +568,7 @@ function FeatureCard({ icon: Icon, title, desc, gradient, index }: typeof FEATUR
 
 /* ═══════════ STATS ═══════════ */
 function StatsSection() {
-  const r = useReveal();
+  const r = useReveal(0.15, 'scale');
   const s1 = useCounter(8, 1500, r.visible);
   const s2 = useCounter(50, 1500, r.visible);
   const s3 = useCounter(2, 800, r.visible);
@@ -548,10 +587,10 @@ function StatsSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s, i) => (
             <div key={i} className={cn(
-              "text-center transition-all duration-700",
-              r.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            )} style={{ transitionDelay: `${i * 100}ms` }}>
-              <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-l from-amber-400 to-orange-500 bg-clip-text text-transparent">
+              "text-center transition-all duration-[800ms]",
+              r.visible ? r.className : "opacity-0 scale-75"
+            )} style={{ transitionDelay: `${i * 120}ms` }}>
+              <div className="text-3xl sm:text-5xl font-bold bg-gradient-to-l from-amber-400 to-orange-500 bg-clip-text text-transparent">
                 {s.value}{s.suffix}
               </div>
               <p className="text-sm text-white/40 mt-2">{s.label}</p>
@@ -583,14 +622,11 @@ const STEPS = [
 ];
 
 function HowItWorksSection() {
-  const r = useReveal();
+  const r = useReveal(0.1, 'up');
   return (
     <section className="py-24">
       <div className="max-w-5xl mx-auto px-6">
-        <div ref={r.ref} className={cn(
-          "text-center mb-16 transition-all duration-700",
-          r.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-        )}>
+        <div ref={r.ref} className={cn("text-center mb-16", r.className)}>
           <h2 className="text-3xl sm:text-4xl font-bold mb-3">3 خطوات بس</h2>
           <p className="text-white/50 text-lg">من الفكرة للنتيجة في أقل من دقيقة</p>
         </div>
@@ -611,17 +647,17 @@ function HowItWorksSection() {
 }
 
 function StepCard({ num, title, desc, index }: typeof STEPS[0] & { index: number }) {
-  const r = useReveal();
+  const r = useReveal(0.1, 'up');
   return (
     <div
       ref={r.ref}
       className={cn(
-        "relative text-center transition-all duration-700",
-        r.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+        "relative text-center",
+        r.className
       )}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 text-black text-2xl font-bold mb-5 shadow-lg shadow-orange-500/20">
+      <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 text-black text-2xl font-bold mb-5 shadow-lg shadow-orange-500/20 animate-float">
         {num}
       </div>
       <h3 className="text-lg font-bold mb-2">{title}</h3>
@@ -632,16 +668,13 @@ function StepCard({ num, title, desc, index }: typeof STEPS[0] & { index: number
 
 /* ═══════════ FINAL CTA ═══════════ */
 function FinalCTA({ onEnterApp }: { onEnterApp: () => void }) {
-  const r = useReveal();
+  const r = useReveal(0.15, 'scale');
   return (
-    <section className="py-24 relative">
+    <section className="py-28 relative">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-b from-orange-500/10 via-amber-500/5 to-transparent rounded-full blur-3xl" />
       </div>
-      <div ref={r.ref} className={cn(
-        "max-w-3xl mx-auto px-6 text-center relative transition-all duration-700",
-        r.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      )}>
+      <div ref={r.ref} className={cn("max-w-3xl mx-auto px-6 text-center relative", r.className)}>
         <h2 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight">
           جاهز تخربش؟
         </h2>
@@ -651,7 +684,7 @@ function FinalCTA({ onEnterApp }: { onEnterApp: () => void }) {
         </p>
         <button
           onClick={onEnterApp}
-          className="group bg-gradient-to-l from-amber-500 to-orange-600 text-black font-bold text-lg px-10 py-4 rounded-full hover:shadow-2xl hover:shadow-orange-500/30 transition-all hover:scale-105 inline-flex items-center gap-3"
+          className="group bg-gradient-to-l from-amber-500 to-orange-600 text-black font-bold text-lg px-10 py-4 rounded-full hover:shadow-2xl hover:shadow-orange-500/30 transition-all hover:scale-105 inline-flex items-center gap-3 animate-pulse-glow"
         >
           <ExternalLink className="h-5 w-5" />
           جرّب خربشة دلوقتي — مجاني
